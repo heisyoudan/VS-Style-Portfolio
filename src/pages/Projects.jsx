@@ -1,5 +1,6 @@
 import React from 'react';
 import RichContentWrapper from '../components/Common/RichContentWrapper';
+import OmitMonitorCard from '../components/Projects/OmitMonitorCard';
 import { VscGithubAlt } from 'react-icons/vsc';
 import { FaYoutube } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
@@ -79,9 +80,19 @@ const Projects = () => {
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px', paddingBottom: '20px' }}>
-                {t.projects.items.map((project, i) => (
-                    <ProjectCard key={i} {...project} t={t.projects} />
-                ))}
+                {t.projects.items.map((project, i) => {
+                    // Omit 项目使用特殊卡片组件
+                    if (project.title.includes('Omit')) {
+                        return (
+                            <OmitMonitorCard 
+                                key={i} 
+                                {...project} 
+                                t={t.projects}
+                            />
+                        );
+                    }
+                    return <ProjectCard key={i} {...project} t={t.projects} />;
+                })}
             </div>
 
             <h2 style={{ marginTop: '10px' }}>
