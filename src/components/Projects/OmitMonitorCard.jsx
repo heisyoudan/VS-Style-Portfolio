@@ -4,12 +4,14 @@ import { FaYoutube } from 'react-icons/fa';
 
 const OmitMonitorCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) => {
     const [downloadSpeed, setDownloadSpeed] = useState(28.5);
+    const [uploadSpeed, setUploadSpeed] = useState(12.3);
     const [ping, setPing] = useState(30);
 
     // 模拟实时数据更新
     useEffect(() => {
         const interval = setInterval(() => {
             setDownloadSpeed(prev => Math.max(5, prev + (Math.random() - 0.5) * 8));
+            setUploadSpeed(prev => Math.max(2, prev + (Math.random() - 0.5) * 4));
             setPing(prev => Math.max(10, prev + (Math.random() - 0.5) * 5));
         }, 2000);
 
@@ -59,12 +61,12 @@ const OmitMonitorCard = ({ title, tech, desc, imgSrc, link, github, industry, t 
                         <span style={{ color: '#fff', marginLeft: '4px' }}>{downloadSpeed.toFixed(1)} Mbps</span>
                     </div>
                     <div style={{ marginBottom: '8px' }}>
-                        <span style={{ color: '#888' }}>Ping:</span>
-                        <span style={{ color: '#fff', marginLeft: '4px' }}>{Math.round(ping)} ms</span>
+                        <span style={{ color: '#888' }}>Upload:</span>
+                        <span style={{ color: '#fff', marginLeft: '4px' }}>{uploadSpeed.toFixed(1)} Mbps</span>
                     </div>
                     <div>
-                        <span style={{ color: '#888' }}>Network:</span>
-                        <span style={{ color: '#fff', marginLeft: '4px' }}>5G / WiFi</span>
+                        <span style={{ color: '#888' }}>Ping:</span>
+                        <span style={{ color: '#fff', marginLeft: '4px' }}>{Math.round(ping)} ms</span>
                     </div>
                 </div>
                 <div style={{
