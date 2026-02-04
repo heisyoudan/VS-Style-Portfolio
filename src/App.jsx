@@ -10,7 +10,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Timeline from './pages/Timeline';
 import Skills from './pages/Skills';
-import Contact from './pages/Contact';
+
 
 const App = () => {
     // Files configuration list
@@ -20,7 +20,7 @@ const App = () => {
         { name: 'Projects.jsx', component: Projects, type: 'file', lineCount: 65 },
         { name: 'Timeline.jsx', component: Timeline, type: 'file', lineCount: 35 },
         { name: 'Skills.jsx', component: Skills, type: 'file', lineCount: 35 },
-        { name: 'Contact.md', component: Contact, type: 'file', lineCount: 20 },
+
     ];
 
     const [activeFile, setActiveFile] = useState(files[0]);

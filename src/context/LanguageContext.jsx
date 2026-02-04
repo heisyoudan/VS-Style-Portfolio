@@ -53,7 +53,7 @@ export const translations = {
                     title: "鄂州製鋼所デジタルツインのプロジェクト",
                     industry: "開発業種：製鋼業",
                     desc: "製鋼所をシステムに複製し、生産現場で発生する様々な形式のデータと接続できます。生産現場で発生するデータがシステム上で集約され、状況を一目で把握できます。立体的な空間表現により、現場を訪れなくても製造現場の状況を手に取るように把握できます。関連データや動画との連携により、多角的な情報を基に正確で迅速な状況判断ができます。",
-                    imgSrc: "/img/1.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
                     link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
                     tech: ["Unity", "C#", "MQTT"]
                 },
@@ -61,7 +61,7 @@ export const translations = {
                     title: "VR消防訓練体験",
                     industry: "開発業種：水力発電業",
                     desc: "水力発電所では、従業員向けのVR研修アプリを利用して、消火訓練をより安全で緊張感のあるものにすることができます。研修内容はVRで表現され、火災と同様の環境を再現できるため、実際に火を使わずに効果的な訓練が可能です。",
-                    imgSrc: "/img/2.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
                     tech: ["Unity", "VR", "Safety"]
                 },
@@ -69,7 +69,7 @@ export const translations = {
                     title: "作業中の高所からの墜落体験",
                     industry: "開発業種：水力発電業",
                     desc: "高所作業中の墜落事故をVRで完全再現し、恐怖の疑似体験を通じて事故を未然に防ぐことを目的としています。さらに、このシステムは安全教育や新人研修など幅広い場面で活用可能であり、従業員の安全意識向上やリスクマネジメントの強化にも貢献します。",
-                    imgSrc: "/img/3.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
                     tech: ["Unity", "Physics", "VR"]
                 },
@@ -77,7 +77,7 @@ export const translations = {
                     title: "訓練分野におけるVRのシステム",
                     industry: "開発業種：水力発電業",
                     desc: "Hi5 VRグローブを装着して仮想空間に没入し、繰り返しの実技確認が必要な現場実習などを、実際の現場にいるかのような臨場感でトレーニングできます。",
-                    imgSrc: "/img/4.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
                     tech: ["Unity", "Hi5 Gloves", "Training"]
                 },
@@ -85,7 +85,7 @@ export const translations = {
                     title: "ARグラスを装着した巡視点検業務用のアプリケーション",
                     industry: "開発業種：水力発電業",
                     desc: "工事現場検査をリモートで実施。デジタル化した作業手順書を閲覧しながら作業でき、現場映像や音声を遠隔の技術者へリアルタイム伝送。支援者はマニュアルや指示を書き込んだ画像を作業者のARグラス上に表示できます。",
-                    imgSrc: "/img/5.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
                     link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
                     tech: ["Unity", "AR", "HoloLens"]
                 },
@@ -93,21 +93,21 @@ export const translations = {
                     title: "契約管理・決済代行システム",
                     industry: "開発業種：金融・決済システム",
                     desc: "大手決済代行サービスの契約管理システム開発。Kickflowワークフロー連携により申込から振込まで一元管理。<br><br><b>担当範囲:</b> 基本設計〜結合テスト、BFF・BE・共通API設計、PostgreSQL設計、AWS連携、React/TypeScript改修、テスト・レビュー",
-                    imgSrc: "/img/6.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
                     tech: ["Java", "Spring Boot", "PostgreSQL"]
                 },
                 {
                     title: "大手決済基盤刷新プロジェクト",
                     industry: "開発業種：金融・決済システム",
                     desc: "大手企業決済システム刷新プロジェクト。技術リードとして新技術導入を主導。<br><br><b>主な貢献:</b><br>・新技術検証(PoC): gRPC・AWS DynamoDB等の技術検証と実装<br>・標準策定: 実装ガイドライン・技術レポート作成<br>・AI活用: GitHub Copilot導入による開発効率化推進",
-                    imgSrc: "/img/7.png",
+                    imgSrc: "/VS-Style-Portfolio/img/7.png",
                     tech: ["Java", "gRPC", "AWS", "DynamoDB"]
                 },
                 {
                     title: "Omit (macOS向けシステムモニター)",
                     industry: "開発業種：macOSアプリ",
                     desc: "macOSメニューバー常駐型システム監視ツール。SwiftUI採用のミニマルデザイン。<br><br><b>特徴:</b><br>・個人開発: 企画からリリースまで独力完成<br>・AI駆動開発: Swift未経験からAIツール活用で短期開発<br>・UXデザイン: 直感的で美しいApple純正風インターフェース",
-                    imgSrc: "/img/8.png",
+                    imgSrc: "/VS-Style-Portfolio/img/8.png",
                     tech: ["Swift", "SwiftUI", "macOS"],
                     github: "https://github.com/heisyoudan/Omit/tree/main"
                 }
@@ -232,7 +232,7 @@ export const translations = {
                     title: "鄂州钢厂数字孪生项目",
                     industry: "开发行业：炼钢业",
                     desc: "将钢厂在系统中进行数字复制，并与现场产生的多种数据类型打通。现场数据在系统中集中汇聚，状态一目了然；通过三维空间表达，即使不去现场也能掌握生产情况。结合相关数据与视频进行联动，在多维信息基础上实现更准确、快速的判断。",
-                    imgSrc: "/img/1.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
                     link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
                     tech: ["Unity", "C#", "MQTT"]
                 },
@@ -240,7 +240,7 @@ export const translations = {
                     title: "VR 消防训练体验",
                     industry: "开发行业：水力发电",
                     desc: "面向水电站员工的 VR 培训应用，使灭火训练更安全、更有临场感。训练内容以 VR 呈现，可还原类似火灾的环境，无需动用真火即可开展高效训练。",
-                    imgSrc: "/img/2.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
                     tech: ["Unity", "VR", "Safety"]
                 },
@@ -248,7 +248,7 @@ export const translations = {
                     title: "高处作业坠落体验",
                     industry: "开发行业：水力发电",
                     desc: "完整还原高处作业的坠落事故，通过沉浸式\"恐惧体验\"来提升安全意识、预防事故。",
-                    imgSrc: "/img/3.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
                     tech: ["Unity", "Physics", "VR"]
                 },
@@ -256,7 +256,7 @@ export const translations = {
                     title: "训练领域的 VR 系统",
                     industry: "开发行业：水力发电",
                     desc: "佩戴 Hi5 VR 手套沉浸于虚拟空间，对需要反复实操确认的训练进行高还原度演练，如同置身真实现场。",
-                    imgSrc: "/img/4.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
                     tech: ["Unity", "Hi5 Gloves", "Training"]
                 },
@@ -264,7 +264,7 @@ export const translations = {
                     title: "佩戴 AR 眼镜的巡检应用",
                     industry: "开发行业：水力发电",
                     desc: "远程实施工地巡检。作业者可在 AR 眼镜中查看数字化作业指引，并将现场视频/音频实时传送给远端技术人员；支援者可将带有标注的图片/指令推送并显示在作业者的 AR 眼镜上。",
-                    imgSrc: "/img/5.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
                     link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
                     tech: ["Unity", "AR", "HoloLens"]
                 },
@@ -272,21 +272,21 @@ export const translations = {
                     title: "契约管理与代收付系统",
                     industry: "开发行业：金融·支付系统",
                     desc: "大型支付代办服务契约管理系统。与 Kickflow 工作流联动实现全流程管理。<br><br><b>负责范围:</b> 基本设计至集成测试、BFF/BE/共通API设计、PostgreSQL设计、AWS集成、React/TypeScript开发、测试与代码评审",
-                    imgSrc: "/img/6.jpg",
+                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
                     tech: ["Java", "Spring Boot", "PostgreSQL"]
                 },
                 {
                     title: "大型企业支付平台现代化重构",
                     industry: "开发行业：金融·支付系统",
                     desc: "大型企业支付系统现代化重构项目。担任技术先行者，主导新技术导入与团队技术升级。<br><br><b>核心贡献:</b><br>・新技术攻坚: gRPC/AWS DynamoDB 可行性验证与先行开发<br>・标准制定: 技术实现报告与开发手册编写<br>・AI流程导入: GitHub Copilot 应用模式验证与标准化工作流建立",
-                    imgSrc: "/img/7.png",
+                    imgSrc: "/VS-Style-Portfolio/img/7.png",
                     tech: ["Java", "gRPC", "AWS", "DynamoDB"]
                 },
                 {
                     title: "Omit (macOS 极简系统监控)",
                     industry: "开发行业：macOS 应用",
                     desc: "基于 SwiftUI 的 macOS 菜单栏系统监控工具。极简设计提供CPU/内存/网络监控。<br><br><b>开发特色:</b><br>・全栈独立开发: UI/UX设计至App上架全流程完成<br>・AI驱动开发: 零基础Swift通过AI辅助实现产品化<br>・极简交互: Apple Native设计语言，\"零干扰\"用户体验",
-                    imgSrc: "/img/8.png",
+                    imgSrc: "/VS-Style-Portfolio/img/8.png",
                     tech: ["Swift", "SwiftUI", "macOS"],
                     github: "https://github.com/heisyoudan/Omit/tree/main"
                 }

@@ -80,17 +80,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Timeline Components */
+/* Timeline Components - Unified Vertical Layout */
 .timeline-item {
     display: flex;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 15px;
+    margin-bottom: 30px;
     position: relative;
+    /* Unified style: same as mobile */
 }
 
 .timeline-line {
     position: absolute;
-    left: 20px;
+    left: 19px;
     /* Aligned to left */
     top: 0;
     bottom: -40px;
@@ -101,40 +102,24 @@ a:hover {
 }
 
 .timeline-date {
-    width: 120px;
+    width: auto;
     text-align: left;
-    /* Align text left */
-    padding-top: 0px;
-    position: relative;
+    position: absolute;
+    left: 40px;
+    top: -20px;
+    /* Move date above content */
+    font-size: 12px;
+    display: block;
     z-index: 1;
     font-weight: bold;
     color: var(--accent-purple);
-    font-size: 14px;
     font-family: var(--font-mono);
-    /* Make date float or separate? 
-       Actually, if we want it "left aligned", the standard way is:
-       Line -> Content. 
-       Where does Date go? 
-       1. Top of content?
-       2. To the left of Line?
-       
-       If user wants "career to left", maybe they mean the visual weight.
-       Let's put Date ABOVE the role/company like in Mobile view, but for Desktop too? 
-       Or just reduce the left padding.
-       
-       Let's try:
-       [Line] [Content + Date]
-       Line at left: 20px.
-       Content padded left: 40px.
-    */
-    display: none;
-    /* Hide standard date column derived from old layout */
 }
 
 .timeline-dot {
     position: absolute;
-    left: 15px;
-    /* Centered on line at 20px (12px width -> 20 - 6 = 14) */
+    left: 14px;
+    /* Centered on line */
     top: 5px;
     width: 12px;
     height: 12px;
@@ -146,8 +131,9 @@ a:hover {
 
 .timeline-content {
     flex: 1;
-    padding-left: 50px;
+    padding-left: 40px;
     /* Space from line */
+    padding-top: 5px;
     position: relative;
     z-index: 1;
 }
@@ -168,37 +154,5 @@ a:hover {
     /* Utility to hide elements on mobile */
     .hide-on-mobile {
         display: none !important;
-    }
-
-    /* Timeline Mobile Fix */
-    .timeline-item {
-        gap: 15px;
-        margin-bottom: 30px;
-    }
-
-    .timeline-line {
-        left: 19px;
-        /* Move line to left */
-    }
-
-    .timeline-date {
-        width: auto;
-        text-align: left;
-        position: absolute;
-        left: 40px;
-        top: -20px;
-        /* Move date above content */
-        font-size: 12px;
-    }
-
-    .timeline-content {
-        padding-left: 40px;
-        /* Push content to right of line */
-        padding-top: 5px;
-    }
-
-    .timeline-dot {
-        left: 14px;
-        /* Align dot with new line position */
     }
 }

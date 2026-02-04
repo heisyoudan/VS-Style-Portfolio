@@ -2,13 +2,55 @@ import React, { useState } from 'react';
 import RichContentWrapper from '../components/Common/RichContentWrapper';
 import { useLanguage } from '../context/LanguageContext';
 import CommentLink from '../components/Common/CommentLink';
+import CodeTypewriter from '../components/Common/CodeTypewriter';
 
 const Home = ({ onNavigate }) => {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
-    // Mapping old translation keys to new style if needed, or just using them directly
-    // {t.home.contact} was "Contact Me" -> About
-    // {t.home.viewWork} was "View Projects" -> Projects
+    // Data for typewriter effect
+    const infoCode = [
+        [
+            { text: 'const', color: 'var(--accent-pink)' },
+            { text: ' ', color: 'var(--text-primary)' },
+            { text: 'info', color: 'var(--accent-yellow)' },
+            { text: ' = ', color: 'var(--text-primary)' },
+            { text: '{', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '    Name: ', color: 'var(--text-primary)' },
+            { text: language === 'zh' ? '"He Xiaodan"' : '"Heisyoudan"', color: 'var(--accent-green)' },
+            { text: ',', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '    CurrentLocation: ', color: 'var(--text-primary)' },
+            { text: '"Tokyo, Japan"', color: 'var(--accent-green)' },
+            { text: ',', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '    Interests: ', color: 'var(--text-primary)' },
+            { text: '[', color: 'var(--text-primary)' },
+            { text: '"AI-Driven Workflow"', color: 'var(--accent-green)' },
+            { text: ', ', color: 'var(--text-primary)' },
+            { text: '"macOS/Web/Unity"', color: 'var(--accent-green)' },
+            { text: ', ', color: 'var(--text-primary)' },
+            { text: '"Product Design"', color: 'var(--accent-green)' },
+            { text: ']', color: 'var(--text-primary)' },
+            { text: ',', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '    Email: ', color: 'var(--text-primary)' },
+            { text: '"heisyoudan@yahoo.com"', color: 'var(--accent-green)' },
+            { text: ',', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '    GitHub: ', color: 'var(--text-primary)' },
+            { text: '"https://github.com/heisyoudan"', color: 'var(--accent-green)', link: 'https://github.com/heisyoudan' },
+            { text: ',', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '};', color: 'var(--text-primary)' }
+        ]
+    ];
 
     return (
         <RichContentWrapper>
@@ -39,53 +81,28 @@ const Home = ({ onNavigate }) => {
                         color: 'var(--text-secondary)',
                         fontWeight: '500'
                     }}>
-                        {t.home.role}
+                        "Software Engineer"
                     </h2>
 
+                    <div style={{ marginTop: '15px', marginBottom: '0' }}>
+                        <CommentLink
+                            text="Go to Projects"
+                            onClick={() => onNavigate && onNavigate('Projects.jsx')}
+                        />
+                        <CommentLink
+                            text="Go to About Me"
+                            onClick={() => onNavigate && onNavigate('About.jsx')}
+                        />
+                    </div>
+
                     <div style={{
-                        marginTop: '40px',
+                        marginTop: '0',
                         marginBottom: '40px',
-                        fontFamily: 'var(--font-mono)',
-                        fontSize: '16px',
-                        lineHeight: '1.6',
-                        color: 'var(--text-primary)'
                     }}>
-                        <div>
-                            <span style={{ color: 'var(--accent-pink)' }}>const</span> <span style={{ color: 'var(--accent-yellow)' }}>info</span> = <span style={{ color: 'var(--text-primary)' }}>{'{'}</span>
-                        </div>
-                        <div style={{ paddingLeft: '20px' }}>
-                            <div>
-                                <span style={{ color: 'var(--text-primary)' }}>CurrentLocation:</span> <span style={{ color: 'var(--accent-green)' }}>"Tokyo, Japan"</span>,
-                            </div>
-                            <div>
-                                <span style={{ color: 'var(--text-primary)' }}>Interests:</span> <span style={{ color: 'var(--text-primary)' }}>[</span><span style={{ color: 'var(--accent-green)' }}>"Java"</span>, <span style={{ color: 'var(--accent-green)' }}>"Unity XR"</span>, <span style={{ color: 'var(--accent-green)' }}>"AI-Native"</span>, <span style={{ color: 'var(--accent-green)' }}>"macOS"</span><span style={{ color: 'var(--text-primary)' }}>]</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span style={{ color: 'var(--text-primary)' }}>{'}'}</span>;
-                        </div>
+                        <CodeTypewriter lines={infoCode} delay={30} initialDelay={100} />
                     </div>
 
-                    <div style={{ marginTop: '0px' }}>
-                        <div style={{ marginTop: '20px' }}>
-                            <CommentLink
-                                text="Go to Projects"
-                                onClick={() => onNavigate && onNavigate('Projects.jsx')}
-                            />
-                            <CommentLink
-                                text="Go to About Me"
-                                onClick={() => onNavigate && onNavigate('About.jsx')}
-                            />
-                        </div>
 
-                        <div style={{ marginTop: '20px', fontFamily: 'var(--font-mono)', fontSize: '16px', lineHeight: '1.6' }}>
-                            <span style={{ color: 'var(--accent-pink)' }}>function</span> <span style={{ color: 'var(--accent-yellow)' }}>main</span><span style={{ color: 'var(--text-primary)' }}>() {'{'}</span>
-                            <div style={{ paddingLeft: '20px' }}>
-                                <span style={{ color: 'var(--text-primary)' }}>portfolio.</span><span style={{ color: 'var(--accent-yellow)' }}>start</span><span style={{ color: 'var(--text-primary)' }}>();</span>
-                            </div>
-                            <span style={{ color: 'var(--text-primary)' }}>{'}'}</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </RichContentWrapper>

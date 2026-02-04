@@ -24,11 +24,11 @@ const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) =
             e.currentTarget.style.boxShadow = 'none';
         }}
     >
-        <div style={{ height: '160px', overflow: 'hidden', backgroundColor: '#000', position: 'relative' }}>
-            <img 
-                src={imgSrc.startsWith('http') ? imgSrc : `${import.meta.env.BASE_URL}${imgSrc.startsWith('/') ? imgSrc.slice(1) : imgSrc}`} 
-                alt={title} 
-                style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9 }} 
+        <div style={{ aspectRatio: '16/9', width: '100%', overflow: 'hidden', backgroundColor: '#000', position: 'relative' }}>
+            <img
+                src={imgSrc}
+                alt={title}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9 }}
             />
             <div style={{
                 position: 'absolute', bottom: 0, left: 0, right: 0, padding: '5px 10px',
@@ -49,7 +49,7 @@ const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) =
                     }}>{t}</span>
                 ))}
             </div>
-            <div 
+            <div
                 style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: '1.6', flex: 1, margin: 0 }}
                 dangerouslySetInnerHTML={{ __html: desc }}
             />
