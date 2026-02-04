@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import { VscChevronRight, VscChevronDown, VscJson, VscMarkdown, VscSymbolMethod } from 'react-icons/vsc';
-import { FaReact, FaCss3Alt } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { SiTypescript, SiYaml } from 'react-icons/si';
 
-const FileIcon = ({ name }) => {
-    if (name.endsWith('.jsx')) return <FaReact color="#61dafb" />; // React Blue
-    if (name.endsWith('.css')) return <FaCss3Alt color="#42a5f5" />; // CSS Blue
-    if (name.endsWith('.json')) return <VscJson color="#f1c40f" />; // JSON Yellow
-    if (name.endsWith('.md')) return <VscMarkdown color="#69b3a2" />; // MD Green
+// 方案A：映射实际文件名 -> 显示名字
+const displayNameMap = {
+    'Projects.jsx': 'Projects.json',
+    'Timeline.jsx': 'Timeline.json'
+};
+
+const FileIcon = ({ displayName }) => {
+    // 根据显示名字判断图标
+    if (displayName.endsWith('.ts')) return <SiTypescript color="#3178c6" />; // TypeScript Blue
+    if (displayName.endsWith('.jsx')) return <FaReact color="#61dafb" />; // React Blue
+    if (displayName.endsWith('.json')) return <VscJson color="#f1c40f" />; // JSON Yellow
+    if (displayName.endsWith('.yaml') || displayName.endsWith('.yml')) return <SiYaml color="#cb171e" />; // YAML Red
+    if (displayName.endsWith('.md')) return <VscMarkdown color="#69b3a2" />; // MD Green
     return <VscSymbolMethod />;
 };
 
@@ -52,25 +61,28 @@ const Explorer = ({ files, activeFile, onSelectFile }) => {
 
                 {isPortfolioOpen && (
                     <div style={{ paddingLeft: '0px' }}>
-                        {files.map(file => (
-                            <div
-                                key={file.name}
-                                onClick={() => onSelectFile(file)}
-                                style={{
-                                    padding: '5px 10px 5px 25px',
-                                    cursor: 'pointer',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '8px',
-                                    backgroundColor: activeFile && activeFile.name === file.name ? 'var(--border-color)' : 'transparent',
-                                    color: activeFile && activeFile.name === file.name ? '#fff' : 'var(--text-muted)',
-                                    fontSize: '13px'
-                                }}
-                            >
-                                <FileIcon name={file.name} />
-                                <span>{file.name}</span>
-                            </div>
-                        ))}
+                        {files.map(file => {
+                            const displayName = displayNameMap[file.name] || file.name;
+                            return (
+                                <div
+                                    key={file.name}
+                                    onClick={() => onSelectFile(file)}
+                                    style={{
+                                        padding: '5px 10px 5px 25px',
+                                        cursor: 'pointer',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '8px',
+                                        backgroundColor: activeFile && activeFile.name === file.name ? 'var(--border-color)' : 'transparent',
+                                        color: activeFile && activeFile.name === file.name ? '#fff' : 'var(--text-muted)',
+                                        fontSize: '13px'
+                                    }}
+                                >
+                                    <FileIcon displayName={displayName} />
+                                    <span>{displayName}</span>
+                                </div>
+                            );
+                        })}
                     </div>
                 )}
             </div>

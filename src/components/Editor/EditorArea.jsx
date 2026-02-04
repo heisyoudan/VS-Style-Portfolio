@@ -2,36 +2,45 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { VscClose } from 'react-icons/vsc';
 
+// 方案A：映射实际文件名 -> 显示名字
+const displayNameMap = {
+    'Projects.jsx': 'Projects.json',
+    'Timeline.jsx': 'Timeline.json'
+};
+
 const TabBar = ({ activeFile, openFiles, onCloseFile, onSelectFile }) => {
     return (
         <div style={{ display: 'flex', backgroundColor: 'var(--bg-color)', overflowX: 'auto', borderBottom: '1px solid var(--border-color)' }}>
-            {openFiles.map(file => (
-                <div
-                    key={file.name}
-                    onClick={() => onSelectFile(file)}
-                    style={{
-                        padding: '10px 15px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '8px',
-                        cursor: 'pointer',
-                        backgroundColor: activeFile.name === file.name ? 'var(--bg-color)' : 'var(--sidebar-bg)',
-                        color: activeFile.name === file.name ? 'var(--text-primary)' : 'var(--text-muted)',
-                        borderTop: activeFile.name === file.name ? '2px solid var(--accent-pink)' : '2px solid transparent',
-                        borderRight: '1px solid var(--border-color)',
-                        minWidth: '120px',
-                        fontSize: '13px'
-                    }}
-                >
-                    <span style={{ flex: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{file.name}</span>
-                    <span
-                        onClick={(e) => { e.stopPropagation(); onCloseFile(file); }}
-                        style={{ display: 'flex', alignItems: 'center', borderRadius: '4px', opacity: 0.7 }}
+            {openFiles.map(file => {
+                const displayName = displayNameMap[file.name] || file.name;
+                return (
+                    <div
+                        key={file.name}
+                        onClick={() => onSelectFile(file)}
+                        style={{
+                            padding: '10px 15px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            cursor: 'pointer',
+                            backgroundColor: activeFile.name === file.name ? 'var(--bg-color)' : 'var(--sidebar-bg)',
+                            color: activeFile.name === file.name ? 'var(--text-primary)' : 'var(--text-muted)',
+                            borderTop: activeFile.name === file.name ? '2px solid var(--accent-pink)' : '2px solid transparent',
+                            borderRight: '1px solid var(--border-color)',
+                            minWidth: '120px',
+                            fontSize: '13px'
+                        }}
                     >
-                        <VscClose size={14} />
-                    </span>
-                </div>
-            ))}
+                        <span style={{ flex: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{displayName}</span>
+                        <span
+                            onClick={(e) => { e.stopPropagation(); onCloseFile(file); }}
+                            style={{ display: 'flex', alignItems: 'center', borderRadius: '4px', opacity: 0.7 }}
+                        >
+                            <VscClose size={14} />
+                        </span>
+                    </div>
+                );
+            })}
         </div>
     );
 };

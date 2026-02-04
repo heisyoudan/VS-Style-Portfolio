@@ -101,6 +101,10 @@ a:hover {
     border-left: 1px dashed var(--border-color);
 }
 
+.timeline-item:last-child .timeline-line {
+    display: none;
+}
+
 .timeline-date {
     width: auto;
     text-align: left;

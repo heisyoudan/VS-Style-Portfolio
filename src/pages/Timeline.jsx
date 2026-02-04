@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import RichContentWrapper from '../components/Common/RichContentWrapper';
 import { useLanguage } from '../context/LanguageContext';
 
-const TimelineItem = ({ date, company, role, desc }) => (
+const TimelineItem = ({ date, company, role, desc, isExpanded }) => (
     <div className="timeline-item">
         {/* Line */}
         <div className="timeline-line"></div>
@@ -29,24 +29,80 @@ const TimelineItem = ({ date, company, role, desc }) => (
             <div className="timeline-dot"></div>
 
             <h3 style={{ margin: '0 0 5px 0', fontSize: '18px', color: 'var(--text-primary)' }}>{company}</h3>
-            <div style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: '1.6', fontFamily: 'var(--font-mono)' }}>
-                // {desc}
-            </div>
+            {isExpanded && (
+                <div style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: '1.6', fontFamily: 'var(--font-mono)' }}>
+                    // {desc}
+                </div>
+            )}
         </div>
     </div>
 );
 
 const Timeline = () => {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
+    const [allExpanded, setAllExpanded] = useState(false);
 
     return (
         <RichContentWrapper>
-            <h2 style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '10px', marginBottom: '30px' }}>
+            <h2 style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '10px', marginBottom: '0' }}>
                 <span style={{ color: 'var(--accent-pink)' }}>#</span> {t.timeline.title}
             </h2>
+
+            {/* Toggle Button */}
+            <div 
+                onClick={() => setAllExpanded(!allExpanded)}
+                style={{
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '13px',
+                    userSelect: 'none',
+                    padding: '12px 16px',
+                    marginTop: '15px',
+                    marginBottom: '12px',
+                    borderRadius: '4px',
+                    width: 'fit-content'
+                }}
+                onMouseEnter={(e) => {
+                    const functionName = e.currentTarget.querySelector('[data-function-name]');
+                    if (functionName) functionName.style.color = 'var(--accent-pink)';
+                }}
+                onMouseLeave={(e) => {
+                    const functionName = e.currentTarget.querySelector('[data-function-name]');
+                    if (functionName) functionName.style.color = 'var(--text-primary)';
+                }}
+            >
+                <div style={{ 
+                    color: 'var(--text-muted)',
+                    opacity: 0.7,
+                    transition: 'opacity 0.2s',
+                    marginBottom: '2px'
+                }}>
+                    // {language === 'ja' ? '全て展開・折りたたみ' : '全部展开/折叠'}
+                </div>
+                <div style={{ color: 'var(--text-primary)', display: 'flex', gap: '4px', alignItems: 'center' }}>
+                    <span 
+                        data-function-name
+                        style={{ 
+                            color: 'var(--text-primary)',
+                            transition: 'color 0.2s',
+                            cursor: 'pointer'
+                        }}
+                    >
+                        toggleDetails()
+                    </span>
+                    <span>.details: </span>
+                    <span style={{ 
+                        color: allExpanded ? '#61dafb' : 'var(--text-muted)',
+                        transition: 'color 0.3s'
+                    }}>
+                        {allExpanded ? 'ON' : 'OFF'}
+                    </span>
+                </div>
+            </div>
+
             <div style={{ paddingTop: '20px' }}>
                 {t.timeline.items && t.timeline.items.map((e, i) => (
-                    <TimelineItem key={i} {...e} />
+                    <TimelineItem key={i} {...e} isExpanded={allExpanded} />
                 ))}
             </div>
             {/* Spacer for bottom */}
