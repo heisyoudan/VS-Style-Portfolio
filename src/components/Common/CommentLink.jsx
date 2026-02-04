@@ -11,12 +11,14 @@ const CommentLink = ({ text, onClick }) => {
             style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: '16px',
-                color: isHovered ? 'var(--accent-green)' : 'var(--text-muted)', // Green or bright color on hover
+                color: isHovered ? 'var(--accent-green)' : 'var(--text-muted)',
                 cursor: 'pointer',
                 marginTop: '8px',
-                display: 'flex',
+                display: 'inline-flex',
                 alignItems: 'center',
-                transition: 'color 0.2s'
+                transition: 'color 0.2s',
+                padding: '8px 12px',
+                borderRadius: '4px'
             }}
         >
             <style>{`
