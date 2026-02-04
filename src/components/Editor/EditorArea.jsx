@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { VscClose } from 'react-icons/vsc';
 
@@ -66,6 +66,27 @@ const LineNumbers = ({ count }) => (
 
 const EditorArea = ({ activeFile, openFiles, onCloseFile, onSelectFile, onNavigate }) => {
     const { language } = useLanguage();
+    const contentRef = useRef(null);
+    const [lineCount, setLineCount] = useState(40);
+
+    useEffect(() => {
+        if (!contentRef.current) return;
+
+        const observer = new ResizeObserver(() => {
+            if (contentRef.current) {
+                const height = contentRef.current.scrollHeight;
+                const lineHeight = 24; // lineHeight: 1.6 * fontSize: 14px ≈ 22.4px, use 24px for safety
+                const calculatedLines = Math.ceil(height / lineHeight) + 2; // +2 buffer for padding
+                setLineCount(Math.max(calculatedLines, 40)); // Minimum 40 lines
+            }
+        });
+
+        observer.observe(contentRef.current);
+        
+        return () => {
+            observer.disconnect();
+        };
+    }, [activeFile]);
 
     if (!activeFile) return (
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--bg-color)' }}>
@@ -88,13 +109,16 @@ const EditorArea = ({ activeFile, openFiles, onCloseFile, onSelectFile, onNaviga
             <TabBar activeFile={activeFile} openFiles={openFiles} onCloseFile={onCloseFile} onSelectFile={onSelectFile} />
 
             <div style={{ flex: 1, display: 'flex', position: 'relative', overflow: 'auto' }}>
-                <LineNumbers count={activeFile.lineCount || 40} />
-                <div style={{
-                    padding: '20px 20px 20px 0',
-                    flex: 1,
-                    fontFamily: 'var(--font-mono)',
-                    color: 'var(--text-primary)'
-                }}>
+                <LineNumbers count={lineCount} />
+                <div 
+                    ref={contentRef}
+                    style={{
+                        padding: '20px 20px 20px 0',
+                        flex: 1,
+                        fontFamily: 'var(--font-mono)',
+                        color: 'var(--text-primary)'
+                    }}
+                >
                     <activeFile.component onNavigate={onNavigate} />
                 </div>
             </div>
