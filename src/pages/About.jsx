@@ -10,7 +10,7 @@ const About = () => {
             <div style={{ fontFamily: 'var(--font-mono)', lineHeight: '1.8' }}>
                 <div style={{ color: 'var(--text-muted)', marginBottom: '20px' }}>
                     /** <br />
-                    * <span style={{ color: 'var(--accent-pink)' }}>@file</span> About.js <br />
+                    * <span style={{ color: 'var(--accent-pink)' }}>@file</span> About.jsx <br />
                     * <span style={{ color: 'var(--accent-pink)' }}>@author</span> {language === 'zh' ? 'He Xiaodan' : 'Heisyoudan'} <br />
                     * <span style={{ color: 'var(--accent-pink)' }}>@description</span> {t.about.title} <br />
                     */

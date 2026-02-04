@@ -19,7 +19,7 @@ const CodeTypewriter = ({ lines, delay = 50, initialDelay = 500 }) => {
     useEffect(() => {
         if (!hasStarted) return;
 
-        if (currentLineIndex >= lines.length) return;
+        if (currentLineIndex >= lines.length) return; // Stop typing animation when done
 
         const currentLine = lines[currentLineIndex];
         // Calculate total length of current line text
@@ -45,6 +45,9 @@ const CodeTypewriter = ({ lines, delay = 50, initialDelay = 500 }) => {
         if (lineIdx > currentLineIndex) return null; // Future lines
 
         let charsToRender = (lineIdx === currentLineIndex) ? currentCharIndex : 99999;
+        // 如果所有行都完成了，显示最后一行的光标
+        const isLastLine = lineIdx === lines.length - 1;
+        const showCursor = (lineIdx === currentLineIndex) || (isLastLine && currentLineIndex >= lines.length);
 
         return (
             <div key={lineIdx} style={{ minHeight: '1.6em', whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
@@ -88,13 +91,15 @@ const CodeTypewriter = ({ lines, delay = 50, initialDelay = 500 }) => {
                     );
                 })}
                 {/* Cursor */}
-                {lineIdx === currentLineIndex && (
+                {showCursor && (
                     <span style={{
-                        borderRight: '2px solid var(--accent-pink)',
-                        animation: 'blink 1s step-end infinite',
                         display: 'inline-block',
-                        verticalAlign: 'text-bottom',
-                        height: '1.2em'
+                        width: '2px',
+                        height: '1.2em',
+                        backgroundColor: 'var(--accent-pink)',
+                        marginLeft: '2px',
+                        animation: 'blink 1s step-end infinite',
+                        verticalAlign: 'text-bottom'
                     }}></span>
                 )}
             </div>
