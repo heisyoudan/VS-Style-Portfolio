@@ -1,0 +1,148 @@
+/* REGISTER VAR TO BE ANIMATABLE*/
+@property --percentage {
+    initial-value: 0;
+    inherits: false;
+    syntax: '<number>';
+}
+
+/* animating the custom prop*/
+@keyframes updatePerc {
+    to {
+        --percentage: 100;
+    }
+}
+
+:root{
+    animation-name: updatePerc;
+    animation-duration: 1s;           
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  
+    animation-timeline: scroll(root block);
+    animation-range: 0% 100%;
+  
+    --start-hue: 330;
+    --primary-color: hsla(calc(var(--start-hue) - var(--percentage) * 1), 81%, 55%, 0.843);
+    --angle: calc(var(--percentage, 0) * 3.6deg);
+    --txt: calc(var(--percentage));
+  }
+
+/* Drawing the arc */
+.progress:after {
+    background: conic-gradient(
+        var(--primary-color) var(--angle),
+        transparent var(--angle)
+    );
+}
+
+/* Number as text */
+.progress__txt:after {
+    counter-reset: myCounter var(--txt);
+    content: counter(myCounter) "%";
+    display: block;
+}
+
+/* COSMETIC */
+.progress {
+    --borderWidth: 10px;
+    --size: 8rem;
+    border-radius: 100%;
+    width: var(--size);
+    height: var(--size);
+    margin: 60px auto;
+    border: 1px solid white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    right: 2rem;
+    z-index: 2;
+    font-size: 2em;
+}
+
+.progress:before {
+    border-radius: 100%;
+    content: '';
+    width: calc(var(--size) - var(--borderWidth));
+    height: calc(var(--size) - var(--borderWidth));
+    position: absolute;
+    background: #222;
+    z-index: 1;
+}
+
+.progress:after {
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    top: calc(var(--borderWidth) / -2);
+    left: calc(var(--borderWidth) / -2);
+    width: calc(var(--size) + var(--borderWidth));
+    height: calc(var(--size) + var(--borderWidth));
+}
+
+.progress__txt {
+    z-index: 2;
+}
+
+/* GENERAL DOCUMENT COSMETIC */
+main {
+    width: min(90%, 80ch);
+    margin-inline: auto;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: hsl(0, 0%, 7%);
+    color: #bbb;
+}
+
+h1 {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    color: var(--primary-color);
+    background: hsl(0, 0%, 7%);
+    font-size: clamp(2.5em, 5vw, 5em);
+    line-height: 1.2; 
+    z-index: 1;
+    padding-block: 2rem;
+    margin-inline: -2em;
+    padding-inline: 2em;
+}
+
+p {
+    font-size: clamp(1.2em, 2vw, 1.8em); 
+    line-height: 2; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .progress {
+        --size: 5rem;
+        font-size: 1.2em;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    main {
+        width: 95%;
+        padding: 0 1rem;
+    }
+
+    h1 {
+        margin-inline: -1em;
+        padding-inline: 1em;
+    }
+
+    body {
+        padding-top: 5rem;
+    }
+}

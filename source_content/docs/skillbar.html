@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="skills.title">技術スキル | 何暁丹</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="何暁丹の技術スキル一覧。Unity VR/AR, C#, Java, Spring Boot, AWSなどのスキルをご覧ください。" />
+  <meta name="author" content="何暁丹" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/skillbar.css">
+  <link rel="stylesheet" href="./css/buttons.css">
+  <link rel="stylesheet" href="./css/lang.css">
+</head>
+<body>
+  <div class="lang-switch" aria-label="Language Switcher" role="group">
+    <button data-lang="ja" class="lang-btn" title="日本語">JA</button>
+    <button data-lang="zh" class="lang-btn" title="中文">中文</button>
+  </div>
+
+  <ul class="skills-bar-container">
+    
+    <h1 data-i18n="skills.title">技術スキル</h1>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>AI-Driven Development (ChatGPT / Gemini / Copilot / Workflow Integration)</h3>
+        <span class="percent" id="ai-driven-percent">95%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-ai-driven"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>Unity VR/AR Development (XR Interaction / AR Foundation / SteamVR)</h3>
+        <span class="percent" id="unity-vr-percent">95%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-unity-vr"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>Java / Spring Boot (Backend / Microservices)</h3>
+        <span class="percent" id="java-spring-percent">90%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-java-spring"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>C# (Unity / .NET)</h3>
+        <span class="percent" id="csharp-percent">90%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-csharp"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>Cloud Native / AWS (DynamoDB / S3 / Serverless)</h3>
+        <span class="percent" id="cloud-aws-percent">80%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-cloud-aws"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>gRPC / Protocol Buffers (IDL / High Performance)</h3>
+        <span class="percent" id="grpc-percent">80%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-grpc"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>PostgreSQL / SQL (RDB / Data Modeling)</h3>
+        <span class="percent" id="postgresql-percent">80%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-postgresql"></span>
+      </div>
+    </li>
+
+    <li>
+      <div class="progressbar-title">
+        <h3>React / TypeScript (Frontend)</h3>
+        <span class="percent" id="react-ts-percent">65%</span>
+      </div>
+      <div class="bar-container">
+        <span class="progressbar" id="progress-react-ts"></span>
+      </div>
+    </li>
+
+    <br>
+    <div class="custom-button-wrapper">
+      <div class="custom-button-container">
+        <button class="custom-btn btn-3" onclick="location.href='index.html'">
+          <span data-i18n="common.back">戻る</span>
+        </button>
+      </div>
+    </div>
+  </ul>
+
+  <script>
+    // 等待 DOM 和 jQuery 都加载完成
+    $(document).ready(function() {
+      const order = [
+        "ai-driven","unity-vr","java-spring",
+        "csharp","cloud-aws","grpc",
+        "postgresql","react-ts"
+      ];
+
+      const skills = {
+        "ai-driven": "95%",
+        "unity-vr": "95%",
+        "java-spring": "90%",
+        "csharp": "90%",
+        "cloud-aws": "80%",
+        "grpc": "80%",
+        "postgresql": "80%",
+        "react-ts": "65%"
+      };
+
+      const colorClasses = [
+        "progressred",
+        "progressblue",
+        "progressgreen",
+        "progressorange",
+        "progresspurple",
+        "progresscyan",
+        "progressyellow",
+        "progresspink"
+      ];
+
+      // 延迟执行动画，确保页面完全加载
+      setTimeout(() => {
+        order.forEach((key, i) => {
+          // 设置百分比文本
+          $('#' + key + '-percent').text(skills[key]);
+          
+          // 获取进度条元素并添加颜色类
+          const bar = $('#progress-' + key);
+          bar.addClass(colorClasses[i % colorClasses.length]);
+          
+          // 延迟设置宽度以创建动画效果
+          setTimeout(() => {
+            bar.css('width', skills[key]);
+          }, i * 200 + 500); // 给每个条增加延迟
+        });
+      }, 300);
+    });
+  </script>
+
+  <script src="./js/i18n.js"></script>
+</body>
+</html>

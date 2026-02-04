@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="index.title">ようこそ、私の世界へ！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="何暁丹のポートフォリオサイトです。Unity VR/ARエンジニア・ Javaバックエンド開発者としてのプロジェクト経験をご覧ください。" />
+  <meta name="author" content="何暁丹" />
+  <meta name="keywords" content="何暁丹, VRエンジニア, ARエンジニア, Unity開発, Javaエンジニア, バックエンド開発, ポートフォリオ" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/lang.css" />
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+  <nav role="navigation" aria-label="メインナビゲーション" class="icon-nav">
+    <div class="nav-left">
+      <!-- 首页 -->
+      <a class="nav-icon-link active" href="index.html" title="ホーム" data-i18n-title="nav.home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9,22 9,12 15,12 15,22"/>
+        </svg>
+      </a>
+      <!-- 自我介绍 -->
+      <a class="nav-icon-link" href="about.html" title="自己紹介" data-i18n-title="nav.about">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      </a>
+      <!-- 项目 -->
+      <a class="nav-icon-link" href="projects.html" title="プロジェクト" data-i18n-title="nav.projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+      </a>
+      <!-- 时间线 -->
+      <a class="nav-icon-link" href="timeline.html" title="タイムライン" data-i18n-title="nav.timeline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12,6 12,12 16,14"/>
+        </svg>
+      </a>
+      <!-- 技能 -->
+      <a class="nav-icon-link" href="skillbar.html" title="スキル" data-i18n-title="nav.skills">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <!-- GitHub -->
+      <a class="nav-icon-link" href="https://github.com/heisyoudan" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      
+      <div class="lang-switch in-nav" aria-label="Language Switcher" role="group">
+        <button data-lang="ja" class="lang-btn" title="日本語">JA</button>
+        <button data-lang="zh" class="lang-btn" title="中文">中文</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="grid">
+    <svg class="grid-svg" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 982 786" aria-hidden="true">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M490 401V537H348.5V401H490ZM490 785.5V676H348.5V785.5H347.5V676H206V785.5H205V676H63.5V785.5H62.5V676H0V675H62.5V538H0V537H62.5V401H0V400H62.5V258H0V257H62.5V116H0V115H62.5V0H63.5V115L205 115V0H206V115L347.5 115V0H348.5V115H490V0H491V115L627.5 115V0H628.5V115H765V0H766V115L902.5 115V0H903.5V115H982V116H903.5V257H982V258H903.5V400H982V401H903.5V537H982V538H903.5V675H982V676H903.5V785.5H902.5V676H766V785.5H765V676H628.5V785.5H627.5V676H491V785.5H490ZM902.5 675V538H766V675H902.5ZM902.5 537V401H766V537H902.5ZM902.5 400V258H766V400H902.5ZM902.5 257V116L766 116V257H902.5ZM627.5 675H491V538H627.5V675ZM765 675H628.5V538H765V675ZM348.5 675H490V538H348.5V675ZM347.5 538V675H206V538H347.5ZM205 538V675H63.5V538H205ZM765 537V401H628.5V537H765ZM765 400V258H628.5V400H765ZM765 257V116H628.5V257H765ZM347.5 401V537H206V401H347.5ZM205 401V537H63.5V401H205ZM627.5 401V537H491V401H627.5ZM627.5 116L491 116V257H627.5V116ZM627.5 258H491V400H627.5V258ZM63.5 257V116L205 116V257H63.5ZM63.5 400V258H205V400H63.5ZM206 116V257H347.5V116L206 116ZM348.5 116V257H490V116H348.5ZM206 400V258H347.5V400H206ZM348.5 258V400H490V258H348.5Z"
+        fill="url(#g)" />
+      <defs>
+        <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(491 392.75) rotate(90) scale(513.25 679.989)">
+          <stop stop-color="white" stop-opacity=".15"/>
+          <stop offset="1" stop-color="#000" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+    </svg>
+    <div class="blur"></div>
+  </div>
+  
+  
+
+  <div class="title">
+    <p data-i18n="index.hero.hello">初めまして、</p>
+    <p data-i18n="index.hero.name">何暁丹と申します。</p>
+    <div class="hero-subtitle-container">
+      <p class="hero-subtitle" data-i18n="index.hero.subtitle">Java / Unity VR・AR / macOS & iOS</p>
+    </div>
+    <div class="cta-buttons">
+      <a class="cta-btn cta-primary" href="about.html" data-i18n="index.cta.about">自己紹介を見る</a>
+      <a class="cta-btn cta-secondary" href="projects.html" data-i18n="index.cta.projects">プロジェクトを見る</a>
+    </div>
+  </div>
+
+  
+  <svg class="top-right" width="219" height="147" viewBox="0 0 219 147" fill="none"
+       xmlns="http://www.w3.org/2000/svg"></svg>
+
+  <script src="./js/i18n.js"></script>
+</body>
+</html>

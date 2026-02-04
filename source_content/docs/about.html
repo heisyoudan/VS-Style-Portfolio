@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="about.title">自己紹介 | 何暁丹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="何暁丹の自己紹介ページです。Unity VR/ARエンジニアとJavaバックエンド開発者としての経験をご覧ください。" />
+    <meta name="author" content="何暁丹" />
+    <meta name="keywords" content="何暁丹, VRエンジニア, ARエンジニア, Unity開発, Javaエンジニア, バックエンド開発" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/lang.css" />
+  </head>
+
+  <body>
+    <div class="lang-switch" aria-label="Language Switcher" role="group">
+      <button data-lang="ja" class="lang-btn" title="日本語">JA</button>
+      <button data-lang="zh" class="lang-btn" title="中文">中文</button>
+    </div>
+
+    <div class="progress">
+      <span class="progress__txt"></span>
+    </div>
+
+    <main>
+      <h1 data-i18n="about.title">自己紹介</h1>
+      <p data-i18n-html="about.body_html">
+        初めまして、何暁丹と申します。<br><br>
+        中国の武漢出身で、2022年10月に来日して以来、日本語を学習してまいりました。
+        現在は日本語能力試験N2に合格し、業務における読み書き・会話に支障はありません。<br><br>
+        これまで中国ではUnityプログラマーとして4年間、建設・製造分野向けの産業用VRシステム開発に従事し、
+        要件定義から実装、システムテストまで一貫して担当しておりました。外部デバイス連携やシステム開発の経験も豊富です。<br><br>
+        来日後はJava、SpringBoot、SpringMVCを中心にバックエンド開発に取り組み、フロントエンドでは
+        HTML / CSS / JavaScript / Reactを用いた開発を行いました。データベースではCRUD操作に加え、
+        複雑なSQLクエリやパフォーマンス調整にも対応できます。<br><br>
+        直近のプロジェクトでは、<b>Kickflowと連携した大規模決済代行サービスシステム</b>に参画し、
+        基本設計から結合テストまで一連の工程を担当しました。AWS環境での開発、BFF・BE・共通モジュールの設計、
+        API開発やS3連携、DB設計など幅広い領域を担当し、コードレビューやチーム開発にも積極的に貢献しました。<br><br>
+        常に新しい技術を学び、自己研鑽を続けながら、チームに貢献できるエンジニアを目指しています。<br>
+        どうぞよろしくお願いいたします。
+      </p>
+      
+    </main>
+
+    <div class="custom-button-wrapper">
+      <div class="custom-button-container">
+        <button class="custom-btn btn-3" onclick="location.href='index.html'">
+          <span data-i18n="common.back">戻る</span>
+        </button>
+      </div>
+    </div>    
+    <script src="./js/i18n.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*,
+*:before,
+*:after { margin:0; padding:0; box-sizing:border-box; }
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 1rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: hsla(330, 81%, 55%, 0.843);
+}
+
+html, body {
+  background: hsl(0, 0%, 7%);
+  width: 100%; 
+  min-height: 100%;
+  font-family: Futura, 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.skills-bar-container {
+  position: relative;
+  width: 80%; 
+  max-width: 900px;
+  min-width: 320px;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 2rem 1rem;
+}
+
+.skills-bar-container li {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.skills-bar-container .progressbar-title {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skills-bar-container .progressbar-title h3 {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.skills-bar-container .progressbar-title .percent {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsla(330, 81%, 55%, 0.9);
+  min-width: 60px;
+  text-align: right;
+}
+
+.skills-bar-container .bar-container {
+  background: #2a2a2a;
+  position: relative;
+  width: 100%;
+  height: 12px;
+  margin-top: 0.5rem;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills-bar-container .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, currentColor, currentColor 70%, rgba(255, 255, 255, 0.2) 100%);
+  /* 确保初始宽度为 0 */
+  transform-origin: left center;
+}
+
+/* 技能条颜色 - 使用渐变效果 */
+.progressred      { color: #ff6b6b; background: linear-gradient(90deg, #ff6b6b, #ff8e8e); }
+.progressblue     { color: #4ecdc4; background: linear-gradient(90deg, #4ecdc4, #6ee0d8); }
+.progressgreen    { color: #45b7d1; background: linear-gradient(90deg, #45b7d1, #6bc5d9); }
+.progressorange   { color: #f39c12; background: linear-gradient(90deg, #f39c12, #f5b041); }
+.progresspurple   { color: #9b59b6; background: linear-gradient(90deg, #9b59b6, #b474c4); }
+.progresscyan     { color: #1abc9c; background: linear-gradient(90deg, #1abc9c, #48c9b0); }
+.progressyellow   { color: #f1c40f; background: linear-gradient(90deg, #f1c40f, #f4d03f); }
+.progresspink     { color: #e91e63; background: linear-gradient(90deg, #e91e63, #ec407a); }
+.progressteal     { color: #14a085; background: linear-gradient(90deg, #14a085, #17a2b8); }
+
+/* 响应式设计 */
+@media only screen and (max-width: 768px) {
+  .skills-bar-container {
+    width: 95%;
+    padding: 1rem 0.5rem;
+    top: auto;
+    left: auto;
+    transform: none;
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .skills-bar-container li {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-bar-container .progressbar-title h3 {
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+  
+  .skills-bar-container .progressbar-title .percent {
+    font-size: 1rem;
+    min-width: 50px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skills-bar-container .progressbar-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .skills-bar-container .progressbar-title .percent {
+    align-self: flex-end;
+    margin-top: -1.5rem;
+  }
+  
+  .skills-bar-container .progressbar-title h3 {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="timeline.title">キャリアタイムライン | 何暁丹</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="何暁丹のキャリアタイムライン。VR/ARエンジニアからJava開発者への転身の経歴をご覧ください。" />
+  <meta name="author" content="何暁丹" />
+  <link rel="stylesheet" href="./css/buttons.css">
+  <link rel="stylesheet" href="./css/timeline.css">
+  <link rel="stylesheet" href="./css/lang.css">
+
+  <script src="./js/timeline.js" defer></script>
+</head>
+<body>
+  <div class="lang-switch" aria-label="Language Switcher" role="group">
+    <button data-lang="ja" class="lang-btn" title="日本語">JA</button>
+    <button data-lang="zh" class="lang-btn" title="中文">中文</button>
+  </div>
+
+  <svg display="none" aria-hidden="true">
+    <symbol id="arrow">
+      <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+    </symbol>
+  </svg>
+
+  <h1 data-i18n="timeline.title">キャリアタイムライン</h1>
+
+  <div id="timeline" class="timeline">
+    <div class="btn-group">
+      <button class="btn" type="button" data-action="expand"   data-i18n="timeline.expandAll">すべて展開</button>
+      <button class="btn" type="button" data-action="collapse" data-i18n="timeline.collapseAll">すべて折りたたむ</button>
+    </div>
+
+    <!-- item 1 -->
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24" height="24"><use href="#arrow"/></svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item1-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2014-12" data-i18n="timeline.item1.date">2014年12月</time><br>
+          <strong class="timeline__title" data-i18n="timeline.item1.company">武漢国測三聯水電設備有限公司</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p" data-i18n="timeline.item1.desc">プロジェクトマネージャーに従事。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 2 -->
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24" height="24"><use href="#arrow"/></svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item2-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2018-05" data-i18n="timeline.item2.date">2018年5月</time><br>
+          <strong class="timeline__title" data-i18n="timeline.item2.company">武漢藍海科創技術有限公司</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p" data-i18n="timeline.item2.desc">VRエンジニアとして、Unityを使用した仮想現実プロジェクトの開発と技術研究を担当。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 3 -->
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24" height="24"><use href="#arrow"/></svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item3-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2019-02" data-i18n="timeline.item3.date">2019年2月</time><br>
+          <strong class="timeline__title" data-i18n="timeline.item3.company">中冶智誠（武漢）工程技術有限公司</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p" data-i18n="timeline.item3.desc">VR/ARエンジニアとして、Unityでの開発と新技術の検証に従事し、チームと共に技術課題を解決。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 4 -->
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24" height="24"><use href="#arrow"/></svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item4-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2022-10" data-i18n="timeline.item4.date">2022年10月</time><br>
+          <strong class="timeline__title" data-i18n="timeline.item4.company">能達日本語学校</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p" data-i18n="timeline.item4.desc">来日後、日本語学校で学習を進め、文化理解と語学力を向上。JLPT N2 を取得。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 5 -->
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24" height="24"><use href="#arrow"/></svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2023-07" data-i18n="timeline.item5.date">2023年7月</time><br>
+          <strong class="timeline__title" data-i18n="timeline.item5.company">NetWisdom株式会社</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p" data-i18n="timeline.item5.desc">Spring MVC / Spring Boot などを用いた Web 開発に従事。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-button-wrapper">
+    <div class="custom-button-container">
+      <button class="custom-btn btn-3" onclick="location.href='index.html'">
+        <span data-i18n="common.back">戻る</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/i18n.js"></script>
+</body>
+</html>

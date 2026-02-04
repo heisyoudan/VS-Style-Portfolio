@@ -1,0 +1,159 @@
+/* Projects page extra styles - extracted from inline styles */
+
+/* Page actions */
+.page-actions {
+  display: flex;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  color: #e6f0ff;
+  font: 600 12px/1 Futura, 'IBM Plex Sans', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn .icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.1), transparent);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+.action-btn:hover {
+  background: rgba(236, 72, 153, 0.08);
+  border-color: rgba(236, 72, 153, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.15);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+}
+
+.action-btn:focus {
+  outline: 2px solid hsla(330, 81%, 55%, 0.9);
+  outline-offset: 2px;
+}
+
+.action-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.action-btn.home {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(168, 85, 247, 0.08));
+  border-color: rgba(236, 72, 153, 0.4);
+  color: #ec4899;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.25);
+}
+
+.action-btn.home:hover {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(168, 85, 247, 0.15));
+  border-color: rgba(236, 72, 153, 0.6);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.35);
+}
+
+@media (max-width: 640px) {
+  .action-btn span {
+    display: none;
+  }
+}
+
+/* Underline link button */
+.underline-link {
+  --pink: #ff0099;
+  --pink2: #ff4d4d;
+  --mag: #ff41e1;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: .75rem;
+  border-radius: 10px;
+  color: #fff;
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, var(--pink), var(--mag), var(--pink2));
+  background-size: 220% 220%;
+  animation: nl-gradient-move 6s linear infinite;
+  box-shadow: 0 0 10px rgba(255, 0, 174, .6), 0 0 22px rgba(255, 77, 77, .45);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  overflow: hidden;
+}
+
+.underline-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 55%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(75deg, transparent 0%, rgba(255, 255, 255, .35) 50%, transparent 100%);
+  transform: skewX(-18deg);
+  filter: blur(2px);
+  animation: nl-sweep 2.8s ease-in-out infinite;
+}
+
+.underline-link:hover {
+  transform: translateY(-1px) scale(1.06);
+  box-shadow: 0 0 16px rgba(255, 0, 174, .85), 0 0 32px rgba(255, 77, 77, .7);
+}
+
+.underline-link:active {
+  transform: translateY(0) scale(.96);
+  filter: brightness(.95);
+}
+
+.underline-link:focus,
+.underline-link:focus-visible {
+  outline: 2px solid rgba(255, 0, 174, .6);
+  outline-offset: 2px;
+}
+
+@keyframes nl-gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes nl-sweep {
+  0% { left: -150%; opacity: 0; }
+  10% { opacity: .8; }
+  60% { left: 120%; opacity: 0; }
+  100% { left: 120%; opacity: 0; }
+}
+
+/* Hide previous navigation icon */
+.codrops-icon--prev {
+  display: none !important;
+}
