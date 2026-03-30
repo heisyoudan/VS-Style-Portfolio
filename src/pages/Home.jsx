@@ -81,13 +81,17 @@ const Home = ({ onNavigate }) => {
                         color: 'var(--text-secondary)',
                         fontWeight: '500'
                     }}>
-                        "AI Workflow Engineer / Indie Developer"
+                        "Software Engineer / Indie Developer"
                     </h2>
 
                     <div style={{ marginTop: '15px', marginBottom: '0' }}>
                         <CommentLink
-                            text="Read AI Playbook"
+                            text="View AI Playbook"
                             onClick={() => window.open('https://github.com/heisyoudan/ai-agent-playbook', '_blank')}
+                        />
+                        <CommentLink
+                            text="View Projects"
+                            onClick={() => onNavigate && onNavigate('Projects.jsx')}
                         />
                     </div>
 
