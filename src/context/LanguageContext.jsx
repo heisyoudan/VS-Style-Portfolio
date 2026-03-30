@@ -149,8 +149,12 @@ export const translations = {
             title: "Skills",
             items: [
                 {
-                    name: "AI-Driven Development (ChatGPT / Gemini / Copilot / Workflow Integration)",
+                    name: "AI-Assisted Development (Codex / Copilot / Antigravity / Multi-Agent Workflow)",
                     level: 95
+                },
+                {
+                    name: "macOS Product Development (SwiftUI / AppKit / Menu Bar Apps)",
+                    level: 85
                 },
                 {
                     name: "Unity VR/AR Development (XR Interaction / AR Foundation / SteamVR)",
@@ -329,8 +333,12 @@ export const translations = {
             title: "Skills",
             items: [
                 {
-                    name: "AI-Driven Development (ChatGPT / Gemini / Copilot / Workflow Integration)",
+                    name: "AI-Assisted Development (Codex / Copilot / Antigravity / Multi-Agent Workflow)",
                     level: 95
+                },
+                {
+                    name: "macOS Product Development (SwiftUI / AppKit / Menu Bar Apps)",
+                    level: 85
                 },
                 {
                     name: "Unity VR/AR Development (XR Interaction / AR Foundation / SteamVR)",

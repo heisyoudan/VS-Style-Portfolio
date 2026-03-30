@@ -58,11 +58,20 @@ const Skills = () => {
     const { t } = useLanguage();
     const [totalChars, setTotalChars] = useState(40);
 
-    // Dynamic colors for the list
+    // Dynamic colors for each skill - ensure each one is unique
     const colors = [
-        "var(--accent-red)", "var(--accent-cyan)", "var(--accent-green)",
-        "var(--accent-orange)", "var(--accent-purple)", "var(--accent-cyan)",
-        "var(--accent-yellow)", "var(--accent-pink)"
+        "var(--accent-purple)",    // AI-Assisted Development
+        "var(--accent-cyan)",      // macOS Product Development  
+        "var(--accent-green)",     // Unity VR/AR Development
+        "var(--accent-orange)",    // Java / Spring Boot
+        "var(--accent-red)",       // C# / .NET
+        "var(--accent-yellow)",    // Cloud Native / AWS
+        "var(--accent-pink)",      // gRPC / Protocol Buffers
+        "#61AFEF",                 // PostgreSQL / SQL (VS Code blue)
+        "#98C379",                 // React / TypeScript (VS Code green)
+        "#D19A66",                 // Additional color (VS Code orange)
+        "#C678DD",                 // Additional color (VS Code purple)
+        "#56B6C2"                  // Additional color (VS Code teal)
     ];
 
     useEffect(() => {

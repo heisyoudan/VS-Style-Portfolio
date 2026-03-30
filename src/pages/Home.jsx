@@ -18,18 +18,18 @@ const Home = ({ onNavigate }) => {
         ],
         [
             { text: '    Name: ', color: 'var(--text-primary)' },
-            { text: language === 'zh' ? '"He Xiaodan"' : '"Heisyoudan"', color: 'var(--accent-green)' },
+            { text: '"Heisyoudan"', color: 'var(--accent-green)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
-            { text: '    CurrentLocation: ', color: 'var(--text-primary)' },
+            { text: '    Base: ', color: 'var(--text-primary)' },
             { text: '"Tokyo, Japan"', color: 'var(--accent-green)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
-            { text: '    Interests: ', color: 'var(--text-primary)' },
+            { text: '    Focus: ', color: 'var(--text-primary)' },
             { text: '[', color: 'var(--text-primary)' },
-            { text: '"AI-Driven Workflow"', color: 'var(--accent-green)' },
+            { text: '"AI Workflow"', color: 'var(--accent-green)' },
             { text: ', ', color: 'var(--text-primary)' },
             { text: '"macOS/Web/Unity"', color: 'var(--accent-green)' },
             { text: ', ', color: 'var(--text-primary)' },
@@ -38,13 +38,22 @@ const Home = ({ onNavigate }) => {
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
-            { text: '    Email: ', color: 'var(--text-primary)' },
-            { text: '"heisyoudan@yahoo.com"', color: 'var(--accent-green)' },
+            { text: '    Building: ', color: 'var(--text-primary)' },
+            { text: '[', color: 'var(--text-primary)' },
+            { text: '"Maestro"', color: 'var(--accent-green)' },
+            { text: ', ', color: 'var(--text-primary)' },
+            { text: '"Vortex"', color: 'var(--accent-green)' },
+            { text: ']', color: 'var(--text-primary)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
             { text: '    GitHub: ', color: 'var(--text-primary)' },
             { text: '"https://github.com/heisyoudan"', color: 'var(--accent-green)', link: 'https://github.com/heisyoudan' },
+            { text: ',', color: 'var(--text-primary)' }
+        ],
+        [
+            { text: '    Email: ', color: 'var(--text-primary)' },
+            { text: '"heisyoudan@yahoo.com"', color: 'var(--accent-green)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
