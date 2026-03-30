@@ -38,15 +38,6 @@ const Home = ({ onNavigate }) => {
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
-            { text: '    Building: ', color: 'var(--text-primary)' },
-            { text: '[', color: 'var(--text-primary)' },
-            { text: '"Maestro"', color: 'var(--accent-green)' },
-            { text: ', ', color: 'var(--text-primary)' },
-            { text: '"Vortex"', color: 'var(--accent-green)' },
-            { text: ']', color: 'var(--text-primary)' },
-            { text: ',', color: 'var(--text-primary)' }
-        ],
-        [
             { text: '    GitHub: ', color: 'var(--text-primary)' },
             { text: '"https://github.com/heisyoudan"', color: 'var(--accent-green)', link: 'https://github.com/heisyoudan' },
             { text: ',', color: 'var(--text-primary)' }

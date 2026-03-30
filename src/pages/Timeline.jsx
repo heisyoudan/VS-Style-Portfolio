@@ -40,7 +40,7 @@ const TimelineItem = ({ date, company, role, desc, isExpanded }) => (
 
 const Timeline = () => {
     const { t, language } = useLanguage();
-    const [allExpanded, setAllExpanded] = useState(false);
+    const [allExpanded, setAllExpanded] = useState(true);
 
     return (
         <RichContentWrapper>
