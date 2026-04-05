@@ -374,12 +374,6 @@ export const translations = {
                 }
             ]
         },
-        timeline: {
-            title: "Timeline"
-        },
-        skills: {
-            title: "Technical Skills"
-        }
     },
     en: {
         nav: {
