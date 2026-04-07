@@ -94,9 +94,9 @@ export const translations = {
                     tech: ["Unity", "AR", "HoloLens"]
                 },
                 {
-                    title: "契約管理・収納代行システム",
+                    title: "契約管理・決済代行システム",
                     industry: "業種：金融・決済システム",
-                    desc: "大規模な収納代行サービス向けの契約管理システムです。Kickflow のワークフローと連携し、申請、承認、管理までの業務を一貫して支える仕組みを構築しました。<br><br><b>担当範囲:</b> 基本設計から結合テストまで開発工程全体に参画し、BFF、バックエンド、共通 API の設計、PostgreSQL のデータベース設計、AWS 連携、React / TypeScript によるフロントエンド開発、テストおよびコードレビューを担当しました。",
+                    desc: "大規模な決済代行サービス向けの契約管理システムです。Kickflow のワークフローと連携し、申請、承認、管理までの業務を一貫して支える仕組みを構築しました。<br><br><b>担当範囲:</b> 基本設計から結合テストまで開発工程全体に参画し、BFF、バックエンド、共通 API の設計、PostgreSQL のデータベース設計、AWS 連携、React / TypeScript によるフロントエンド開発、テストおよびコードレビューを担当しました。",
                     imgSrc: "/VS-Style-Portfolio/img/6.jpg",
                     tech: ["Java", "Spring Boot", "PostgreSQL"]
                 },
