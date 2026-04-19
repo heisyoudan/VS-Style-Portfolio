@@ -32,7 +32,7 @@ export const translations = {
             title: "自己紹介",
             content: `
                 <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin-bottom: 15px;">// whoAmI()</div>
-                <p>こんにちは、<strong>何暁丹</strong>です。</p>
+                <p>初めまして、<strong>何暁丹</strong>です。</p>
                 <p>私は、空間インタラクションの視点とバックエンドの設計思考をあわせ持つエンジニアです。要件整理、設計、実装、検証、納品まで、一連の流れを一貫して推進することを得意としています。</p>
                 
                 <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// background</div>
