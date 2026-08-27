@@ -3,6 +3,7 @@ import RichContentWrapper from '../components/Common/RichContentWrapper';
 import OmitMonitorCard from '../components/Projects/OmitMonitorCard';
 import { VscGithubAlt } from 'react-icons/vsc';
 import { FaYoutube } from 'react-icons/fa';
+import { SiAppstore } from 'react-icons/si';
 import { useLanguage } from '../context/LanguageContext';
 
 const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) => (
@@ -62,7 +63,7 @@ const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) =
                 )}
                 {link && (
                     <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px' }}>
-                        <FaYoutube /> <span style={{ color: 'var(--accent-cyan)' }}>{t.demo}</span>
+                        {link.includes('apps.apple.com') ? <SiAppstore /> : <FaYoutube />} <span style={{ color: 'var(--accent-cyan)' }}>{link.includes('apps.apple.com') ? t.store : t.demo}</span>
                     </a>
                 )}
             </div>

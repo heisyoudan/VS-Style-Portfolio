@@ -52,6 +52,7 @@ export const translations = {
             more: "詳しくはこちら",
             code: "コード",
             demo: "プレビュー",
+            store: "App Store",
             items: [
                 {
                     title: "鄂州製鋼所デジタルツインプロジェクト",
@@ -114,6 +115,14 @@ export const translations = {
                     imgSrc: "/VS-Style-Portfolio/img/8.png",
                     tech: ["Swift", "SwiftUI", "macOS"],
                     github: "https://github.com/heisyoudan/Omit/tree/main"
+                },
+                {
+                    title: "Vortex（macOS メニューバー ダウンロード整理ツール）",
+                    industry: "業種：macOS アプリ",
+                    desc: "macOS のメニューバーから Downloads フォルダを整理できるファイルオーガナイザーです。新しくダウンロードしたファイルをメニューバーですぐに確認でき、種類ごとのフォルダへ自動整理、ファイルの開く・ドラッグ・アーカイブ・削除、履歴タイムラインからの安全な取り消しまでを一通りカバーしています。整理はすべてローカルで完結し、ファイルは ~/Downloads/Vortex 配下に整理されます。<br><br><b>担当範囲:</b> 企画・設計から SwiftUI による機能実装、Mac App Store での公開までを個人で一貫して担当しました。メニューバー常駐アプリの設計、ファイル監視・自動整理、Vortex Pro の課金実装も含みます。",
+                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    link: "https://apps.apple.com/jp/app/vortex-file-organizer/id6772141575?mt=12",
+                    tech: ["Swift", "SwiftUI", "macOS"]
                 }
             ]
         },
@@ -238,6 +247,7 @@ export const translations = {
             more: "了解更多",
             code: "代码",
             demo: "预览",
+            store: "App Store",
             items: [
                 {
                     title: "鄂州钢厂数字孪生项目",
@@ -300,6 +310,14 @@ export const translations = {
                     imgSrc: "/VS-Style-Portfolio/img/8.png",
                     tech: ["Swift", "SwiftUI", "macOS"],
                     github: "https://github.com/heisyoudan/Omit/tree/main"
+                },
+                {
+                    title: "Vortex（macOS 菜单栏下载整理工具）",
+                    industry: "行业：macOS 应用",
+                    desc: "从 macOS 菜单栏掌控下载文件夹的文件整理工具，帮你告别下载杂乱。可在菜单栏即时查看新下载的文件，按类型自动整理到清晰文件夹，支持打开、拖拽、归档、删除等快捷操作，并通过清晰的时间线安全撤销最近的移动。所有整理均在本地完成，文件默认整理到 ~/Downloads/Vortex。<br><br><b>担当范围:</b> 从需求策划、SwiftUI 功能开发到 Mac App Store 上架发布全程独立负责，涵盖菜单栏常驻应用设计、文件监控与自动整理、Vortex Pro 内购等功能实现。",
+                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    link: "https://apps.apple.com/jp/app/vortex-file-organizer/id6772141575?mt=12",
+                    tech: ["Swift", "SwiftUI", "macOS"]
                 }
             ]
         },
