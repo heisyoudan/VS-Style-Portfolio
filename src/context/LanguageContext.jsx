@@ -104,58 +104,13 @@ export const translations = {
             proprietary: "Proprietary enterprise project",
             items: [
                 {
-                    title: "Steel Mill Digital Twin Visualization",
-                    industry: "Industrial Visualization · Steel Manufacturing",
-                    role: "Unity Developer",
-                    whatIBuilt: "Built a digital twin system that recreates a steel mill's production site in 3D space and aggregates data from multiple on-site sources into one view. Managers can grasp production status intuitively without visiting the site, supported by linked data and video for faster, more accurate decisions.<br><br><b>Scope:</b> Unity frontend implementation — API data integration, 3D model control, and user interaction.",
-                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
-                    link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
-                    tech: ["Unity", "C#", "MQTT"]
-                },
-                {
-                    title: "VR Fire Extinguishing Training",
-                    industry: "Industrial VR · Hydroelectric",
-                    role: "Unity / XR Engineer",
-                    whatIBuilt: "Developed a VR fire-extinguishing training app for hydroelectric power plant staff. Immersive spatial presentation increases safety and realism, letting trainees practice in a near-fire environment without using real flames.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
-                    tech: ["Unity", "VR", "Safety"]
-                },
-                {
-                    title: "High-Altitude Fall Safety Experience",
-                    industry: "Industrial VR · Hydroelectric",
-                    role: "Unity / XR Engineer",
-                    whatIBuilt: "An immersive safety-training app for work at height. By reproducing the situation and fear of a fall, it raises workers' safety awareness and helps prevent accidents.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
-                    tech: ["Unity", "Physics", "VR"]
-                },
-                {
-                    title: "Hi5 Glove Immersive Training System",
-                    industry: "Industrial VR · Hydroelectric",
-                    role: "Unity / XR Engineer",
-                    whatIBuilt: "An immersive training system using Hi5 VR gloves. Hands-on procedures that need repeated practice can be experienced with high fidelity in virtual space, improving training efficiency and on-site proficiency.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
-                    tech: ["Unity", "Hi5 Gloves", "Training"]
-                },
-                {
-                    title: "AR Glasses Inspection Support App",
-                    industry: "Industrial AR · Hydroelectric",
-                    role: "Unity / XR Engineer",
-                    whatIBuilt: "An AR app that supports on-site inspections. Workers view digitized work instructions on AR glasses and share live video and audio with remote engineers, who can display annotated images and instructions in the worker's field of view — improving inspection efficiency and collaboration.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
-                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
-                    tech: ["Unity", "AR", "HoloLens"]
-                },
-                {
-                    title: "Contract Management & Payment System",
-                    industry: "Enterprise · FinTech",
-                    role: "Backend Engineer",
-                    whatIBuilt: "Built a contract management system for a large-scale payment agency service, integrated with the Kickflow workflow platform to support the full flow of applications, approvals, and management.<br><br><b>Scope:</b> Participated across the whole development process from basic design through integration testing — BFF, backend, and shared API design, PostgreSQL database design, AWS integration, React + TypeScript frontend development, testing, and code review.",
-                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
-                    tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
-                    proprietary: true
+                    title: "Vortex — Native macOS File Organizer",
+                    industry: "macOS App · Live on the Mac App Store",
+                    role: "Solo Developer",
+                    whatIBuilt: "Designed, developed, tested, and shipped a native macOS file organization utility to the Mac App Store. From the menu bar you can instantly see newly downloaded files, auto-organize them into type-based folders, and open, drag, archive, or delete them — with a timeline that lets you safely undo recent moves. Everything runs locally and files are organized under ~/Downloads/Vortex.<br><br><b>Scope:</b> Product planning, SwiftUI implementation, menu bar app architecture, file watching & auto-organization, and StoreKit 2 in-app purchases (Vortex Pro) — all the way to App Store release.",
+                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    link: "https://apps.apple.com/us/app/vortex-file-organizer/id6772141575?mt=12",
+                    tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "File System APIs"]
                 },
                 {
                     title: "Enterprise Payment Platform Modernization",
@@ -167,6 +122,24 @@ export const translations = {
                     proprietary: true
                 },
                 {
+                    title: "Contract Management & Payment System",
+                    industry: "Enterprise · FinTech",
+                    role: "Backend Engineer",
+                    whatIBuilt: "Built a contract management system for a large-scale payment agency service, integrated with the Kickflow workflow platform to support the full flow of applications, approvals, and management.<br><br><b>Scope:</b> Participated across the whole development process from basic design through integration testing — BFF, backend, and shared API design, PostgreSQL database design, AWS integration, React + TypeScript frontend development, testing, and code review.",
+                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
+                    tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
+                    proprietary: true
+                },
+                {
+                    title: "VR Fire Extinguishing Training",
+                    industry: "Industrial VR · Hydroelectric",
+                    role: "Unity / XR Engineer",
+                    whatIBuilt: "Developed a VR fire-extinguishing training app for hydroelectric power plant staff. Immersive spatial presentation increases safety and realism, letting trainees practice in a near-fire environment without using real flames.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
+                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
+                    tech: ["Unity", "VR", "Safety"]
+                },
+                {
                     title: "Omit — Minimal macOS System Monitor",
                     industry: "macOS App · Open Source",
                     role: "Solo Developer",
@@ -176,13 +149,40 @@ export const translations = {
                     tech: ["Swift", "SwiftUI", "MenuBarExtra", "macOS"]
                 },
                 {
-                    title: "Vortex — Native macOS File Organizer",
-                    industry: "macOS App · Live on the Mac App Store",
-                    role: "Solo Developer",
-                    whatIBuilt: "Designed, developed, tested, and shipped a native macOS file organization utility to the Mac App Store. From the menu bar you can instantly see newly downloaded files, auto-organize them into type-based folders, and open, drag, archive, or delete them — with a timeline that lets you safely undo recent moves. Everything runs locally and files are organized under ~/Downloads/Vortex.<br><br><b>Scope:</b> Product planning, SwiftUI implementation, menu bar app architecture, file watching & auto-organization, and StoreKit 2 in-app purchases (Vortex Pro) — all the way to App Store release.",
-                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
-                    link: "https://apps.apple.com/us/app/vortex-file-organizer/id6772141575?mt=12",
-                    tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "File System APIs"]
+                    title: "AR Glasses Inspection Support App",
+                    industry: "Industrial AR · Hydroelectric",
+                    role: "Unity / XR Engineer",
+                    whatIBuilt: "An AR app that supports on-site inspections. Workers view digitized work instructions on AR glasses and share live video and audio with remote engineers, who can display annotated images and instructions in the worker's field of view — improving inspection efficiency and collaboration.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
+                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
+                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
+                    tech: ["Unity", "AR", "HoloLens"]
+                },
+                {
+                    title: "Steel Mill Digital Twin Visualization",
+                    industry: "Industrial Visualization · Steel Manufacturing",
+                    role: "Unity Developer",
+                    whatIBuilt: "Built a digital twin system that recreates a steel mill's production site in 3D space and aggregates data from multiple on-site sources into one view. Managers can grasp production status intuitively without visiting the site, supported by linked data and video for faster, more accurate decisions.<br><br><b>Scope:</b> Unity frontend implementation — API data integration, 3D model control, and user interaction.",
+                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
+                    link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
+                    tech: ["Unity", "C#", "MQTT"]
+                },
+                {
+                    title: "Hi5 Glove Immersive Training System",
+                    industry: "Industrial VR · Hydroelectric",
+                    role: "Unity / XR Engineer",
+                    whatIBuilt: "An immersive training system using Hi5 VR gloves. Hands-on procedures that need repeated practice can be experienced with high fidelity in virtual space, improving training efficiency and on-site proficiency.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
+                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
+                    tech: ["Unity", "Hi5 Gloves", "Training"]
+                },
+                {
+                    title: "High-Altitude Fall Safety Experience",
+                    industry: "Industrial VR · Hydroelectric",
+                    role: "Unity / XR Engineer",
+                    whatIBuilt: "An immersive safety-training app for work at height. By reproducing the situation and fear of a fall, it raises workers' safety awareness and helps prevent accidents.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
+                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
+                    tech: ["Unity", "Physics", "VR"]
                 },
                 {
                     title: "AI Agent Playbook",
@@ -327,58 +327,13 @@ export const translations = {
             proprietary: "社内専用プロジェクト",
             items: [
                 {
-                    title: "鄂州製鋼所デジタルツインプロジェクト",
-                    industry: "業種：製鋼業",
-                    role: "Unity エンジニア",
-                    whatIBuilt: "製鋼所の生産現場をデジタル空間上に再現し、現場で発生するさまざまなデータを連携・集約できるシステムを構築しました。三次元空間による可視化により、現地に行かなくても生産状況を直感的に把握できるようにし、関連データや映像との連携によって、より正確かつ迅速な状況判断を支援しました。<br><br><b>担当範囲:</b> Unity フロントエンドの実装を一貫して担当し、API 連携、3D モデル制御、ユーザーインタラクションの実装を行いました。",
-                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
-                    link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
-                    tech: ["Unity", "C#", "MQTT"]
-                },
-                {
-                    title: "VR消火訓練体験",
-                    industry: "業種：水力発電",
-                    role: "Unity / XR エンジニア",
-                    whatIBuilt: "水力発電所の従業員向けに開発した VR 消火訓練アプリです。没入感のある空間表現によって、消火訓練の安全性と臨場感を高めました。実際の火を使わずに、火災に近い状況を再現した訓練を効率的に行えるようにしました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
-                    tech: ["Unity", "VR", "Safety"]
-                },
-                {
-                    title: "高所作業墜落体験",
-                    industry: "業種：水力発電",
-                    role: "Unity / XR エンジニア",
-                    whatIBuilt: "高所作業における安全教育向けの没入型体験アプリです。墜落事故の状況や恐怖感を再現することで、作業者の安全意識を高め、危険認識の向上と事故防止につなげました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
-                    tech: ["Unity", "Physics", "VR"]
-                },
-                {
-                    title: "Hi5グローブ対応没入型訓練システム",
-                    industry: "業種：水力発電",
-                    role: "Unity / XR エンジニア",
-                    whatIBuilt: "Hi5 VR グローブを活用した没入型訓練システムです。仮想空間内で、繰り返し実技確認が必要な訓練を高い再現度で体験できるようにし、訓練効率と現場作業への習熟度向上を支援しました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
-                    tech: ["Unity", "Hi5 Gloves", "Training"]
-                },
-                {
-                    title: "ARグラス巡視支援アプリ",
-                    industry: "業種：水力発電",
-                    role: "Unity / XR エンジニア",
-                    whatIBuilt: "現場巡視を支援する AR アプリです。作業者は AR グラス上でデジタル化された作業手順を確認でき、現場の映像と音声を遠隔の技術者へリアルタイムに共有できます。遠隔支援側は、注記付きの画像や指示内容を作業者の視界上に表示でき、巡視の効率向上と円滑な連携を実現しました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
-                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
-                    tech: ["Unity", "AR", "HoloLens"]
-                },
-                {
-                    title: "契約管理・決済代行システム",
-                    industry: "業種：金融・決済システム",
-                    role: "Backend Engineer（バックエンドエンジニア）",
-                    whatIBuilt: "大規模な決済代行サービス向けの契約管理システムです。Kickflow のワークフローと連携し、申請、承認、管理までの業務を一貫して支える仕組みを構築しました。<br><br><b>担当範囲:</b> 基本設計から結合テストまで開発工程全体に参画し、BFF、バックエンド、共通 API の設計、PostgreSQL のデータベース設計、AWS 連携、React / TypeScript によるフロントエンド開発、テストおよびコードレビューを担当しました。",
-                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
-                    tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
-                    proprietary: true
+                    title: "Vortex（macOS メニューバー ダウンロード整理ツール）",
+                    industry: "業種：macOS アプリ",
+                    role: "Solo Developer（個人開発）",
+                    whatIBuilt: "macOS のメニューバーから Downloads フォルダを整理できるファイルオーガナイザーです。新しくダウンロードしたファイルをメニューバーですぐに確認でき、種類ごとのフォルダへ自動整理、ファイルの開く・ドラッグ・アーカイブ・削除、履歴タイムラインからの安全な取り消しまでを一通りカバーしています。整理はすべてローカルで完結し、ファイルは ~/Downloads/Vortex 配下に整理されます。<br><br><b>担当範囲:</b> 企画・設計から SwiftUI による機能実装、Mac App Store での公開までを個人で一貫して担当しました。メニューバー常駐アプリの設計、ファイル監視・自動整理、Vortex Pro の課金実装も含みます。",
+                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    link: "https://apps.apple.com/jp/app/vortex-file-organizer/id6772141575?mt=12",
+                    tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "File System APIs"]
                 },
                 {
                     title: "大手企業向け決済基盤モダナイゼーションプロジェクト",
@@ -390,6 +345,24 @@ export const translations = {
                     proprietary: true
                 },
                 {
+                    title: "契約管理・決済代行システム",
+                    industry: "業種：金融・決済システム",
+                    role: "Backend Engineer（バックエンドエンジニア）",
+                    whatIBuilt: "大規模な決済代行サービス向けの契約管理システムです。Kickflow のワークフローと連携し、申請、承認、管理までの業務を一貫して支える仕組みを構築しました。<br><br><b>担当範囲:</b> 基本設計から結合テストまで開発工程全体に参画し、BFF、バックエンド、共通 API の設計、PostgreSQL のデータベース設計、AWS 連携、React / TypeScript によるフロントエンド開発、テストおよびコードレビューを担当しました。",
+                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
+                    tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
+                    proprietary: true
+                },
+                {
+                    title: "VR消火訓練体験",
+                    industry: "業種：水力発電",
+                    role: "Unity / XR エンジニア",
+                    whatIBuilt: "水力発電所の従業員向けに開発した VR 消火訓練アプリです。没入感のある空間表現によって、消火訓練の安全性と臨場感を高めました。実際の火を使わずに、火災に近い状況を再現した訓練を効率的に行えるようにしました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
+                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
+                    tech: ["Unity", "VR", "Safety"]
+                },
+                {
                     title: "Omit（macOS向けミニマルシステムモニター）",
                     industry: "業種：macOS アプリ",
                     role: "Solo Developer（個人開発）",
@@ -399,13 +372,40 @@ export const translations = {
                     tech: ["Swift", "SwiftUI", "MenuBarExtra", "macOS"]
                 },
                 {
-                    title: "Vortex（macOS メニューバー ダウンロード整理ツール）",
-                    industry: "業種：macOS アプリ",
-                    role: "Solo Developer（個人開発）",
-                    whatIBuilt: "macOS のメニューバーから Downloads フォルダを整理できるファイルオーガナイザーです。新しくダウンロードしたファイルをメニューバーですぐに確認でき、種類ごとのフォルダへ自動整理、ファイルの開く・ドラッグ・アーカイブ・削除、履歴タイムラインからの安全な取り消しまでを一通りカバーしています。整理はすべてローカルで完結し、ファイルは ~/Downloads/Vortex 配下に整理されます。<br><br><b>担当範囲:</b> 企画・設計から SwiftUI による機能実装、Mac App Store での公開までを個人で一貫して担当しました。メニューバー常駐アプリの設計、ファイル監視・自動整理、Vortex Pro の課金実装も含みます。",
-                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
-                    link: "https://apps.apple.com/jp/app/vortex-file-organizer/id6772141575?mt=12",
-                    tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "File System APIs"]
+                    title: "ARグラス巡視支援アプリ",
+                    industry: "業種：水力発電",
+                    role: "Unity / XR エンジニア",
+                    whatIBuilt: "現場巡視を支援する AR アプリです。作業者は AR グラス上でデジタル化された作業手順を確認でき、現場の映像と音声を遠隔の技術者へリアルタイムに共有できます。遠隔支援側は、注記付きの画像や指示内容を作業者の視界上に表示でき、巡視の効率向上と円滑な連携を実現しました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
+                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
+                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
+                    tech: ["Unity", "AR", "HoloLens"]
+                },
+                {
+                    title: "鄂州製鋼所デジタルツインプロジェクト",
+                    industry: "業種：製鋼業",
+                    role: "Unity エンジニア",
+                    whatIBuilt: "製鋼所の生産現場をデジタル空間上に再現し、現場で発生するさまざまなデータを連携・集約できるシステムを構築しました。三次元空間による可視化により、現地に行かなくても生産状況を直感的に把握できるようにし、関連データや映像との連携によって、より正確かつ迅速な状況判断を支援しました。<br><br><b>担当範囲:</b> Unity フロントエンドの実装を一貫して担当し、API 連携、3D モデル制御、ユーザーインタラクションの実装を行いました。",
+                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
+                    link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
+                    tech: ["Unity", "C#", "MQTT"]
+                },
+                {
+                    title: "Hi5グローブ対応没入型訓練システム",
+                    industry: "業種：水力発電",
+                    role: "Unity / XR エンジニア",
+                    whatIBuilt: "Hi5 VR グローブを活用した没入型訓練システムです。仮想空間内で、繰り返し実技確認が必要な訓練を高い再現度で体験できるようにし、訓練効率と現場作業への習熟度向上を支援しました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
+                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
+                    tech: ["Unity", "Hi5 Gloves", "Training"]
+                },
+                {
+                    title: "高所作業墜落体験",
+                    industry: "業種：水力発電",
+                    role: "Unity / XR エンジニア",
+                    whatIBuilt: "高所作業における安全教育向けの没入型体験アプリです。墜落事故の状況や恐怖感を再現することで、作業者の安全意識を高め、危険認識の向上と事故防止につなげました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
+                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
+                    tech: ["Unity", "Physics", "VR"]
                 },
                 {
                     title: "AI Agent Playbook",
@@ -550,58 +550,13 @@ export const translations = {
             proprietary: "企业专有项目",
             items: [
                 {
-                    title: "鄂州钢厂数字孪生项目",
-                    industry: "行业：炼钢业",
-                    role: "Unity 工程师",
-                    whatIBuilt: "以数字孪生方式构建钢厂生产现场，将多种现场数据源打通并在系统中集中呈现。通过三维空间可视化，使管理者无需到现场即可直观掌握生产状态，并结合关联数据与视频进行联动，支撑更准确、迅速的多维决策。<br><br><b>担当范围:</b> 全程负责 Unity 前端开发，包括 API 数据对接、3D 模型控制、用户交互功能的实现。",
-                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
-                    link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
-                    tech: ["Unity", "C#", "MQTT"]
-                },
-                {
-                    title: "VR 消防训练体验",
-                    industry: "行业：水力发电",
-                    role: "Unity / XR 工程师",
-                    whatIBuilt: "面向水电站员工开发的 VR 灭火训练应用。通过沉浸式空间表现提升灭火训练的安全性与临场感，将训练内容在 VR 中还原，无需动用真火即可在接近火灾的环境下高效开展训练。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
-                    tech: ["Unity", "VR", "Safety"]
-                },
-                {
-                    title: "高处作业坠落体验",
-                    industry: "行业：水力发电",
-                    role: "Unity / XR 工程师",
-                    whatIBuilt: "面向高处作业安全教育的沉浸式体验应用。通过再现坠落事故的情境与心理紧张感，提升作业人员安全意识，促进危险认知能力提升和事故预防。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
-                    tech: ["Unity", "Physics", "VR"]
-                },
-                {
-                    title: "Hi5 手套沉浸式训练系统",
-                    industry: "行业：水力发电",
-                    role: "Unity / XR 工程师",
-                    whatIBuilt: "基于 Hi5 VR 手套的沉浸式训练系统。通过在虚拟空间中高还原度地体验需要反复实操确认的训练内容，提升训练效率及现场作业的熟练度。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
-                    tech: ["Unity", "Hi5 Gloves", "Training"]
-                },
-                {
-                    title: "AR 眼镜巡检支援应用",
-                    industry: "行业：水力发电",
-                    role: "Unity / XR 工程师",
-                    whatIBuilt: "支持现场巡检的 AR 应用。作业者可通过 AR 眼镜查看数字化作业指引，并将现场画面与音频实时共享给远端技术人员；远程支援方可将带有标注的图片或指令推送到作业者的视野中，提升巡检效率与协作质量。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
-                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
-                    tech: ["Unity", "AR", "HoloLens"]
-                },
-                {
-                    title: "契约管理·代收付系统",
-                    industry: "行业：金融·支付系统",
-                    role: "后端工程师（Backend Engineer）",
-                    whatIBuilt: "面向大规模代收付服务的契约管理系统，与 Kickflow 工作流联动，构建了从申请、审批到管理的全流程业务支撑体系。<br><br><b>担当范围:</b> 参与了从基本设计到集成测试的完整开发流程，负责 BFF、后端、共通 API 的设计、PostgreSQL 数据库设计、AWS 集成、React / TypeScript 前端开发、测试及代码评审。",
-                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
-                    tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
-                    proprietary: true
+                    title: "Vortex（macOS 菜单栏下载整理工具）",
+                    industry: "行业：macOS 应用",
+                    role: "独立开发者（Solo Developer）",
+                    whatIBuilt: "从 macOS 菜单栏掌控下载文件夹的文件整理工具，帮你告别下载杂乱。可在菜单栏即时查看新下载的文件，按类型自动整理到清晰文件夹，支持打开、拖拽、归档、删除等快捷操作，并通过清晰的时间线安全撤销最近的移动。所有整理均在本地完成，文件默认整理到 ~/Downloads/Vortex。<br><br><b>担当范围:</b> 从需求策划、SwiftUI 功能开发到 Mac App Store 上架发布全程独立负责，涵盖菜单栏常驻应用设计、文件监控与自动整理、Vortex Pro 内购等功能实现。",
+                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    link: "https://apps.apple.com/us/app/vortex-file-organizer/id6772141575?mt=12",
+                    tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "文件系统 API"]
                 },
                 {
                     title: "大型企业支付平台现代化重构",
@@ -613,6 +568,24 @@ export const translations = {
                     proprietary: true
                 },
                 {
+                    title: "契约管理·代收付系统",
+                    industry: "行业：金融·支付系统",
+                    role: "后端工程师（Backend Engineer）",
+                    whatIBuilt: "面向大规模代收付服务的契约管理系统，与 Kickflow 工作流联动，构建了从申请、审批到管理的全流程业务支撑体系。<br><br><b>担当范围:</b> 参与了从基本设计到集成测试的完整开发流程，负责 BFF、后端、共通 API 的设计、PostgreSQL 数据库设计、AWS 集成、React / TypeScript 前端开发、测试及代码评审。",
+                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
+                    tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
+                    proprietary: true
+                },
+                {
+                    title: "VR 消防训练体验",
+                    industry: "行业：水力发电",
+                    role: "Unity / XR 工程师",
+                    whatIBuilt: "面向水电站员工开发的 VR 灭火训练应用。通过沉浸式空间表现提升灭火训练的安全性与临场感，将训练内容在 VR 中还原，无需动用真火即可在接近火灾的环境下高效开展训练。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
+                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
+                    tech: ["Unity", "VR", "Safety"]
+                },
+                {
                     title: "Omit（macOS 极简系统监控）",
                     industry: "行业：macOS 应用",
                     role: "独立开发者（Solo Developer）",
@@ -622,13 +595,40 @@ export const translations = {
                     tech: ["Swift", "SwiftUI", "MenuBarExtra", "macOS"]
                 },
                 {
-                    title: "Vortex（macOS 菜单栏下载整理工具）",
-                    industry: "行业：macOS 应用",
-                    role: "独立开发者（Solo Developer）",
-                    whatIBuilt: "从 macOS 菜单栏掌控下载文件夹的文件整理工具，帮你告别下载杂乱。可在菜单栏即时查看新下载的文件，按类型自动整理到清晰文件夹，支持打开、拖拽、归档、删除等快捷操作，并通过清晰的时间线安全撤销最近的移动。所有整理均在本地完成，文件默认整理到 ~/Downloads/Vortex。<br><br><b>担当范围:</b> 从需求策划、SwiftUI 功能开发到 Mac App Store 上架发布全程独立负责，涵盖菜单栏常驻应用设计、文件监控与自动整理、Vortex Pro 内购等功能实现。",
-                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
-                    link: "https://apps.apple.com/us/app/vortex-file-organizer/id6772141575?mt=12",
-                    tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "文件系统 API"]
+                    title: "AR 眼镜巡检支援应用",
+                    industry: "行业：水力发电",
+                    role: "Unity / XR 工程师",
+                    whatIBuilt: "支持现场巡检的 AR 应用。作业者可通过 AR 眼镜查看数字化作业指引，并将现场画面与音频实时共享给远端技术人员；远程支援方可将带有标注的图片或指令推送到作业者的视野中，提升巡检效率与协作质量。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
+                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
+                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
+                    tech: ["Unity", "AR", "HoloLens"]
+                },
+                {
+                    title: "鄂州钢厂数字孪生项目",
+                    industry: "行业：炼钢业",
+                    role: "Unity 工程师",
+                    whatIBuilt: "以数字孪生方式构建钢厂生产现场，将多种现场数据源打通并在系统中集中呈现。通过三维空间可视化，使管理者无需到现场即可直观掌握生产状态，并结合关联数据与视频进行联动，支撑更准确、迅速的多维决策。<br><br><b>担当范围:</b> 全程负责 Unity 前端开发，包括 API 数据对接、3D 模型控制、用户交互功能的实现。",
+                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
+                    link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
+                    tech: ["Unity", "C#", "MQTT"]
+                },
+                {
+                    title: "Hi5 手套沉浸式训练系统",
+                    industry: "行业：水力发电",
+                    role: "Unity / XR 工程师",
+                    whatIBuilt: "基于 Hi5 VR 手套的沉浸式训练系统。通过在虚拟空间中高还原度地体验需要反复实操确认的训练内容，提升训练效率及现场作业的熟练度。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
+                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
+                    tech: ["Unity", "Hi5 Gloves", "Training"]
+                },
+                {
+                    title: "高处作业坠落体验",
+                    industry: "行业：水力发电",
+                    role: "Unity / XR 工程师",
+                    whatIBuilt: "面向高处作业安全教育的沉浸式体验应用。通过再现坠落事故的情境与心理紧张感，提升作业人员安全意识，促进危险认知能力提升和事故预防。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
+                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
+                    tech: ["Unity", "Physics", "VR"]
                 },
                 {
                     title: "AI Agent Playbook",
