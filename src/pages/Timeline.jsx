@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import RichContentWrapper from '../components/Common/RichContentWrapper';
 import { useLanguage } from '../context/LanguageContext';
 
-const TimelineItem = ({ date, company, role, desc, isExpanded }) => (
+const TimelineItem = ({ date, company, desc, isExpanded }) => (
     <div className="timeline-item">
         {/* Line */}
         <div className="timeline-line"></div>
@@ -77,7 +77,7 @@ const Timeline = () => {
                     transition: 'opacity 0.2s',
                     marginBottom: '2px'
                 }}>
-                    // {language === 'ja' ? '全て展開・折りたたみ' : '全部展开/折叠'}
+                    // {language === 'ja' ? '全て展開・折りたたみ' : language === 'zh' ? '全部展开/折叠' : 'Expand / collapse all'}
                 </div>
                 <div style={{ color: 'var(--text-primary)', display: 'flex', gap: '4px', alignItems: 'center' }}>
                     <span 

@@ -1,0 +1,42 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#1a1b26"/>
+  <rect width="1280" height="720" fill="#191a21"/>
+  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGlow)"/>
+  <defs>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#bd93f9" stop-opacity="0.12"/>
+      <stop offset="0.5" stop-color="#191a21" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8be9fd" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect x="120" y="90" width="1040" height="540" rx="12" fill="#21222c" stroke="#44475a" stroke-width="2"/>
+  <!-- Title bar -->
+  <rect x="120" y="90" width="1040" height="48" rx="12" fill="#282a36" stroke="#44475a" stroke-width="2"/>
+  <rect x="120" y="114" width="1040" height="24" fill="#282a36"/>
+  <circle cx="156" cy="114" r="7" fill="#ff5555"/>
+  <circle cx="180" cy="114" r="7" fill="#f1fa8c"/>
+  <circle cx="204" cy="114" r="7" fill="#50fa7b"/>
+  <text x="640" y="119" text-anchor="middle" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="16" fill="#6272a4">ai-agent-playbook — zsh</text>
+
+  <!-- Prompt lines -->
+  <text x="160" y="190" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="22" fill="#f8f8f2">
+    <tspan fill="#50fa7b">$ </tspan><tspan fill="#f8f8f2">maestro run --playbook</tspan>
+  </text>
+  <text x="160" y="240" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="22" fill="#8be9fd">▸ decompose task → 12 subtasks</text>
+  <text x="160" y="290" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="22" fill="#8be9fd">▸ design context boundaries</text>
+  <text x="160" y="340" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="22" fill="#8be9fd">▸ enforce quality gates</text>
+  <text x="160" y="390" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="22" fill="#50fa7b">✓ workflow as product</text>
+
+  <!-- Blinking cursor -->
+  <rect x="160" y="410" width="13" height="26" fill="#bd93f9"/>
+  <text x="184" y="431" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="22" fill="#f8f8f2"> </text>
+
+  <!-- Footer label -->
+  <rect x="160" y="480" width="640" height="2" fill="#44475a"/>
+  <text x="160" y="530" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="20" font-weight="700" fill="#bd93f9">AI AGENT PLAYBOOK</text>
+  <text x="160" y="566" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="17" fill="#8be9fd">AI-Agent Collaboration · Open Source Methodology</text>
+  <text x="160" y="596" font-family="'Fira Code','SF Mono',Consolas,monospace" font-size="15" fill="#6272a4">github.com/heisyoudan/ai-agent-playbook</text>
+</svg>

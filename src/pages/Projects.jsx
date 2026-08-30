@@ -6,7 +6,7 @@ import { FaYoutube } from 'react-icons/fa';
 import { SiAppstore } from 'react-icons/si';
 import { useLanguage } from '../context/LanguageContext';
 
-const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) => (
+const ProjectCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, industry, proprietary, t }) => (
     <div style={{
         backgroundColor: 'var(--sidebar-bg)',
         border: '1px solid var(--border-color)',
@@ -43,17 +43,23 @@ const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) =
         <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
             <h3 style={{ margin: '0 0 10px 0', fontSize: '16px', color: 'var(--text-primary)' }}>{title}</h3>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '15px' }}>
-                {tech && tech.map(t => (
-                    <span key={t} style={{
+                {tech && tech.map(item => (
+                    <span key={item} style={{
                         fontSize: '10px', padding: '2px 8px', borderRadius: '4px',
                         backgroundColor: 'var(--bg-color)', color: 'var(--accent-pink)',
                         border: '1px solid var(--border-color)'
-                    }}>{t}</span>
+                    }}>{item}</span>
                 ))}
+            </div>
+            <div style={{ marginBottom: '12px', fontSize: '13px', color: 'var(--text-primary)' }}>
+                <span style={{ color: 'var(--accent-purple)', fontWeight: '600' }}>{t.roleLabel}:</span> {role}
+            </div>
+            <div style={{ marginBottom: '8px', fontSize: '12px', color: 'var(--accent-green)' }}>
+                // {t.whatIBuiltLabel}
             </div>
             <div
                 style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: '1.6', flex: 1, margin: 0 }}
-                dangerouslySetInnerHTML={{ __html: desc }}
+                dangerouslySetInnerHTML={{ __html: whatIBuilt }}
             />
             <div style={{ display: 'flex', gap: '15px', marginTop: '20px', borderTop: '1px solid var(--border-color)', paddingTop: '15px' }}>
                 {github && (
@@ -65,6 +71,11 @@ const ProjectCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) =
                     <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px' }}>
                         {link.includes('apps.apple.com') ? <SiAppstore /> : <FaYoutube />} <span style={{ color: 'var(--accent-cyan)' }}>{link.includes('apps.apple.com') ? t.store : t.demo}</span>
                     </a>
+                )}
+                {proprietary && !github && !link && (
+                    <span style={{ color: 'var(--text-muted)', fontSize: '12px', fontStyle: 'italic' }}>
+                        {t.proprietary}
+                    </span>
                 )}
             </div>
         </div>

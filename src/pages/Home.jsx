@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import RichContentWrapper from '../components/Common/RichContentWrapper';
 import { useLanguage } from '../context/LanguageContext';
 import CommentLink from '../components/Common/CommentLink';
 import CodeTypewriter from '../components/Common/CodeTypewriter';
 
 const Home = ({ onNavigate }) => {
-    const { t, language } = useLanguage();
+    const { t } = useLanguage();
 
     // Data for typewriter effect
     const infoCode = [
@@ -29,22 +29,19 @@ const Home = ({ onNavigate }) => {
         [
             { text: '    Focus: ', color: 'var(--text-primary)' },
             { text: '[', color: 'var(--text-primary)' },
-            { text: '"AI Workflow"', color: 'var(--accent-green)' },
+            { text: '"Backend"', color: 'var(--accent-green)' },
             { text: ', ', color: 'var(--text-primary)' },
-            { text: '"macOS/Web/Unity"', color: 'var(--accent-green)' },
+            { text: '"macOS"', color: 'var(--accent-green)' },
             { text: ', ', color: 'var(--text-primary)' },
-            { text: '"Product Design"', color: 'var(--accent-green)' },
+            { text: '"XR"', color: 'var(--accent-green)' },
+            { text: ', ', color: 'var(--text-primary)' },
+            { text: '"AI-Assisted Dev"', color: 'var(--accent-green)' },
             { text: ']', color: 'var(--text-primary)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
             { text: '    GitHub: ', color: 'var(--text-primary)' },
             { text: '"https://github.com/heisyoudan"', color: 'var(--accent-green)', link: 'https://github.com/heisyoudan' },
-            { text: ',', color: 'var(--text-primary)' }
-        ],
-        [
-            { text: '    Email: ', color: 'var(--text-primary)' },
-            { text: '"heisyoudan@yahoo.com"', color: 'var(--accent-green)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
@@ -81,17 +78,37 @@ const Home = ({ onNavigate }) => {
                         color: 'var(--text-secondary)',
                         fontWeight: '500'
                     }}>
-                        "Software Engineer / Indie Developer"
+                        {t.home.role}
                     </h2>
 
-                    <div style={{ marginTop: '15px', marginBottom: '0' }}>
+                    <h3 style={{
+                        marginTop: '8px',
+                        fontSize: '15px',
+                        color: 'var(--accent-cyan)',
+                        fontWeight: '500'
+                    }}>
+                        {t.home.subtitle}
+                    </h3>
+
+                    <p style={{
+                        marginTop: '16px',
+                        marginBottom: '0',
+                        maxWidth: '680px',
+                        fontSize: '15px',
+                        lineHeight: '1.7',
+                        color: 'var(--text-muted)'
+                    }}>
+                        {t.home.description}
+                    </p>
+
+                    <div style={{ marginTop: '20px', marginBottom: '0' }}>
                         <CommentLink
-                            text="View AI Playbook"
-                            onClick={() => window.open('https://github.com/heisyoudan/ai-agent-playbook', '_blank')}
+                            text={t.home.viewWork}
+                            onClick={() => onNavigate && onNavigate('Projects.jsx')}
                         />
                         <CommentLink
-                            text="View Projects"
-                            onClick={() => onNavigate && onNavigate('Projects.jsx')}
+                            text={t.home.viewPlaybook}
+                            onClick={() => window.open('https://github.com/heisyoudan/ai-agent-playbook', '_blank')}
                         />
                     </div>
 

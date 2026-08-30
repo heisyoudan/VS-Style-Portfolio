@@ -93,11 +93,15 @@ const EditorArea = ({ activeFile, openFiles, onCloseFile, onSelectFile, onNaviga
             <div style={{ color: '#ffffff', textAlign: 'center', lineHeight: 1.6, fontSize: '14px' }}>
                 {language === 'ja' ? (
                     <>
-                        <div>　ようこそ。左側からページを選んでください。</div>
+                        <div>ようこそ。左側からページを選んでください。</div>
+                    </>
+                ) : language === 'zh' ? (
+                    <>
+                        <div>欢迎来到我的工作台，从左侧选择一个页面开始。</div>
                     </>
                 ) : (
                     <>
-                        <div>　欢迎来到我的工作台，从左侧选择一个页面开始。</div>
+                        <div>Welcome to my workspace. Select a page from the left to get started.</div>
                     </>
                 )}
             </div>

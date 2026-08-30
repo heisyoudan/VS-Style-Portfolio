@@ -53,7 +53,7 @@ const StatusBar = () => {
                         }}
                         title="Select Language"
                     >
-                        <span>{language === 'ja' ? 'JA' : language === 'zh' ? 'ZH' : 'EN'}</span>
+                        <span>{language === 'ja' ? 'JP' : language === 'zh' ? 'CN' : 'EN'}</span>
                     </div>
 
                     {/* Popup Menu */}
@@ -77,11 +77,15 @@ const StatusBar = () => {
                                 minWidth: 'auto', // Allowed to shrink
                                 whiteSpace: 'nowrap' // Prevent wrapping
                             }}>
-                                {['ja', 'zh'].map(lang => (
+                                {[
+                                    { code: 'en', label: 'EN' },
+                                    { code: 'ja', label: 'JP' },
+                                    { code: 'zh', label: 'CN' }
+                                ].map(lang => (
                                     <div
-                                        key={lang}
+                                        key={lang.code}
                                         onClick={() => {
-                                            setLanguage(lang);
+                                            setLanguage(lang.code);
                                             setShowLangMenu(false);
                                         }}
                                         style={{
@@ -96,10 +100,10 @@ const StatusBar = () => {
                                             fontSize: '12px', // Smaller font like VS Code
                                         }}
                                         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--bg-color)'}
-                                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = language === lang ? 'var(--bg-color)' : 'transparent'}
+                                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = language === lang.code ? 'var(--bg-color)' : 'transparent'}
                                     >
-                                        <span>{lang === 'ja' ? 'Japanese' : 'Chinese'}</span>
-                                        {language === lang && <span>✓</span>}
+                                        <span>{lang.label}</span>
+                                        {language === lang.code && <span>✓</span>}
                                     </div>
                                 ))}
                             </div>

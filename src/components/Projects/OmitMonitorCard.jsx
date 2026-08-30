@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { VscGithubAlt } from 'react-icons/vsc';
 import { FaYoutube } from 'react-icons/fa';
 
-const OmitMonitorCard = ({ title, tech, desc, imgSrc, link, github, industry, t }) => {
+const OmitMonitorCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, industry, proprietary, t }) => {
     const [downloadSpeed, setDownloadSpeed] = useState(28.5);
     const [uploadSpeed, setUploadSpeed] = useState(12.3);
     const [ping, setPing] = useState(30);
@@ -88,9 +88,15 @@ const OmitMonitorCard = ({ title, tech, desc, imgSrc, link, github, industry, t 
                         }}>{tech_item}</span>
                     ))}
                 </div>
+                <div style={{ marginBottom: '12px', fontSize: '13px', color: 'var(--text-primary)' }}>
+                    <span style={{ color: 'var(--accent-purple)', fontWeight: '600' }}>{t.roleLabel}:</span> {role}
+                </div>
+                <div style={{ marginBottom: '8px', fontSize: '12px', color: 'var(--accent-green)' }}>
+                    // {t.whatIBuiltLabel}
+                </div>
                 <div
                     style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: '1.6', flex: 1, margin: 0 }}
-                    dangerouslySetInnerHTML={{ __html: desc }}
+                    dangerouslySetInnerHTML={{ __html: whatIBuilt }}
                 />
                 <div style={{ display: 'flex', gap: '15px', marginTop: '20px', borderTop: '1px solid var(--border-color)', paddingTop: '15px' }}>
                     {github && (
@@ -102,6 +108,11 @@ const OmitMonitorCard = ({ title, tech, desc, imgSrc, link, github, industry, t 
                         <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px' }}>
                             <FaYoutube /> <span style={{ color: 'var(--accent-cyan)' }}>{t.demo}</span>
                         </a>
+                    )}
+                    {proprietary && !github && !link && (
+                        <span style={{ color: 'var(--text-muted)', fontSize: '12px', fontStyle: 'italic' }}>
+                            {t.proprietary}
+                        </span>
                     )}
                 </div>
             </div>

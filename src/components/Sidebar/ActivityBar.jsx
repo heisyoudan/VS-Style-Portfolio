@@ -22,9 +22,11 @@ const Icon = ({ children, active, onClick, title }) => (
 const LanguageSwitcher = () => {
     const { language, setLanguage } = useLanguage();
     const languages = [
+        { code: 'en', label: 'EN' },
         { code: 'ja', label: 'JP' },
         { code: 'zh', label: 'CN' }
     ];
+    const langNames = { en: 'English', ja: 'Japanese', zh: 'Chinese' };
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
@@ -32,7 +34,7 @@ const LanguageSwitcher = () => {
                 <div
                     key={lang.code}
                     onClick={() => setLanguage(lang.code)}
-                    title={`Switch to ${lang.label === 'JP' ? 'Japanese' : 'Chinese'}`}
+                    title={`Switch to ${langNames[lang.code]}`}
                     style={{
                         padding: '12px',
                         cursor: 'pointer',
@@ -55,8 +57,6 @@ const LanguageSwitcher = () => {
 };
 
 const ActivityBar = ({ onClickExplorer }) => {
-    const { language, setLanguage } = useLanguage();
-
     return (
         <div style={{
             width: '50px',
