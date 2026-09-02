@@ -18,7 +18,7 @@ const Home = ({ onNavigate }) => {
         ],
         [
             { text: '    Name: ', color: 'var(--text-primary)' },
-            { text: '"Heisyoudan"', color: 'var(--accent-green)' },
+            { text: `"${t.home.codeName}"`, color: 'var(--accent-green)' },
             { text: ',', color: 'var(--text-primary)' }
         ],
         [
