@@ -65,8 +65,9 @@ export const translations = {
             name: "He Xiaodan.",
             codeName: "He Xiaodan",
             role: "Software Engineer & Indie Developer",
-            subtitle: "Backend · macOS · XR · AI-Assisted Development",
-            description: "I build production software across backend systems, native macOS applications, and immersive XR experiences. My work spans enterprise payment systems, independently shipped Mac apps, and industrial VR/AR solutions.",
+            subtitle: "Backend · Full-Stack · Product Engineering · AI-Native Development",
+            description: "Building production software across enterprise systems, independent products, and international client projects — with AI-assisted engineering integrated into my development workflow.",
+            signals: ["Enterprise Engineering", "Independent Products", "International Client Delivery"],
             viewWork: "View Projects",
             viewPlaybook: "View AI Playbook",
             contact: "About Me"
@@ -86,8 +87,8 @@ export const translations = {
                 <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// background</div>
                 <p>Earlier in my career, I spent several years building industrial Unity VR/AR systems, including safety training, digital twins, hardware interaction, and HoloLens-based inspection tools.</p>
 
-                <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// openSource</div>
-                <p>I also explore AI-assisted software development and multi-agent engineering workflows through my open-source projects.</p>
+                <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// aiNativeDev</div>
+                <p>AI-assisted development and multi-agent engineering workflows are part of my active engineering practice — applied in enterprise backend work, independent product development, international client delivery, and workflow research. Architecture decisions, requirements, acceptance criteria, and final delivery remain under human control. AI agents operate under structured task contracts, quality gates, and explicit review.</p>
 
                 <p>I value clear requirements, reliable implementation, and asynchronous written communication.</p>
             `,
@@ -105,94 +106,112 @@ export const translations = {
             proprietary: "Proprietary enterprise project",
             items: [
                 {
+                    title: "International EdTech Platform Modernization",
+                    industry: "Domain: EdTech · International Freelance",
+                    role: "Independent Full-Stack Developer",
+                    whatIBuilt: "Took ownership of and continued development on a live EdTech platform for an international client. The system spans Unity, C#, backend services, Azure, and MySQL. Conducted end-to-end architecture investigation, reviewed the cloud and database environment, established a reliable technical baseline, and advanced curriculum and localization architecture.<br><br><b>Scope:</b> Codebase investigation, Unity and backend architecture analysis, Azure environment review, database schema analysis, implementation, testing, technical documentation, and asynchronous international client communication across time zones.<br><br><b>AI-assisted development:</b> Applied AI Coding Agents to codebase investigation, implementation support, QA, and technical documentation through role-separated workflows. Requirements definition, acceptance criteria, and final judgment remain human-controlled.",
+                    imgSrc: "/VS-Style-Portfolio/img/edtech.png",
+                    tech: ["Unity", "C#", "Azure", "MySQL", "Localization", "Full-Stack"],
+                    privateLabel: "International Commercial Project · Upwork Contract"
+                },
+                {
+                    title: "Enterprise Payment Platform Modernization",
+                    industry: "Domain: FinTech · Payment Systems",
+                    role: "Backend Engineer",
+                    whatIBuilt: "Contributed to a large-scale enterprise payment infrastructure modernization project, participating across the full software development lifecycle — from design through implementation, unit testing, and integration testing. As a technical lead-in member, led feasibility validation and early implementation of gRPC and AWS DynamoDB, producing technical implementation reports and development guides that served as a foundation for downstream teams.<br><br><b>Scope:</b> Design documentation, Java / Spring Boot backend implementation, unit and integration testing, technical investigation, PoC, code review, technical documentation, and new technology adoption validation.<br><br><b>Long-term Agent Engineering practice:</b> Since Coding Agents became practically viable, sustained over a year of high-intensity real-world practice within a large-scale enterprise engineering environment. The workflow progressively evolved from AI-assisted development toward highly Agent-driven delivery — with Coding Agents actively involved across requirements understanding, design, implementation, testing, review, and technical documentation. Built hands-on experience in task decomposition, context management, multi-agent collaboration, verification, quality control, and human-in-the-loop practices under production engineering conditions.",
+                    imgSrc: "/VS-Style-Portfolio/img/enterprise-payment.png",
+                    tech: ["Java", "Spring Boot", "gRPC", "AWS", "DynamoDB", "AI-Assisted Dev"],
+                    proprietary: true
+                },
+                {
                     title: "Vortex — Native macOS File Organizer",
-                    industry: "macOS App · Live on the Mac App Store",
-                    role: "Solo Developer",
-                    whatIBuilt: "Designed, developed, tested, and shipped a native macOS file organization utility to the Mac App Store. From the menu bar you can instantly see newly downloaded files, auto-organize them into type-based folders, and open, drag, archive, or delete them — with a timeline that lets you safely undo recent moves. Everything runs locally and files are organized under ~/Downloads/Vortex.<br><br><b>Scope:</b> Product planning, SwiftUI implementation, menu bar app architecture, file watching & auto-organization, and StoreKit 2 in-app purchases (Vortex Pro) — all the way to App Store release.",
-                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    industry: "Domain: macOS · Productivity",
+                    role: "Solo Product Developer",
+                    whatIBuilt: "Designed, developed, and shipped a native macOS file organization utility to the Mac App Store. From the menu bar you can instantly see newly downloaded files, auto-organize them into type-based folders, and open, drag, archive, or delete them — with a timeline that lets you safely undo recent moves. Everything runs locally and files are organized under ~/Downloads/Vortex.<br><br><b>Scope:</b> Product planning, UX design, SwiftUI implementation, menu bar app architecture, file watching and auto-organization, and StoreKit 2 in-app purchases (Vortex Pro) — end-to-end from product definition through App Store release.",
+                    imgSrc: "/VS-Style-Portfolio/img/vortex-app.jpg",
                     link: "https://apps.apple.com/us/app/vortex-file-organizer/id6772141575?mt=12",
                     tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "File System APIs"]
                 },
                 {
-                    title: "Enterprise Payment Platform Modernization",
-                    industry: "Enterprise · FinTech",
-                    role: "Backend Engineer",
-                    whatIBuilt: "Contributed to the modernization of a large-scale payment platform as a technical lead-in member, driving the validation and adoption of new technologies and helping shape implementation standards for downstream development.<br><br><b>Scope:</b> Feasibility validation and lead implementation of gRPC and AWS DynamoDB, technical implementation reports and development guides, and validating AI-assisted development tools (GitHub Copilot) to standardize the team's workflow.",
-                    imgSrc: "/VS-Style-Portfolio/img/7.png",
-                    tech: ["Java", "Spring Boot", "gRPC", "AWS", "DynamoDB"],
-                    proprietary: true
-                },
-                {
                     title: "Contract Management & Payment System",
-                    industry: "Enterprise · FinTech",
+                    industry: "Domain: FinTech · Payment Systems",
                     role: "Backend Engineer",
-                    whatIBuilt: "Built a contract management system for a large-scale payment agency service, integrated with the Kickflow workflow platform to support the full flow of applications, approvals, and management.<br><br><b>Scope:</b> Participated across the whole development process from basic design through integration testing — BFF, backend, and shared API design, PostgreSQL database design, AWS integration, React + TypeScript frontend development, testing, and code review.",
-                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
+                    whatIBuilt: "Built a contract management system for a large-scale payment agency service, integrated with the Kickflow workflow platform to support the full flow of applications, approvals, and management.<br><br><b>Scope:</b> Participated across the complete enterprise software development lifecycle — from basic design and detailed design through implementation, unit testing, and integration testing. Responsible for BFF, backend, and shared API design, PostgreSQL database design, AWS integration, React / TypeScript frontend development, testing, and code review.",
+                    imgSrc: "/VS-Style-Portfolio/img/enterprise-contract.jpg",
                     tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
                     proprietary: true
                 },
                 {
-                    title: "VR Fire Extinguishing Training",
-                    industry: "Industrial VR · Hydroelectric",
-                    role: "Unity / XR Engineer",
-                    whatIBuilt: "Developed a VR fire-extinguishing training app for hydroelectric power plant staff. Immersive spatial presentation increases safety and realism, letting trainees practice in a near-fire environment without using real flames.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
-                    tech: ["Unity", "VR", "Safety"]
+                    title: "Maestro",
+                    industry: "Domain: AI Engineering · Developer Tools",
+                    role: "Author · Independent Engineer",
+                    whatIBuilt: "Designed and continuously maintains Maestro, an agent-first workflow controller for organizing AI Coding Agents in software development. It transforms requirements into tasks with explicit context, responsibilities, and acceptance criteria, then coordinates roles including Dev, QA, and Sage through development, independent verification, rollback, and closure.<br><br><b>Workflow:</b> Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close. Each role works in isolated context, passing tasks, artifacts, evidence, and lifecycle state through shared project truth. Failed verification returns to development with evidence attached; successful verification advances state.<br><br><b>Core mechanisms:</b> Task Contract, Context Isolation, Shared Truth, Quality Gate, Atomic Rollback, Human Authority, and replaceable AI Worker / Provider Adapters.<br><br>Maestro has evolved through long-term real-world project use and continues to serve as personal development workflow infrastructure.",
+                    imgSrc: "/VS-Style-Portfolio/img/maestro.png",
+                    tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
+                    privateLabel: "Private Repository · Personal Tooling"
+                },
+                {
+                    title: "AI Agent Playbook",
+                    industry: "Domain: Open Source · AI Engineering",
+                    role: "Author · Independent",
+                    whatIBuilt: "An ongoing open-source distillation of AI Agent software engineering methodology, built from hands-on experience across enterprise projects, independent development, and commercial client delivery. Abstracts real engineering experience into reusable principles: Task Decomposition, Context Isolation, Artifact, Verification, Gate, Contract, Convergence, and Human Authority.<br><br>The playbook focuses on integrating Coding Agents into verifiable software engineering workflows, and is continuously refined through real project practice. Related methods are tooled and validated in Maestro. Published on GitHub under MIT.",
+                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.svg",
+                    github: "https://github.com/heisyoudan/ai-agent-playbook",
+                    tech: ["AI Agents", "Agent Workflow", "Context Engineering", "Software Engineering", "Open Source"]
                 },
                 {
                     title: "Omit — Minimal macOS System Monitor",
-                    industry: "macOS App · Open Source",
+                    industry: "Domain: macOS · Open Source",
                     role: "Solo Developer",
-                    whatIBuilt: "Designed and shipped a minimal macOS menu bar system monitor with SwiftUI, aiming for a light, intuitive way to check CPU, memory, and network status with a clean, minimal design.<br><br><b>Scope:</b> UI/UX design, feature implementation, and app release completed independently — productized from scratch with AI-assisted development, pursuing an Apple-native minimal experience.",
-                    imgSrc: "/VS-Style-Portfolio/img/8.png",
+                    whatIBuilt: "Designed and shipped a minimal macOS menu bar system monitor built with SwiftUI, delivering a lightweight and intuitive way to check CPU, memory, and network status.<br><br><b>Scope:</b> End-to-end independent development — UI/UX design, SwiftUI implementation, and open-source release. Combined AI-assisted development with deliberate focus on clean, minimal design to deliver a native macOS experience.",
+                    imgSrc: "/VS-Style-Portfolio/img/omit-monitor.png",
                     github: "https://github.com/heisyoudan/Omit",
                     tech: ["Swift", "SwiftUI", "MenuBarExtra", "macOS"]
                 },
                 {
-                    title: "AR Glasses Inspection Support App",
-                    industry: "Industrial AR · Hydroelectric",
+                    title: "VR Fire Extinguishing Training",
+                    industry: "Domain: Industrial XR · Safety Training",
                     role: "Unity / XR Engineer",
-                    whatIBuilt: "An AR app that supports on-site inspections. Workers view digitized work instructions on AR glasses and share live video and audio with remote engineers, who can display annotated images and instructions in the worker's field of view — improving inspection efficiency and collaboration.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
+                    whatIBuilt: "Developed a VR fire-extinguishing training application for hydroelectric power plant staff. By reproducing fire scenarios in immersive 3D space, trainees experience realistic safety training without using open flames — improving both training quality and safety.<br><br><b>Scope:</b> End-to-end delivery as an independent engineer: requirement analysis, proposal and system design, technical architecture, Unity VR implementation, testing, acceptance support, and final delivery.",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-fire-training.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
+                    tech: ["Unity", "C#", "VR", "Safety Training"]
+                },
+                {
+                    title: "AR Glasses Inspection Support App",
+                    industry: "Domain: Industrial AR · Inspection",
+                    role: "Unity / XR Engineer",
+                    whatIBuilt: "Built an AR application for HoloLens that supports on-site industrial inspections. Workers view digitized work instructions overlaid in their field of view, while sharing live video and audio with remote engineers who can annotate and push guidance directly into the worker's AR view — enabling real-time remote collaboration across distance.<br><br><b>Scope:</b> End-to-end delivery as an independent engineer: requirement analysis, HoloLens AR system design, Unity implementation, real-time video / audio integration, annotation overlay, testing, and delivery support.",
+                    imgSrc: "/VS-Style-Portfolio/img/ar-glasses.jpg",
                     link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
-                    tech: ["Unity", "AR", "HoloLens"]
+                    tech: ["Unity", "HoloLens", "AR", "Remote Collaboration"]
                 },
                 {
                     title: "Steel Mill Digital Twin Visualization",
-                    industry: "Industrial Visualization · Steel Manufacturing",
+                    industry: "Domain: Industrial Visualization · Digital Twin",
                     role: "Unity Developer",
-                    whatIBuilt: "Built a digital twin system that recreates a steel mill's production site in 3D space and aggregates data from multiple on-site sources into one view. Managers can grasp production status intuitively without visiting the site, supported by linked data and video for faster, more accurate decisions.<br><br><b>Scope:</b> Unity frontend implementation — API data integration, 3D model control, and user interaction.",
-                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
+                    whatIBuilt: "Built a real-time digital twin system that recreates a steel mill's production floor in 3D space, aggregating live data from multiple on-site sources — MQTT feeds, REST APIs, and sensor streams — into a unified view. Enables managers to grasp production status intuitively without visiting the site, supporting faster and more accurate decisions.<br><br><b>Scope:</b> Unity frontend implementation — MQTT and REST API data integration, real-time 3D model state control, multi-source data binding, and user interaction design.",
+                    imgSrc: "/VS-Style-Portfolio/img/xr-digital-twin.jpg",
                     link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
-                    tech: ["Unity", "C#", "MQTT"]
+                    tech: ["Unity", "C#", "MQTT", "Digital Twin", "Real-time Data"]
                 },
                 {
                     title: "Hi5 Glove Immersive Training System",
-                    industry: "Industrial VR · Hydroelectric",
+                    industry: "Domain: Industrial VR · Immersive Training",
                     role: "Unity / XR Engineer",
-                    whatIBuilt: "An immersive training system using Hi5 VR gloves. Hands-on procedures that need repeated practice can be experienced with high fidelity in virtual space, improving training efficiency and on-site proficiency.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
+                    whatIBuilt: "Developed an immersive training system using Hi5 VR gloves, enabling hands-on procedural training in virtual space with high physical fidelity. Trainees perform real hand gestures and interact with virtual objects, improving both training efficiency and on-site proficiency.<br><br><b>Scope:</b> End-to-end delivery as an independent engineer: requirement analysis, Hi5 hardware SDK integration, hand interaction system design, Unity implementation, testing, and delivery support.",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-hi5-gloves.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
-                    tech: ["Unity", "Hi5 Gloves", "Training"]
+                    tech: ["Unity", "Hi5 Gloves", "Hand Interaction", "VR"]
                 },
                 {
                     title: "High-Altitude Fall Safety Experience",
-                    industry: "Industrial VR · Hydroelectric",
+                    industry: "Domain: Industrial VR · Safety Experience",
                     role: "Unity / XR Engineer",
-                    whatIBuilt: "An immersive safety-training app for work at height. By reproducing the situation and fear of a fall, it raises workers' safety awareness and helps prevent accidents.<br><br><b>Scope:</b> Requirement analysis, proposal & design, technical architecture, implementation, testing, acceptance, and delivery support — delivered end-to-end as an independent engineer.",
-                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
+                    whatIBuilt: "Built a VR safety training experience that immerses workers in a physically simulated high-altitude fall scenario. By triggering a visceral fear response in a controlled virtual environment, the application builds genuine safety awareness and risk recognition that standard training cannot achieve.<br><br><b>Scope:</b> End-to-end delivery as an independent engineer: requirement analysis, VR physics simulation design, height and fall scenario construction, Unity implementation, testing, and delivery support.",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-fall-safety.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
-                    tech: ["Unity", "Physics", "VR"]
-                },
-                {
-                    title: "AI Agent Playbook",
-                    industry: "Open Source · Developer Tools",
-                    role: "Author / Independent",
-                    whatIBuilt: "A practical, open-source methodology for AI-agent collaboration, distilled from two years of production use in a large-scale payment project — covering task decomposition, context design, constraint systems, quality gates, and designing workflows as products.<br><br>The methodology is validated in code by an internal agent-collaboration framework I designed and built (SwiftUI + CLI, with JSON-based state machines and atomic rollback). The playbook itself is published on GitHub under MIT.",
-                    imgSrc: "/VS-Style-Portfolio/img/10.svg",
-                    github: "https://github.com/heisyoudan/ai-agent-playbook",
-                    tech: ["Swift", "SwiftUI", "AI Agents", "Workflow Design"]
+                    tech: ["Unity", "VR", "Physics Simulation", "Safety Training"]
                 }
             ]
         },
@@ -220,51 +239,21 @@ export const translations = {
                     desc: "Moved to Japan and studied Japanese, improving language and cultural understanding. Achieved JLPT N2."
                 },
                 {
-                    date: "Jul 2023",
+                    date: "Jul 2023 – Present",
                     company: "NetWisdom Inc.",
-                    desc: "Web development using Spring MVC / Spring Boot."
+                    desc: "Enterprise backend and full-stack engineer at a Japan-based software company. Work spans Java / Spring Boot web development, enterprise payment platform modernization (gRPC, AWS, DynamoDB), backend and BFF implementation, technical investigation, code review, and validation of AI-assisted development tooling."
                 }
             ]
         },
         skills: {
             title: "Technical Skills",
-            items: [
-                {
-                    name: "AI-Assisted Development (Codex / Copilot / Antigravity / Multi-Agent Workflow)",
-                    level: 95
-                },
-                {
-                    name: "macOS Product Development (SwiftUI / AppKit / Menu Bar Apps)",
-                    level: 85
-                },
-                {
-                    name: "Unity VR/AR Development (XR Interaction / AR Foundation / SteamVR)",
-                    level: 95
-                },
-                {
-                    name: "Java / Spring Boot (Backend / Microservices)",
-                    level: 90
-                },
-                {
-                    name: "C# (Unity / .NET)",
-                    level: 90
-                },
-                {
-                    name: "Cloud Native / AWS (DynamoDB / S3 / Serverless)",
-                    level: 80
-                },
-                {
-                    name: "gRPC / Protocol Buffers (IDL / High Performance)",
-                    level: 80
-                },
-                {
-                    name: "PostgreSQL / SQL (RDB / Data Modeling)",
-                    level: 80
-                },
-                {
-                    name: "React / TypeScript (Frontend)",
-                    level: 65
-                }
+            groups: [
+                { name: "Backend & Enterprise", items: ["Java", "Spring Boot", "REST APIs", "gRPC", "PostgreSQL", "SQL"] },
+                { name: "Frontend & Full-Stack", items: ["React", "TypeScript", "JavaScript"] },
+                { name: "Cloud & Infrastructure", items: ["AWS", "Azure", "DynamoDB", "MySQL"] },
+                { name: "Native & Product Engineering", items: ["Swift", "SwiftUI", "macOS", "StoreKit 2", "App Sandbox"] },
+                { name: "XR & Real-Time", items: ["Unity", "C#", "VR", "AR", "HoloLens", "Digital Twin"] },
+                { name: "AI-Native Development", items: ["GitHub Copilot", "Codex", "Multi-Agent Workflow", "Context Engineering", "Agent-assisted QA", "Human-in-the-loop Validation"] }
             ]
         }
     },
@@ -289,8 +278,9 @@ export const translations = {
             name: "Heisyoudan と申します。",
             codeName: "Heisyoudan",
             role: "Software Engineer & Indie Developer",
-            subtitle: "Backend · macOS · XR · AI-Assisted Development",
-            description: "バックエンドシステム、ネイティブ macOS アプリ、没入型 XR 体験にわたり、本番運用されるソフトウェアを開発しています。エンタープライズ決済基盤、個人開発でリリースした Mac アプリ、産業向け VR/AR ソリューションを手がけてきました。",
+            subtitle: "Backend · Full-Stack · Product Engineering · AI-Native Development",
+            description: "エンタープライズシステム、独立製品、国際クライアントプロジェクトにわたり、本番運用されるソフトウェアを開発しています。AI 支援エンジニアリングを開発ワークフローに組み込んで実践しています。",
+            signals: ["エンタープライズ開発", "独立製品開発", "国際クライアント納品"],
             viewWork: "プロジェクトを見る",
             viewPlaybook: "AI Playbook を見る",
             contact: "自己紹介"
@@ -310,8 +300,8 @@ export const translations = {
                 <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// background</div>
                 <p>これまでに数年にわたり、安全訓練、デジタルツイン、ハードウェア連携、HoloLens を活用した点検ツールなど、産業向け Unity VR/AR システムの開発に携わってきました。</p>
 
-                <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// openSource</div>
-                <p>また、オープンソースプロジェクトを通じて、AI 支援開発やマルチエージェントのエンジニアリングワークフローも探求しています。</p>
+                <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// aiNativeDev</div>
+                <p>AI 支援開発とマルチエージェントワークフローは、エンタープライズ開発・独立製品・国際クライアント納品・ワークフロー研究にわたる実際のエンジニアリング実践の一部です。アーキテクチャ設計、要件定義、受入基準、最終納品は人間が管理します。AI エージェントは構造化されたタスク契約、品質ゲート、明示的なレビューのもとで動作します。</p>
 
                 <p>明確な要件、確実な実装、そして非同期の文書ベースのコミュニケーションを大切にしています。</p>
             `,
@@ -329,94 +319,112 @@ export const translations = {
             proprietary: "社内専用プロジェクト",
             items: [
                 {
+                    title: "国際 EdTech プラットフォーム モダナイゼーション",
+                    industry: "領域：EdTech · 国際フリーランス",
+                    role: "Independent Full-Stack Developer（独立フルスタック開発者）",
+                    whatIBuilt: "国際クライアントの稼働中 EdTech プラットフォームを引き継ぎ、開発を継続。Unity / C# / バックエンド / Azure / MySQL にまたがる既存システムのアーキテクチャ調査・クラウドおよびデータベース環境確認・信頼できる技術ベースラインの確立を経て、カリキュラムおよびローカライゼーションアーキテクチャの改善開発を推進しました。<br><br><b>担当範囲：</b>コードベース調査、Unity・バックエンドアーキテクチャ分析、Azure 環境確認、DB スキーマ分析、実装、テスト、技術ドキュメント整備、時差をまたぐ非同期の国際クライアントコミュニケーション。<br><br><b>AI-assisted development：</b>コードベース調査・実装支援・QA・技術ドキュメント作成に AI Coding Agents をロール分離ワークフローで適用。要件定義・受け入れ基準・最終判断は人間が管理。",
+                    imgSrc: "/VS-Style-Portfolio/img/edtech.png",
+                    tech: ["Unity", "C#", "Azure", "MySQL", "ローカライゼーション", "Full-Stack"],
+                    privateLabel: "国際商業案件 · Upwork 契約"
+                },
+                {
+                    title: "大手企業向け決済基盤モダナイゼーション",
+                    industry: "領域：金融 · 決済システム",
+                    role: "Backend Engineer（バックエンドエンジニア）",
+                    whatIBuilt: "大規模エンタープライズ決済インフラのモダナイゼーションプロジェクトに参画し、設計から実装・単体テスト・結合テストまでの完整なソフトウェア開発ライフサイクルを担当しました。技術先行メンバーとして gRPC および AWS DynamoDB の実現性検証と先行開発を担い、技術実装レポートと開発ガイドを作成して後続チームの開発基盤を整備しました。<br><br><b>担当範囲：</b>設計書作成、Java / Spring Boot バックエンド実装、単体・結合テスト、技術調査、PoC、コードレビュー、技術ドキュメント作成、新技術導入検証。<br><br><b>長期 Agent Engineering 実践：</b>Coding Agents が実用段階に入って以降、大規模エンタープライズ開発環境において1年以上にわたり高強度で実践継続。AI-assisted development から高度な Agent-driven な開発フローへの段階的な進化を経験しました。Coding Agents は要件理解・設計・実装・テスト・レビュー・技術ドキュメントなどの工程に深く関与しており、Task Decomposition、Context Management、Multi-Agent コラボレーション、検証、品質管理、Human-in-the-loop の実践知見を積み上げました。",
+                    imgSrc: "/VS-Style-Portfolio/img/enterprise-payment.png",
+                    tech: ["Java", "Spring Boot", "gRPC", "AWS", "DynamoDB", "AI-Assisted Dev"],
+                    proprietary: true
+                },
+                {
                     title: "Vortex（macOS メニューバー ダウンロード整理ツール）",
-                    industry: "業種：macOS アプリ",
-                    role: "Solo Developer（個人開発）",
-                    whatIBuilt: "macOS のメニューバーから Downloads フォルダを整理できるファイルオーガナイザーです。新しくダウンロードしたファイルをメニューバーですぐに確認でき、種類ごとのフォルダへ自動整理、ファイルの開く・ドラッグ・アーカイブ・削除、履歴タイムラインからの安全な取り消しまでを一通りカバーしています。整理はすべてローカルで完結し、ファイルは ~/Downloads/Vortex 配下に整理されます。<br><br><b>担当範囲:</b> 企画・設計から SwiftUI による機能実装、Mac App Store での公開までを個人で一貫して担当しました。メニューバー常駐アプリの設計、ファイル監視・自動整理、Vortex Pro の課金実装も含みます。",
-                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    industry: "領域：macOS · Productivity",
+                    role: "Solo Product Developer（独立プロダクト開発者）",
+                    whatIBuilt: "macOS ネイティブのファイル整理ユーティリティを設計・開発し、Mac App Store にリリースしました。メニューバーから新着ダウンロードをすぐに確認でき、種類別フォルダへの自動整理・開く / ドラッグ / アーカイブ / 削除などの操作、タイムラインから安全に移動を取り消す機能を提供。整理はすべてローカルで完結し、ファイルは ~/Downloads/Vortex に整理されます。<br><br><b>担当範囲：</b>製品企画・UX 設計・SwiftUI 実装・メニューバーアプリのアーキテクチャ設計・ファイル監視と自動整理・Vortex Pro の StoreKit 2 課金実装まで、製品定義から App Store リリースまでを一貫して担当。",
+                    imgSrc: "/VS-Style-Portfolio/img/vortex-app.jpg",
                     link: "https://apps.apple.com/jp/app/vortex-file-organizer/id6772141575?mt=12",
                     tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "File System APIs"]
                 },
                 {
-                    title: "大手企業向け決済基盤モダナイゼーションプロジェクト",
-                    industry: "業種：金融・決済システム",
-                    role: "Backend Engineer（バックエンドエンジニア）",
-                    whatIBuilt: "大手企業の決済基盤を対象としたモダナイゼーションプロジェクトです。技術先行メンバーとして新技術の導入検証とチームの開発力向上を推進し、後続開発の実装方針整備を支援しました。<br><br><b>担当範囲:</b> gRPC および AWS DynamoDB の実現性検証と先行開発、技術実装レポートや開発ガイドの作成、さらに GitHub Copilot の活用検証と標準化された開発フローの整備を担当しました。",
-                    imgSrc: "/VS-Style-Portfolio/img/7.png",
-                    tech: ["Java", "Spring Boot", "gRPC", "AWS", "DynamoDB"],
-                    proprietary: true
-                },
-                {
                     title: "契約管理・決済代行システム",
-                    industry: "業種：金融・決済システム",
+                    industry: "領域：金融 · 決済システム",
                     role: "Backend Engineer（バックエンドエンジニア）",
-                    whatIBuilt: "大規模な決済代行サービス向けの契約管理システムです。Kickflow のワークフローと連携し、申請、承認、管理までの業務を一貫して支える仕組みを構築しました。<br><br><b>担当範囲:</b> 基本設計から結合テストまで開発工程全体に参画し、BFF、バックエンド、共通 API の設計、PostgreSQL のデータベース設計、AWS 連携、React / TypeScript によるフロントエンド開発、テストおよびコードレビューを担当しました。",
-                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
+                    whatIBuilt: "大規模決済代行サービス向けの契約管理システムを構築し、Kickflow ワークフローと連携して申請・承認・管理の全業務フローを支える仕組みを実現しました。<br><br><b>担当範囲：</b>基本設計・詳細設計から実装・単体テスト・結合テストまでのエンタープライズ開発フロー全体に参画。BFF・バックエンド・共通 API 設計、PostgreSQL データベース設計、AWS 連携、React / TypeScript フロントエンド開発、テスト、コードレビューを担当。",
+                    imgSrc: "/VS-Style-Portfolio/img/enterprise-contract.jpg",
                     tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
                     proprietary: true
                 },
                 {
-                    title: "VR消火訓練体験",
-                    industry: "業種：水力発電",
-                    role: "Unity / XR エンジニア",
-                    whatIBuilt: "水力発電所の従業員向けに開発した VR 消火訓練アプリです。没入感のある空間表現によって、消火訓練の安全性と臨場感を高めました。実際の火を使わずに、火災に近い状況を再現した訓練を効率的に行えるようにしました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
-                    tech: ["Unity", "VR", "Safety"]
+                    title: "Maestro",
+                    industry: "領域：AI Engineering · Developer Tools",
+                    role: "Author / Solo Engineer（設計・開発者）",
+                    whatIBuilt: "Maestro を設計し、長期にわたってメンテナンスを続けています。Maestro は AI Coding Agents をソフトウェア開発に組み込むためのエージェントファーストなワークフローコントローラーです。要件を明確なコンテキスト・責任・受け入れ基準を持つタスクに変換し、Dev / QA / Sage などのロールを通じて開発・独立検証・ロールバック・クローズのサイクルを協調します。<br><br><b>ワークフロー：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。各ロールは隔離されたコンテキストで動作し、共有プロジェクト状態を通じて Task・Artifact・Evidence・ライフサイクル情報を受け渡します。検証失敗時は証拠付きで開発に差し戻し、通過後は状態を進めます。<br><br><b>コアメカニズム：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority、交換可能な AI Worker / Provider Adapter。<br><br>Maestro は長期にわたる実際のプロジェクト使用を通じて進化を続け、個人開発ワークフローの基盤として機能しています。",
+                    imgSrc: "/VS-Style-Portfolio/img/maestro.png",
+                    tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
+                    privateLabel: "Private Repository · Personal Tooling"
                 },
                 {
-                    title: "Omit（macOS向けミニマルシステムモニター）",
-                    industry: "業種：macOS アプリ",
+                    title: "AI Agent Playbook",
+                    industry: "領域：Open Source · AI Engineering",
+                    role: "Author / Independent（執筆・個人開発）",
+                    whatIBuilt: "大規模企業プロジェクト・独立開発・商業クライアント納品を通じて形成した AI Agent ソフトウェアエンジニアリング方法論を継続的に整理し、オープンソースとして公開しています。実際の開発経験を Task Decomposition、Context Isolation、Artifact、Verification、Gate、Contract、Convergence、Human Authority などの再利用可能な工程原則に抽象化しています。<br><br>Coding Agents を検証可能なソフトウェアエンジニアリングフローに統合する方法に焦点を当て、実際のプロジェクト実践を通じて継続的に修正・拡張しています。関連する方法論は Maestro でもツール化・検証されており、Playbook 自体は GitHub にて MIT ライセンスで公開しています。",
+                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.svg",
+                    github: "https://github.com/heisyoudan/ai-agent-playbook",
+                    tech: ["AI Agents", "Agent Workflow", "Context Engineering", "Software Engineering", "Open Source"]
+                },
+                {
+                    title: "Omit（macOS ミニマルシステムモニター）",
+                    industry: "領域：macOS · Open Source",
                     role: "Solo Developer（個人開発）",
-                    whatIBuilt: "SwiftUI で開発した macOS メニューバー向けのシステムモニタリングツールです。CPU、メモリ、ネットワークの状態を、ミニマルなデザインで軽快かつ直感的に確認できる体験を目指しました。<br><br><b>担当範囲:</b> UI / UX 設計、機能実装、アプリ公開までを個人で一貫して担当しました。Swift 未経験の状態から AI を活用して製品化まで進め、Apple らしいミニマルな操作体験を追求しました。",
-                    imgSrc: "/VS-Style-Portfolio/img/8.png",
+                    whatIBuilt: "SwiftUI を用いた macOS メニューバー向けシステムモニターを設計・開発し、CPU・メモリ・ネットワーク状態をミニマルなデザインで軽快かつ直感的に確認できる体験を実現しました。<br><br><b>担当範囲：</b>UI / UX 設計・SwiftUI 実装・オープンソース公開まで一貫して担当。AI-assisted development を活用して実装・製品化・公開までの完整な開発フローを完遂し、Apple らしいミニマルな操作体験を追求しました。",
+                    imgSrc: "/VS-Style-Portfolio/img/omit-monitor.png",
                     github: "https://github.com/heisyoudan/Omit",
                     tech: ["Swift", "SwiftUI", "MenuBarExtra", "macOS"]
                 },
                 {
-                    title: "ARグラス巡視支援アプリ",
-                    industry: "業種：水力発電",
+                    title: "VR 消火訓練体験",
+                    industry: "領域：Industrial XR · 安全訓練",
                     role: "Unity / XR エンジニア",
-                    whatIBuilt: "現場巡視を支援する AR アプリです。作業者は AR グラス上でデジタル化された作業手順を確認でき、現場の映像と音声を遠隔の技術者へリアルタイムに共有できます。遠隔支援側は、注記付きの画像や指示内容を作業者の視界上に表示でき、巡視の効率向上と円滑な連携を実現しました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
+                    whatIBuilt: "水力発電所の従業員向けに VR 消火訓練アプリケーションを開発しました。火災シナリオを没入型 3D 空間で再現することで、実際の火を使わずにリアルな安全訓練を実施でき、訓練品質と安全性を向上させます。<br><br><b>担当範囲：</b>要件分析・提案と設計・技術アーキテクチャ・Unity VR 実装・テスト・受け入れ対応・最終納品まで、独立エンジニアとして一貫して担当。",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-fire-training.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
+                    tech: ["Unity", "C#", "VR", "Safety Training"]
+                },
+                {
+                    title: "AR グラス巡視支援アプリ",
+                    industry: "領域：Industrial AR · 設備点検",
+                    role: "Unity / XR エンジニア",
+                    whatIBuilt: "HoloLens を使用した現場巡視支援 AR アプリを構築しました。作業者は AR グラス上でデジタル化された作業手順を視野内に表示しながら、映像・音声をリアルタイムで遠隔エンジニアと共有。遠隔支援側は注記付き指示を作業者の視野に直接プッシュでき、距離を超えたリアルタイムの遠隔協調を実現しました。<br><br><b>担当範囲：</b>要件分析・HoloLens AR システム設計・Unity 実装・リアルタイム映像 / 音声連携・アノテーションオーバーレイ・テスト・納品支援まで一貫して担当。",
+                    imgSrc: "/VS-Style-Portfolio/img/ar-glasses.jpg",
                     link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
-                    tech: ["Unity", "AR", "HoloLens"]
+                    tech: ["Unity", "HoloLens", "AR", "Remote Collaboration"]
                 },
                 {
-                    title: "鄂州製鋼所デジタルツインプロジェクト",
-                    industry: "業種：製鋼業",
+                    title: "鄂州製鋼所デジタルツインシステム",
+                    industry: "領域：産業可視化 · デジタルツイン",
                     role: "Unity エンジニア",
-                    whatIBuilt: "製鋼所の生産現場をデジタル空間上に再現し、現場で発生するさまざまなデータを連携・集約できるシステムを構築しました。三次元空間による可視化により、現地に行かなくても生産状況を直感的に把握できるようにし、関連データや映像との連携によって、より正確かつ迅速な状況判断を支援しました。<br><br><b>担当範囲:</b> Unity フロントエンドの実装を一貫して担当し、API 連携、3D モデル制御、ユーザーインタラクションの実装を行いました。",
-                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
+                    whatIBuilt: "製鋼所の生産フロアをリアルタイム デジタルツインとして再現し、MQTT フィード・REST API・センサーデータなど複数の現場データソースを 3D 空間上に統合表示するシステムを構築しました。管理者は現地を訪問せずに生産状況を直感的に把握し、より迅速で正確な意思決定が可能になります。<br><br><b>担当範囲：</b>Unity フロントエンド全般 — MQTT / REST API データ連携・リアルタイム 3D モデル状態制御・複数ソースデータバインディング・ユーザーインタラクション設計。",
+                    imgSrc: "/VS-Style-Portfolio/img/xr-digital-twin.jpg",
                     link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
-                    tech: ["Unity", "C#", "MQTT"]
+                    tech: ["Unity", "C#", "MQTT", "Digital Twin", "Real-time Data"]
                 },
                 {
-                    title: "Hi5グローブ対応没入型訓練システム",
-                    industry: "業種：水力発電",
+                    title: "Hi5 グローブ没入型訓練システム",
+                    industry: "領域：Industrial VR · 没入型訓練",
                     role: "Unity / XR エンジニア",
-                    whatIBuilt: "Hi5 VR グローブを活用した没入型訓練システムです。仮想空間内で、繰り返し実技確認が必要な訓練を高い再現度で体験できるようにし、訓練効率と現場作業への習熟度向上を支援しました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
+                    whatIBuilt: "Hi5 VR グローブを使用した没入型訓練システムを開発しました。訓練者は実際の手の動作で仮想オブジェクトを操作し、高い物理的忠実度で実作業手順を体験できるため、訓練効率と現場熟練度が向上します。<br><br><b>担当範囲：</b>要件分析・Hi5 ハードウェア SDK 統合・手インタラクションシステム設計・Unity 実装・テスト・納品支援まで一貫して担当。",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-hi5-gloves.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
-                    tech: ["Unity", "Hi5 Gloves", "Training"]
+                    tech: ["Unity", "Hi5 Gloves", "Hand Interaction", "VR"]
                 },
                 {
-                    title: "高所作業墜落体験",
-                    industry: "業種：水力発電",
+                    title: "高所作業墜落体感システム",
+                    industry: "領域：Industrial VR · 安全体感",
                     role: "Unity / XR エンジニア",
-                    whatIBuilt: "高所作業における安全教育向けの没入型体験アプリです。墜落事故の状況や恐怖感を再現することで、作業者の安全意識を高め、危険認識の向上と事故防止につなげました。<br><br><b>担当範囲:</b> 要件整理、提案・設計、技術構成の検討、実装、テスト、受け入れ対応、納品支援まで一貫して担当しました。立ち上げからリリースまで単独で担当したプロジェクトです。",
-                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
+                    whatIBuilt: "高所での物理シミュレーションによる墜落シナリオを体験させる VR 安全訓練アプリを構築しました。管理された仮想環境で恐怖感を体感させることで、標準的な訓練では難しい真の安全意識とリスク認識の定着を促します。<br><br><b>担当範囲：</b>要件分析・VR 物理シミュレーション設計・高所・墜落シナリオ構築・Unity 実装・テスト・納品支援まで一貫して担当。",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-fall-safety.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
-                    tech: ["Unity", "Physics", "VR"]
-                },
-                {
-                    title: "AI Agent Playbook",
-                    industry: "オープンソース · 開発ツール",
-                    role: "Author / Independent（執筆・個人開発）",
-                    whatIBuilt: "大規模決済プロジェクトでの 2 年間の実運用から抽出した、AI エージェント協業の実践方法論をオープンソースとして公開（MIT）。タスク分解、コンテキスト設計、制約の体系化、品質ゲート、ワークフローを製品として設計する方法を扱います。<br><br>本方法論は、私が設計・実装した社内のエージェント協業フレームワーク（SwiftUI + CLI、JSON ベースの状態機械とアトミックロールバックを搭載）でコードレベルに検証されています。",
-                    imgSrc: "/VS-Style-Portfolio/img/10.svg",
-                    github: "https://github.com/heisyoudan/ai-agent-playbook",
-                    tech: ["Swift", "SwiftUI", "AI Agents", "ワークフロー設計"]
+                    tech: ["Unity", "VR", "Physics Simulation", "Safety Training"]
                 }
             ]
         },
@@ -444,51 +452,21 @@ export const translations = {
                     desc: "来日後、日本語学校で学習を進め、文化理解と語学力を向上。JLPT N2 を取得。"
                 },
                 {
-                    date: "2023年7月",
+                    date: "2023年7月 – 現在",
                     company: "NetWisdom株式会社",
-                    desc: "Spring MVC / Spring Boot などを用いた Web 開発に従事。"
+                    desc: "日本のソフトウェア会社にてエンタープライズバックエンド・フルスタックエンジニアとして従事。Java / Spring Boot を用いた Web 開発から、決済基盤のモダナイゼーション（gRPC / AWS / DynamoDB）、バックエンド・BFF の実装、技術調査、コードレビュー、AI 支援開発ツールの検証・推進まで担当。"
                 }
             ]
         },
         skills: {
             title: "Skills",
-            items: [
-                {
-                    name: "AI-Assisted Development (Codex / Copilot / Antigravity / Multi-Agent Workflow)",
-                    level: 95
-                },
-                {
-                    name: "macOS Product Development (SwiftUI / AppKit / Menu Bar Apps)",
-                    level: 85
-                },
-                {
-                    name: "Unity VR/AR Development (XR Interaction / AR Foundation / SteamVR)",
-                    level: 95
-                },
-                {
-                    name: "Java / Spring Boot (Backend / Microservices)",
-                    level: 90
-                },
-                {
-                    name: "C# (Unity / .NET)",
-                    level: 90
-                },
-                {
-                    name: "Cloud Native / AWS (DynamoDB / S3 / Serverless)",
-                    level: 80
-                },
-                {
-                    name: "gRPC / Protocol Buffers (IDL / High Performance)",
-                    level: 80
-                },
-                {
-                    name: "PostgreSQL / SQL (RDB / Data Modeling)",
-                    level: 80
-                },
-                {
-                    name: "React / TypeScript (Frontend)",
-                    level: 65
-                }
+            groups: [
+                { name: "バックエンド & エンタープライズ", items: ["Java", "Spring Boot", "REST APIs", "gRPC", "PostgreSQL", "SQL"] },
+                { name: "フロントエンド & フルスタック", items: ["React", "TypeScript", "JavaScript"] },
+                { name: "クラウド & インフラ", items: ["AWS", "Azure", "DynamoDB", "MySQL"] },
+                { name: "ネイティブ & プロダクト開発", items: ["Swift", "SwiftUI", "macOS", "StoreKit 2", "App Sandbox"] },
+                { name: "XR & リアルタイム", items: ["Unity", "C#", "VR", "AR", "HoloLens", "Digital Twin"] },
+                { name: "AI ネイティブ開発", items: ["GitHub Copilot", "Codex", "マルチエージェント ワークフロー", "コンテキスト設計", "エージェント QA", "ヒューマンインザループ検証"] }
             ]
         }
     },
@@ -513,8 +491,9 @@ export const translations = {
             name: "我是何晓丹。",
             codeName: "何晓丹",
             role: "Software Engineer & Indie Developer",
-            subtitle: "Backend · macOS · XR · AI-Assisted Development",
-            description: "我构建可投入生产环境的软件，覆盖后端系统、原生 macOS 应用与沉浸式 XR 体验。工作范围包括企业支付平台、独立上架的 Mac 应用，以及工业 VR/AR 解决方案。",
+            subtitle: "Backend · Full-Stack · Product Engineering · AI-Native Development",
+            description: "在企业系统、独立产品与国际客户项目中构建生产级软件，将 AI 辅助工程作为开发工作流的组成部分融入实际交付。",
+            signals: ["企业级工程", "独立产品开发", "国际客户交付"],
             viewWork: "查看项目",
             viewPlaybook: "查看 AI Playbook",
             contact: "关于我"
@@ -534,8 +513,8 @@ export const translations = {
                 <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// background</div>
                 <p>职业生涯早期，我花了几年的时间构建工业级 Unity VR/AR 系统，包括安全培训、数字孪生、硬件交互，以及基于 HoloLens 的巡检工具。</p>
 
-                <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// openSource</div>
-                <p>我也通过开源项目探索 AI 辅助软件开发与多智能体工程工作流。</p>
+                <div style="color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; margin: 25px 0 15px 0;">// aiNativeDev</div>
+                <p>AI 辅助开发与多智能体工程工作流已是我工程实践的重要组成部分——应用于企业后端开发、独立产品交付、国际客户项目以及工作流研究。架构决策、需求定义、验收标准与最终交付由人控制。AI 智能体在结构化任务契约、质量门禁与明确评审下运作。</p>
 
                 <p>我重视清晰的需求、可靠的实现，以及异步的文字沟通。</p>
             `,
@@ -553,96 +532,114 @@ export const translations = {
             proprietary: "企业专有项目",
             items: [
                 {
+                    title: "国际 EdTech 平台现代化",
+                    industry: "领域：EdTech · 国际自由职业",
+                    role: "独立全栈开发者（Independent Full-Stack Developer）",
+                    whatIBuilt: "接手并持续开发国际客户的生产 EdTech 平台。承接横跨 Unity / C# / 后端服务 / Azure / MySQL 的既有系统，完成架构调研、云和数据库环境核查、建立可靠的技术基线，并推进课程及本地化架构的改进开发。<br><br><b>担当范围：</b>代码库调研、Unity 与后端架构分析、Azure 环境核查、数据库 Schema 分析、开发实现、测试及技术文档整理、跨时区异步国际客户沟通。<br><br><b>AI 辅助开发：</b>将 AI Coding Agents 应用于代码库调研、实现支持、QA 与技术文档，并通过角色分离的工作流进行协作；需求定义、验收标准与最终判断由人工控制。",
+                    imgSrc: "/VS-Style-Portfolio/img/edtech.png",
+                    tech: ["Unity", "C#", "Azure", "MySQL", "本地化", "Full-Stack"],
+                    privateLabel: "国际商业项目 · Upwork 合同验证"
+                },
+                {
+                    title: "大型企业支付平台现代化重构",
+                    industry: "领域：金融 · 支付系统",
+                    role: "后端工程师（Backend Engineer）",
+                    whatIBuilt: "参与大型企业支付基础设施现代化项目，覆盖设计、实现、单体测试到结合测试等完整软件开发流程。同时作为技术先行成员，负责 gRPC、AWS DynamoDB 等新技术的可行性验证与先行开发，并将验证成果沉淀为技术实现报告和开发指南，为后续团队开发提供基础。<br><br><b>担当范围：</b>设计书编写、Java / Spring Boot 后端实现、单体与结合测试、技术调查、PoC、代码 Review、技术文档，以及新技术导入验证。<br><br><b>长期 Agent Engineering 实践：</b>自 Coding Agents 进入早期实用阶段起，在大型企业开发环境中持续一年以上进行高强度实践，亲历项目从 AI-assisted development 逐步演进为高度 Agent-driven 的开发流程。Coding Agents 已深度参与需求理解、设计、实现、测试、Review 与技术文档等完整工程环节。在这一过程中，积累了复杂工程中的任务拆分、上下文管理、多 Agent 协作、验证、质量控制与 Human-in-the-loop 等实践经验。",
+                    imgSrc: "/VS-Style-Portfolio/img/enterprise-payment.png",
+                    tech: ["Java", "Spring Boot", "gRPC", "AWS", "DynamoDB", "AI-Assisted Dev"],
+                    proprietary: true
+                },
+                {
                     title: "Vortex（macOS 菜单栏下载整理工具）",
-                    industry: "行业：macOS 应用",
-                    role: "独立开发者（Solo Developer）",
-                    whatIBuilt: "从 macOS 菜单栏掌控下载文件夹的文件整理工具，帮你告别下载杂乱。可在菜单栏即时查看新下载的文件，按类型自动整理到清晰文件夹，支持打开、拖拽、归档、删除等快捷操作，并通过清晰的时间线安全撤销最近的移动。所有整理均在本地完成，文件默认整理到 ~/Downloads/Vortex。<br><br><b>担当范围:</b> 从需求策划、SwiftUI 功能开发到 Mac App Store 上架发布全程独立负责，涵盖菜单栏常驻应用设计、文件监控与自动整理、Vortex Pro 内购等功能实现。",
-                    imgSrc: "/VS-Style-Portfolio/img/9.jpg",
+                    industry: "领域：macOS · Productivity",
+                    role: "独立产品开发者（Solo Product Developer）",
+                    whatIBuilt: "设计、开发并上架了一款 macOS 原生文件整理工具至 Mac App Store。从菜单栏即时查看新下载的文件，按类型自动整理到清晰文件夹，支持打开、拖拽、归档、删除等快捷操作，并通过时间线安全撤销最近的移动。所有整理均在本地完成，文件默认整理到 ~/Downloads/Vortex。<br><br><b>担当范围：</b>产品规划、UX 设计、SwiftUI 实现、菜单栏应用架构设计、文件监控与自动整理、Vortex Pro StoreKit 2 内购实现，从产品定义到 App Store 发布全程独立负责。",
+                    imgSrc: "/VS-Style-Portfolio/img/vortex-app.jpg",
                     link: "https://apps.apple.com/us/app/vortex-file-organizer/id6772141575?mt=12",
                     tech: ["Swift", "SwiftUI", "StoreKit 2", "App Sandbox", "文件系统 API"]
                 },
                 {
-                    title: "大型企业支付平台现代化重构",
-                    industry: "行业：金融·支付系统",
-                    role: "后端工程师（Backend Engineer）",
-                    whatIBuilt: "面向大型企业支付基础设施的现代化重构项目。作为技术先行成员，推动新技术导入验证与团队开发能力提升，为后续实现方案奠定基础。<br><br><b>担当范围:</b> 负责 gRPC 与 AWS DynamoDB 的可行性验证及先行开发、技术实现报告与开发指南的编写，以及 GitHub Copilot 的应用验证与标准化开发流程的整理。",
-                    imgSrc: "/VS-Style-Portfolio/img/7.png",
-                    tech: ["Java", "Spring Boot", "gRPC", "AWS", "DynamoDB"],
-                    proprietary: true
-                },
-                {
                     title: "契约管理·代收付系统",
-                    industry: "行业：金融·支付系统",
+                    industry: "领域：金融 · 支付系统",
                     role: "后端工程师（Backend Engineer）",
-                    whatIBuilt: "面向大规模代收付服务的契约管理系统，与 Kickflow 工作流联动，构建了从申请、审批到管理的全流程业务支撑体系。<br><br><b>担当范围:</b> 参与了从基本设计到集成测试的完整开发流程，负责 BFF、后端、共通 API 的设计、PostgreSQL 数据库设计、AWS 集成、React / TypeScript 前端开发、测试及代码评审。",
-                    imgSrc: "/VS-Style-Portfolio/img/6.jpg",
+                    whatIBuilt: "面向大规模代收付服务构建契约管理系统，与 Kickflow 工作流联动，实现从申请、审批到管理的全流程业务支撑体系。<br><br><b>担当范围：</b>参与从基本设计、详细设计、实现、单体测试到结合测试的完整企业开发流程，负责 BFF、后端、共通 API 设计、PostgreSQL 数据库设计、AWS 集成、React / TypeScript 前端开发、测试及代码 Review。",
+                    imgSrc: "/VS-Style-Portfolio/img/enterprise-contract.jpg",
                     tech: ["Java", "Spring Boot", "PostgreSQL", "React", "TypeScript", "AWS"],
                     proprietary: true
                 },
                 {
-                    title: "VR 消防训练体验",
-                    industry: "行业：水力发电",
-                    role: "Unity / XR 工程师",
-                    whatIBuilt: "面向水电站员工开发的 VR 灭火训练应用。通过沉浸式空间表现提升灭火训练的安全性与临场感，将训练内容在 VR 中还原，无需动用真火即可在接近火灾的环境下高效开展训练。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/2.jpg",
-                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
-                    tech: ["Unity", "VR", "Safety"]
+                    title: "Maestro",
+                    industry: "领域：AI Engineering · Developer Tools",
+                    role: "作者 · 独立工程师",
+                    whatIBuilt: "设计并长期维护 Maestro，一个用于组织 AI Coding Agents 参与软件开发的 Agent-first Workflow Controller。它将需求转化为具有明确上下文、职责和验收标准的任务，并协调 Dev、QA、Sage 等角色完成开发、独立验证、回退与关闭。<br><br><b>工作流程：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。不同角色在隔离上下文中工作，通过共享项目状态传递 Task、Artifact、Evidence 与生命周期信息；验证失败时携带证据回退开发，通过后继续推进状态。<br><br><b>核心机制：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority，以及可替换的 AI Worker / Provider Adapter。<br><br>Maestro 经过长期实际项目使用和持续演进，目前作为个人开发工作流基础设施使用。",
+                    imgSrc: "/VS-Style-Portfolio/img/maestro.png",
+                    tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
+                    privateLabel: "私有仓库 · 个人工具"
+                },
+                {
+                    title: "AI Agent Playbook",
+                    industry: "领域：Open Source · AI Engineering",
+                    role: "作者 · 独立开发",
+                    whatIBuilt: "持续整理并开源自己在大型企业项目、独立开发和商业交付中形成的 AI Agent 软件工程方法论，将真实开发经验抽象为 Task Decomposition、Context Isolation、Artifact、Verification、Gate、Contract、Convergence 与 Human Authority 等可复用工程原则。<br><br>Playbook 关注如何将 Coding Agents 纳入可验证的软件工程流程，并持续通过真实项目实践进行修正和扩展。相关方法同时在 Maestro 中进行工具化验证，Playbook 本身已在 GitHub 开源。",
+                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.svg",
+                    github: "https://github.com/heisyoudan/ai-agent-playbook",
+                    tech: ["AI Agents", "Agent Workflow", "Context Engineering", "Software Engineering", "Open Source"]
                 },
                 {
                     title: "Omit（macOS 极简系统监控）",
-                    industry: "行业：macOS 应用",
+                    industry: "领域：macOS · Open Source",
                     role: "独立开发者（Solo Developer）",
-                    whatIBuilt: "基于 SwiftUI 开发的 macOS 菜单栏系统监控工具，以极简设计实现对 CPU、内存、网络状态的轻量、直观监控体验。<br><br><b>担当范围:</b> 从 UI / UX 设计、功能开发到应用上架全程独立完成。在 Swift 零基础的情况下借助 AI 完成了产品化，打磨出符合 Apple 原生设计语言的极简操作体验。",
-                    imgSrc: "/VS-Style-Portfolio/img/8.png",
+                    whatIBuilt: "设计并发布了一款基于 SwiftUI 的 macOS 菜单栏系统监控工具，以极简设计实现对 CPU、内存、网络状态的轻量直观监控体验。<br><br><b>担当范围：</b>UI / UX 设计、SwiftUI 实现、开源发布全程独立完成。结合 AI-assisted development 完成从实现、产品化到开源发布的完整开发流程，保持符合 Apple 原生设计语言的极简体验。",
+                    imgSrc: "/VS-Style-Portfolio/img/omit-monitor.png",
                     github: "https://github.com/heisyoudan/Omit",
                     tech: ["Swift", "SwiftUI", "MenuBarExtra", "macOS"]
                 },
                 {
-                    title: "AR 眼镜巡检支援应用",
-                    industry: "行业：水力发电",
+                    title: "VR 消防训练体验",
+                    industry: "领域：工业 XR · 安全训练",
                     role: "Unity / XR 工程师",
-                    whatIBuilt: "支持现场巡检的 AR 应用。作业者可通过 AR 眼镜查看数字化作业指引，并将现场画面与音频实时共享给远端技术人员；远程支援方可将带有标注的图片或指令推送到作业者的视野中，提升巡检效率与协作质量。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/5.jpg",
-                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
-                    tech: ["Unity", "AR", "HoloLens"]
+                    whatIBuilt: "为水电站员工开发 VR 消防训练应用。通过在沉浸式 3D 空间中还原火灾场景，使受训者无需真实火源即可进行高还原度安全训练，显著提升训练质量与安全性。<br><br><b>担当范围：</b>作为独立工程师全程负责：需求分析、方案与系统设计、技术架构、Unity VR 实现、测试、验收支持及最终交付。",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-fire-training.jpg",
+                    link: "https://1drv.ms/u/s!ApmvHuIZS7NH73pCdtLAFPWxUCmN?e=Aa43ua",
+                    tech: ["Unity", "C#", "VR", "Safety Training"]
                 },
                 {
-                    title: "鄂州钢厂数字孪生项目",
-                    industry: "行业：炼钢业",
+                    title: "AR 眼镜巡检支援应用",
+                    industry: "领域：工业 AR · 设备巡检",
+                    role: "Unity / XR 工程师",
+                    whatIBuilt: "构建了基于 HoloLens 的现场巡检支援 AR 应用。作业者在视野中查看数字化作业指引，同时将现场画面与音频实时共享给远端技术人员；远程支援方可将带标注的指令直接推送至作业者视野中，实现跨距离的实时远程协作。<br><br><b>担当范围：</b>作为独立工程师全程负责：需求分析、HoloLens AR 系统设计、Unity 实现、实时视频/音频集成、标注覆盖层、测试及交付支持。",
+                    imgSrc: "/VS-Style-Portfolio/img/ar-glasses.jpg",
+                    link: "https://1drv.ms/v/s!ApmvHuIZS7NHgsZYsNjoHyQCTrJHHw?e=Ro6M53",
+                    tech: ["Unity", "HoloLens", "AR", "Remote Collaboration"]
+                },
+                {
+                    title: "鄂州钢厂数字孪生系统",
+                    industry: "领域：工业可视化 · 数字孪生",
                     role: "Unity 工程师",
-                    whatIBuilt: "以数字孪生方式构建钢厂生产现场，将多种现场数据源打通并在系统中集中呈现。通过三维空间可视化，使管理者无需到现场即可直观掌握生产状态，并结合关联数据与视频进行联动，支撑更准确、迅速的多维决策。<br><br><b>担当范围:</b> 全程负责 Unity 前端开发，包括 API 数据对接、3D 模型控制、用户交互功能的实现。",
-                    imgSrc: "/VS-Style-Portfolio/img/1.jpg",
+                    whatIBuilt: "构建了将钢厂生产现场实时数字孪生化的系统，将 MQTT 数据流、REST API、传感器数据等多路现场数据源整合后以 3D 空间呈现。管理者无需到访现场即可直观把握生产状态，支撑更迅速、准确的多维决策。<br><br><b>担当范围：</b>全程负责 Unity 前端开发 —— MQTT / REST API 数据集成、实时 3D 模型状态控制、多源数据绑定、用户交互设计。",
+                    imgSrc: "/VS-Style-Portfolio/img/xr-digital-twin.jpg",
                     link: "https://1drv.ms/f/s!ApmvHuIZS7NH734r2opVDz_NfUgF?e=E8RTCJ",
-                    tech: ["Unity", "C#", "MQTT"]
+                    tech: ["Unity", "C#", "MQTT", "Digital Twin", "实时数据"]
                 },
                 {
                     title: "Hi5 手套沉浸式训练系统",
-                    industry: "行业：水力发电",
+                    industry: "领域：工业 VR · 沉浸式训练",
                     role: "Unity / XR 工程师",
-                    whatIBuilt: "基于 Hi5 VR 手套的沉浸式训练系统。通过在虚拟空间中高还原度地体验需要反复实操确认的训练内容，提升训练效率及现场作业的熟练度。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/4.jpg",
+                    whatIBuilt: "开发了基于 Hi5 VR 手套的沉浸式训练系统，使受训者通过真实手势操作虚拟对象，以高物理还原度体验实际操作流程，提升训练效率与现场熟练度。<br><br><b>担当范围：</b>作为独立工程师全程负责：需求分析、Hi5 硬件 SDK 集成、手部交互系统设计、Unity 实现、测试及交付支持。",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-hi5-gloves.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73i4yWg3Fm1f5V6K?e=03aIN3",
-                    tech: ["Unity", "Hi5 Gloves", "Training"]
+                    tech: ["Unity", "Hi5 Gloves", "手部交互", "VR"]
                 },
                 {
                     title: "高处作业坠落体验",
-                    industry: "行业：水力发电",
+                    industry: "领域：工业 VR · 安全体感",
                     role: "Unity / XR 工程师",
-                    whatIBuilt: "面向高处作业安全教育的沉浸式体验应用。通过再现坠落事故的情境与心理紧张感，提升作业人员安全意识，促进危险认知能力提升和事故预防。<br><br><b>担当范围:</b> 从需求梳理、方案设计、技术选型、开发实现、测试验收到交付支持全程独立负责，是个人从零到成品完成的项目。",
-                    imgSrc: "/VS-Style-Portfolio/img/3.jpg",
+                    whatIBuilt: "构建了通过 VR 物理仿真让作业者亲身体验高处坠落场景的安全训练应用。在可控的虚拟环境中触发真实恐惧感，培养标准培训难以实现的安全意识与风险认知。<br><br><b>担当范围：</b>作为独立工程师全程负责：需求分析、VR 物理仿真设计、高处/坠落场景构建、Unity 实现、测试及交付支持。",
+                    imgSrc: "/VS-Style-Portfolio/img/vr-fall-safety.jpg",
                     link: "https://1drv.ms/u/s!ApmvHuIZS7NH73mxHP_X2rVvKCTX?e=RTW0Dq",
-                    tech: ["Unity", "Physics", "VR"]
-                },
-                {
-                    title: "AI Agent Playbook",
-                    industry: "开源 · 开发工具",
-                    role: "作者 · 独立开发",
-                    whatIBuilt: "开源分享（MIT）在大规模支付项目中两年实战沉淀的 AI 智能体协作方法论，涵盖任务拆解、上下文设计、约束体系、质量门禁，以及把工作流当作产品来设计。<br><br>相关方法论已通过我设计并实现的内部智能体协作框架（SwiftUI + CLI，含 JSON 状态机与原子回滚）完成代码级验证；Playbook 本身已在 GitHub 公开。",
-                    imgSrc: "/VS-Style-Portfolio/img/10.svg",
-                    github: "https://github.com/heisyoudan/ai-agent-playbook",
-                    tech: ["Swift", "SwiftUI", "AI Agents", "工作流设计"]
+                    tech: ["Unity", "VR", "物理仿真", "安全训练"]
                 }
-            ]
+                        ]
         },
         timeline: {
             title: "Timeline",
@@ -668,51 +665,21 @@ export const translations = {
                     desc: "来日后在日语学校学习，提升语言能力与文化理解，并取得 JLPT N2。"
                 },
                 {
-                    date: "2023年7月",
+                    date: "2023年7月 – 至今",
                     company: "NetWisdom株式会社",
-                    desc: "从事基于 Spring MVC / Spring Boot 的 Web 开发。"
+                    desc: "在日本软件公司担任企业级后端/全栈工程师，工作范围涵盖 Java / Spring Boot Web 开发、企业支付平台现代化（gRPC / AWS / DynamoDB）、后端与 BFF 开发、技术调查、代码评审，以及 AI 辅助开发工具的验证与推广。"
                 }
             ]
         },
         skills: {
             title: "Skills",
-            items: [
-                {
-                    name: "AI-Assisted Development (Codex / Copilot / Antigravity / Multi-Agent Workflow)",
-                    level: 95
-                },
-                {
-                    name: "macOS Product Development (SwiftUI / AppKit / Menu Bar Apps)",
-                    level: 85
-                },
-                {
-                    name: "Unity VR/AR Development (XR Interaction / AR Foundation / SteamVR)",
-                    level: 95
-                },
-                {
-                    name: "Java / Spring Boot (Backend / Microservices)",
-                    level: 90
-                },
-                {
-                    name: "C# (Unity / .NET)",
-                    level: 90
-                },
-                {
-                    name: "Cloud Native / AWS (DynamoDB / S3 / Serverless)",
-                    level: 80
-                },
-                {
-                    name: "gRPC / Protocol Buffers (IDL / High Performance)",
-                    level: 80
-                },
-                {
-                    name: "PostgreSQL / SQL (RDB / Data Modeling)",
-                    level: 80
-                },
-                {
-                    name: "React / TypeScript (Frontend)",
-                    level: 65
-                }
+            groups: [
+                { name: "后端 & 企业级", items: ["Java", "Spring Boot", "REST APIs", "gRPC", "PostgreSQL", "SQL"] },
+                { name: "前端 & 全栈", items: ["React", "TypeScript", "JavaScript"] },
+                { name: "云 & 基础设施", items: ["AWS", "Azure", "DynamoDB", "MySQL"] },
+                { name: "原生 & 产品工程", items: ["Swift", "SwiftUI", "macOS", "StoreKit 2", "App Sandbox"] },
+                { name: "XR & 实时渲染", items: ["Unity", "C#", "VR", "AR", "HoloLens", "Digital Twin"] },
+                { name: "AI 原生开发", items: ["GitHub Copilot", "Codex", "多智能体工作流", "上下文工程", "智能体辅助 QA", "人类闭环验证"] }
             ]
         }
     }

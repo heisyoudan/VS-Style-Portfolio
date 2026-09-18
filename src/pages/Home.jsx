@@ -101,6 +101,22 @@ const Home = ({ onNavigate }) => {
                         {t.home.description}
                     </p>
 
+                    {t.home.signals && (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '16px' }}>
+                            {t.home.signals.map(tag => (
+                                <span key={tag} style={{
+                                    fontSize: '11px', padding: '3px 10px',
+                                    borderRadius: '3px',
+                                    border: '1px solid var(--border-color)',
+                                    color: 'var(--text-muted)',
+                                    fontFamily: 'var(--font-mono)',
+                                }}>
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    )}
+
                     <div style={{ marginTop: '20px', marginBottom: '0' }}>
                         <CommentLink
                             text={t.home.viewWork}

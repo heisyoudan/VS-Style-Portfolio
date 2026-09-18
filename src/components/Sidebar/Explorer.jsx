@@ -6,7 +6,8 @@ import { SiTypescript, SiYaml } from 'react-icons/si';
 // 方案A：映射实际文件名 -> 显示名字
 const displayNameMap = {
     'Projects.jsx': 'Projects.json',
-    'Timeline.jsx': 'Timeline.json'
+    'Timeline.jsx': 'Timeline.json',
+    'Skills.jsx': 'Skills.ts'
 };
 
 const FileIcon = ({ displayName }) => {

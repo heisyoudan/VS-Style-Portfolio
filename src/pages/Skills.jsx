@@ -1,115 +1,71 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import RichContentWrapper from '../components/Common/RichContentWrapper';
 import { useLanguage } from '../context/LanguageContext';
 
-const TerminalBar = ({ name, level, color, totalChars }) => {
-    const [displayPerc, setDisplayPerc] = useState(0);
-    const targetPerc = parseInt(level);
-
-    useEffect(() => {
-        let current = 0;
-        const interval = setInterval(() => {
-            if (current < targetPerc) {
-                current += 1;
-                setDisplayPerc(current);
-            } else {
-                clearInterval(interval);
-            }
-        }, 20);
-        return () => clearInterval(interval);
-    }, [targetPerc]);
-
-    // Parse name to separate title and comment
-    // usage: "Java / Spring Boot (Backend / Microservices)" -> ["Java / Spring Boot", "Backend / Microservices"]
-    const match = name.match(/^(.*?)\s*\((.*?)\)$/);
-    const mainTitle = match ? match[1] : name;
-    const comment = match ? match[2] : null;
-
-    const filledChars = Math.floor((displayPerc / 100) * totalChars);
-    const emptyChars = totalChars - filledChars;
-
-    const barString = (
-        <span>
-            <span style={{ color: 'var(--text-muted)' }}>[</span>
-            <span style={{ color: color }}>{'#'.repeat(filledChars)}</span>
-            <span style={{ color: 'var(--border-color)' }}>{'.'.repeat(emptyChars)}</span>
-            <span style={{ color: 'var(--text-muted)' }}>]</span>
-        </span>
-    );
-
-    return (
-        <div style={{ marginBottom: '30px', fontFamily: 'var(--font-mono)' }}>
-            <div style={{ marginBottom: '5px', fontSize: '15px', color: 'var(--text-primary)', fontWeight: '500' }}>
-                {mainTitle}
-            </div>
-            {comment && (
-                <div style={{ marginBottom: '8px', fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic' }}>
-                    // {comment}
-                </div>
-            )}
-            <div style={{ fontSize: '14px', whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
-                {barString} <span style={{ color: color }}>{displayPerc}%</span>
-            </div>
-        </div>
-    );
-};
+// Fixed English camelCase keys — same order as groups
+const PROP_KEYS = [
+    'backendEnterprise',
+    'frontendFullStack',
+    'cloudInfra',
+    'nativeProductEng',
+    'xrRealTime',
+    'aiNativeDev',
+];
 
 const Skills = () => {
     const { t } = useLanguage();
-    const [totalChars, setTotalChars] = useState(40);
-
-    // Dynamic colors for each skill - ensure each one is unique
-    const colors = [
-        "var(--accent-purple)",    // AI-Assisted Development
-        "var(--accent-cyan)",      // macOS Product Development  
-        "var(--accent-green)",     // Unity VR/AR Development
-        "var(--accent-orange)",    // Java / Spring Boot
-        "var(--accent-red)",       // C# / .NET
-        "var(--accent-yellow)",    // Cloud Native / AWS
-        "var(--accent-pink)",      // gRPC / Protocol Buffers
-        "#61AFEF",                 // PostgreSQL / SQL (VS Code blue)
-        "#98C379",                 // React / TypeScript (VS Code green)
-        "#D19A66",                 // Additional color (VS Code orange)
-        "#C678DD",                 // Additional color (VS Code purple)
-        "#56B6C2"                  // Additional color (VS Code teal)
-    ];
-
-    useEffect(() => {
-        const handleResize = () => {
-            setTotalChars(window.innerWidth < 600 ? 20 : 40);
-        };
-        window.addEventListener('resize', handleResize);
-        handleResize();
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
 
     return (
         <RichContentWrapper>
             <h2 style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '10px', marginBottom: '30px' }}>
                 <span style={{ color: 'var(--accent-pink)' }}>#</span> {t.skills.title}
             </h2>
-            <div style={{ maxWidth: '800px' }}>
-                <div style={{ padding: '0', marginTop: '20px' }}>
-                    <div style={{ color: 'var(--accent-green)', marginBottom: '20px', fontSize: '12px' }}>
-                        root@portfolio:~/skills# ./check_proficiency.sh
-                    </div>
 
-                    {t.skills.items.map((s, i) => (
-                        <TerminalBar
-                            key={i}
-                            name={s.name}
-                            level={s.level}
-                            color={colors[i % colors.length]}
-                            totalChars={totalChars}
-                        />
-                    ))}
+            <div style={{ maxWidth: '860px', fontFamily: 'var(--font-mono)', fontSize: '14px', lineHeight: '1.9' }}>
 
-                    <div style={{ color: 'var(--accent-green)', marginTop: '20px', fontSize: '12px', animation: 'blink 1s infinite' }}>
-                        root@portfolio:~/skills# <span style={{ backgroundColor: 'var(--accent-green)', color: '#000' }}>&nbsp;</span>
-                    </div>
-                    <style>
-                        {`@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }`}
-                    </style>
+                <div style={{ color: 'var(--text-muted)', fontSize: '12px', fontStyle: 'italic', marginBottom: '20px' }}>
+                    // skills.ts
+                </div>
+
+                {/* type TechnicalCapabilities = { */}
+                <div style={{ marginBottom: '20px' }}>
+                    <span style={{ color: 'var(--accent-pink)' }}>type </span>
+                    <span style={{ color: 'var(--accent-yellow)' }}>TechnicalCapabilities</span>
+                    <span style={{ color: 'var(--text-muted)' }}> = {'{'}</span>
+                </div>
+
+                {t.skills.groups.map((group, i) => {
+                    const propKey = PROP_KEYS[i] ?? `group${i}`;
+                    return (
+                        <div key={i} style={{ paddingLeft: '28px', marginBottom: '18px' }}>
+                            {/* // group comment */}
+                            <div style={{ color: 'var(--text-muted)', fontStyle: 'italic', fontSize: '13px', marginBottom: '2px' }}>
+                                {'// '}{group.name}
+                            </div>
+
+                            {/* propKey: 'A' | 'B' | 'C'; */}
+                            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', rowGap: '2px' }}>
+                                <span style={{ color: 'var(--accent-cyan)' }}>{propKey}</span>
+                                <span style={{ color: 'var(--text-muted)', margin: '0 6px 0 1px' }}>:</span>
+                                {group.items.map((item, j) => (
+                                    <span key={j} style={{ display: 'inline-flex', alignItems: 'baseline' }}>
+                                        <span style={{ color: 'var(--accent-green)' }}>&#39;{item}&#39;</span>
+                                        {j < group.items.length - 1
+                                            ? <span style={{ color: 'var(--text-muted)', margin: '0 5px' }}>|</span>
+                                            : <span style={{ color: 'var(--text-muted)' }}>;</span>
+                                        }
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    );
+                })}
+
+                {/* }; */}
+                <div style={{ color: 'var(--text-muted)', marginTop: '4px' }}>{'};'}</div>
+
+                <div style={{ marginTop: '28px', fontSize: '12px', color: 'var(--text-muted)', opacity: 0.45 }}>
+                    TypeScript &nbsp;·&nbsp; UTF-8 &nbsp;·&nbsp; Ln {t.skills.groups.length * 3 + 3}, Col 1
                 </div>
             </div>
         </RichContentWrapper>

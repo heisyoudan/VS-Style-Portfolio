@@ -2,7 +2,11 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="100" style="margin-bottom: 10px;">
 </p>
 
-<h1 align="center">VS-Style-Portfolio</h1>
+<h1 align="center">He Xiaodan — Software Engineering Portfolio</h1>
+
+<p align="center">
+  <strong>Software Engineer · Full-Stack · Product Engineering · AI-Native Development</strong>
+</p>
 
 <p align="center">
   <a href="https://heisyoudan.github.io/VS-Style-Portfolio/">
@@ -28,18 +32,15 @@
 <h2 align="center" id="-english">✦ English</h2>
 
 <p align="center">
-  <strong>More than a portfolio. It's an IDE experience.</strong><br>
-  A developer-centric personal website inspired by Visual Studio Code.
+  A software engineer with broad production engineering experience across enterprise backend, native macOS development, and industrial XR systems — with AI-native development integrated into real software delivery.<br><br>
+  This portfolio is built as an interactive VS Code-inspired interface using <strong>React</strong> and <strong>Vite</strong>.
 </p>
-
-### Overview
-This project transforms the traditional boring resume into an interactive IDE interface. Built with **React** and **Vite**, it mimics the VS Code layout to showcase my projects, skills, and professional journey in a way that developers understand best.
 
 ### Key Features
 * **💻 Immersive UI**: Fully functional sidebar, tabs, and status bar mimicking VS Code.
 * **⚡️ Blazing Fast**: Powered by React + Vite for instant page loads.
 * **📱 Responsive**: Optimized for both desktop (IDE view) and mobile devices.
-* **🎨 Customizable**: Easy to extend pages and modify configurations.
+* **🌐 Multilingual**: English · Japanese · Chinese with browser language detection.
 
 ### Installation & Run
 
