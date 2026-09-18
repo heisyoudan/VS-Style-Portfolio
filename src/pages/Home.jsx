@@ -4,138 +4,172 @@ import { useLanguage } from '../context/LanguageContext';
 import CommentLink from '../components/Common/CommentLink';
 import CodeTypewriter from '../components/Common/CodeTypewriter';
 
+const KEY = 'var(--accent-cyan)';
+const STR = 'var(--accent-green)';
+const PUNCT = 'var(--text-muted)';
+
 const Home = ({ onNavigate }) => {
     const { t } = useLanguage();
 
-    // Data for typewriter effect
-    const infoCode = [
+    // Code values stay in English — they read as technical identifiers, not UI copy.
+    const str = (value) => ({ text: value, color: STR });
+
+    const profileCode = [
         [
             { text: 'const', color: 'var(--accent-pink)' },
-            { text: ' ', color: 'var(--text-primary)' },
-            { text: 'info', color: 'var(--accent-yellow)' },
-            { text: ' = ', color: 'var(--text-primary)' },
-            { text: '{', color: 'var(--text-primary)' }
+            { text: ' ', color: PUNCT },
+            { text: 'profile', color: 'var(--accent-yellow)' },
+            { text: ' = ', color: PUNCT },
+            { text: '{', color: PUNCT }
         ],
         [
-            { text: '    Name: ', color: 'var(--text-primary)' },
-            { text: `"${t.home.codeName}"`, color: 'var(--accent-green)' },
-            { text: ',', color: 'var(--text-primary)' }
+            { text: '  name: ', color: KEY },
+            { text: `"${t.home.codeName}"`, color: STR },
+            { text: ',', color: PUNCT }
         ],
         [
-            { text: '    Base: ', color: 'var(--text-primary)' },
-            { text: '"Tokyo, Japan"', color: 'var(--accent-green)' },
-            { text: ',', color: 'var(--text-primary)' }
+            { text: '  base: ', color: KEY },
+            { text: '"Tokyo, Japan"', color: STR },
+            { text: ',', color: PUNCT }
+        ],
+        [],
+        [
+            { text: '  work: ', color: KEY },
+            { text: '[', color: PUNCT }
         ],
         [
-            { text: '    Focus: ', color: 'var(--text-primary)' },
-            { text: '[', color: 'var(--text-primary)' },
-            { text: '"Backend"', color: 'var(--accent-green)' },
-            { text: ', ', color: 'var(--text-primary)' },
-            { text: '"macOS"', color: 'var(--accent-green)' },
-            { text: ', ', color: 'var(--text-primary)' },
-            { text: '"XR"', color: 'var(--accent-green)' },
-            { text: ', ', color: 'var(--text-primary)' },
-            { text: '"AI-Assisted Dev"', color: 'var(--accent-green)' },
-            { text: ']', color: 'var(--text-primary)' },
-            { text: ',', color: 'var(--text-primary)' }
+            { text: '    ', color: PUNCT },
+            str('"Enterprise Systems"'),
+            { text: ',', color: PUNCT }
         ],
         [
-            { text: '    GitHub: ', color: 'var(--text-primary)' },
-            { text: '"https://github.com/heisyoudan"', color: 'var(--accent-green)', link: 'https://github.com/heisyoudan' },
-            { text: ',', color: 'var(--text-primary)' }
+            { text: '    ', color: PUNCT },
+            str('"Indie Products"'),
+            { text: ',', color: PUNCT }
         ],
         [
-            { text: '};', color: 'var(--text-primary)' }
+            { text: '    ', color: PUNCT },
+            str('"International Clients"')
+        ],
+        [
+            { text: '  ],', color: PUNCT }
+        ],
+        [],
+        [
+            { text: '  focus: ', color: KEY },
+            { text: '[', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"Backend"'),
+            { text: ',', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"Full Stack"'),
+            { text: ',', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"macOS"'),
+            { text: ',', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"AI Native Development"')
+        ],
+        [
+            { text: '  ],', color: PUNCT }
+        ],
+        [],
+        [
+            { text: '  building: ', color: KEY },
+            { text: '[', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"Vortex"'),
+            { text: ',', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"Omit"'),
+            { text: ',', color: PUNCT }
+        ],
+        [
+            { text: '    ', color: PUNCT },
+            str('"Maestro"')
+        ],
+        [
+            { text: '  ],', color: PUNCT }
+        ],
+        [],
+        [
+            { text: '  github: ', color: KEY },
+            { text: '"github.com/heisyoudan"', color: STR, link: 'https://github.com/heisyoudan' }
+        ],
+        [
+            { text: '};', color: PUNCT }
         ]
     ];
 
     return (
         <RichContentWrapper>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', paddingTop: '60px' }}>
-                <div>
-                    <h2 style={{
-                        margin: 0,
-                        fontSize: '28px',
-                        color: 'var(--text-primary)',
-                        fontWeight: '600'
-                    }}>
-                        {t.home.intro}
-                    </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', paddingTop: '60px', maxWidth: '760px' }}>
+                <h1 style={{
+                    fontSize: '56px',
+                    margin: '0 0 20px 0',
+                    fontWeight: '800',
+                    color: 'var(--accent-pink)',
+                    lineHeight: '1.2'
+                }}>
+                    {t.home.name}
+                </h1>
 
-                    <h1 style={{
-                        fontSize: '64px',
-                        margin: '10px 0',
-                        fontWeight: '800',
-                        color: 'var(--accent-pink)',
-                        lineHeight: '1.2'
-                    }}>
-                        {t.home.name}
-                    </h1>
+                <h2 style={{
+                    fontSize: '26px',
+                    color: 'var(--text-primary)',
+                    fontWeight: '600',
+                    margin: '0 0 10px 0',
+                    lineHeight: '1.4'
+                }}>
+                    {t.home.role}
+                </h2>
 
-                    <h2 style={{
-                        marginTop: '10px',
-                        fontSize: '24px',
-                        color: 'var(--text-secondary)',
-                        fontWeight: '500'
-                    }}>
-                        {t.home.role}
-                    </h2>
+                <h3 style={{
+                    marginTop: '4px',
+                    marginBottom: '0',
+                    fontSize: '15px',
+                    color: 'var(--accent-cyan)',
+                    fontWeight: '500',
+                    lineHeight: '1.6'
+                }}>
+                    {t.home.subtitle}
+                </h3>
 
-                    <h3 style={{
-                        marginTop: '8px',
-                        fontSize: '15px',
-                        color: 'var(--accent-cyan)',
-                        fontWeight: '500'
-                    }}>
-                        {t.home.subtitle}
-                    </h3>
+                <p style={{
+                    marginTop: '20px',
+                    marginBottom: '0',
+                    fontSize: '15px',
+                    lineHeight: '1.8',
+                    color: 'var(--text-muted)'
+                }}>
+                    {t.home.description}
+                </p>
 
-                    <p style={{
-                        marginTop: '16px',
-                        marginBottom: '0',
-                        maxWidth: '680px',
-                        fontSize: '15px',
-                        lineHeight: '1.7',
-                        color: 'var(--text-muted)'
-                    }}>
-                        {t.home.description}
-                    </p>
+                <div style={{ marginTop: '24px' }}>
+                    <CommentLink
+                        text={t.home.viewWork}
+                        onClick={() => onNavigate && onNavigate('Projects.jsx')}
+                    />
+                    <CommentLink
+                        text={t.home.viewPlaybook}
+                        onClick={() => window.open('https://github.com/heisyoudan/ai-agent-playbook', '_blank')}
+                    />
+                </div>
 
-                    {t.home.signals && (
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '16px' }}>
-                            {t.home.signals.map(tag => (
-                                <span key={tag} style={{
-                                    fontSize: '11px', padding: '3px 10px',
-                                    borderRadius: '3px',
-                                    border: '1px solid var(--border-color)',
-                                    color: 'var(--text-muted)',
-                                    fontFamily: 'var(--font-mono)',
-                                }}>
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
-                    )}
-
-                    <div style={{ marginTop: '20px', marginBottom: '0' }}>
-                        <CommentLink
-                            text={t.home.viewWork}
-                            onClick={() => onNavigate && onNavigate('Projects.jsx')}
-                        />
-                        <CommentLink
-                            text={t.home.viewPlaybook}
-                            onClick={() => window.open('https://github.com/heisyoudan/ai-agent-playbook', '_blank')}
-                        />
-                    </div>
-
-                    <div style={{
-                        marginTop: '0',
-                        marginBottom: '40px',
-                    }}>
-                        <CodeTypewriter lines={infoCode} delay={30} initialDelay={100} />
-                    </div>
-
-
+                <div style={{ marginTop: '8px', marginBottom: '40px' }}>
+                    <CodeTypewriter lines={profileCode} delay={15} initialDelay={100} />
                 </div>
             </div>
         </RichContentWrapper>

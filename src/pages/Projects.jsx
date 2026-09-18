@@ -88,13 +88,7 @@ const ProjectCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, indu
                 onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; e.currentTarget.style.opacity = '1'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.opacity = '0.9'; }}
             />
-            {/* zoom icon badge */}
-            <span style={{
-                position: 'absolute', top: '8px', right: '8px',
-                fontSize: '11px', padding: '2px 7px', borderRadius: '3px',
-                background: 'rgba(0,0,0,0.6)', color: 'rgba(255,255,255,0.5)',
-                fontFamily: 'var(--font-mono)', pointerEvents: 'none',
-            }}>⊕</span>
+            {/* zoom affordance lives in the cursor + hover scale only — no badge overlap */}
             <div style={{
                 position: 'absolute', bottom: 0, left: 0, right: 0, padding: '5px 10px',
                 background: 'rgba(0,0,0,0.8)', fontSize: '11px', color: 'var(--accent-cyan)',

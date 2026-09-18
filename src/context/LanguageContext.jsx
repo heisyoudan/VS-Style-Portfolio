@@ -60,14 +60,11 @@ export const translations = {
             ]
         },
         home: {
-            greeting: "Welcome to my world!",
-            intro: "Hi, I am",
             name: "He Xiaodan.",
             codeName: "He Xiaodan",
             role: "Software Engineer & Indie Developer",
-            subtitle: "Backend · Full-Stack · Product Engineering · AI-Native Development",
-            description: "Building production software across enterprise systems, independent products, and international client projects — with AI-assisted engineering integrated into my development workflow.",
-            signals: ["Enterprise Engineering", "Independent Products", "International Client Delivery"],
+            subtitle: "Backend · Full Stack · Product Engineering · AI Native Development",
+            description: "Building production software across enterprise systems, indie products, and international client projects — with AI deeply integrated into real development and delivery workflows.",
             viewWork: "View Projects",
             viewPlaybook: "View AI Playbook",
             contact: "About Me"
@@ -155,7 +152,7 @@ export const translations = {
                     industry: "Domain: Open Source · AI Engineering",
                     role: "Author · Independent",
                     whatIBuilt: "An ongoing open-source distillation of AI Agent software engineering methodology, built from hands-on experience across enterprise projects, independent development, and commercial client delivery. Abstracts real engineering experience into reusable principles: Task Decomposition, Context Isolation, Artifact, Verification, Gate, Contract, Convergence, and Human Authority.<br><br>The playbook focuses on integrating Coding Agents into verifiable software engineering workflows, and is continuously refined through real project practice. Related methods are tooled and validated in Maestro. Published on GitHub under MIT.",
-                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.svg",
+                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.png",
                     github: "https://github.com/heisyoudan/ai-agent-playbook",
                     tech: ["AI Agents", "Agent Workflow", "Context Engineering", "Software Engineering", "Open Source"]
                 },
@@ -273,14 +270,11 @@ export const translations = {
             ]
         },
         home: {
-            greeting: "ようこそ、私の世界へ！",
-            intro: "初めまして、",
             name: "Heisyoudan と申します。",
             codeName: "Heisyoudan",
             role: "Software Engineer & Indie Developer",
-            subtitle: "Backend · Full-Stack · Product Engineering · AI-Native Development",
-            description: "エンタープライズシステム、独立製品、国際クライアントプロジェクトにわたり、本番運用されるソフトウェアを開発しています。AI 支援エンジニアリングを開発ワークフローに組み込んで実践しています。",
-            signals: ["エンタープライズ開発", "独立製品開発", "国際クライアント納品"],
+            subtitle: "Backend · Full Stack · Product Engineering · AI Native Development",
+            description: "エンタープライズシステム、個人プロダクト、海外クライアントプロジェクトにわたり本番ソフトウェアを構築し、AI を実際の開発・納品フローに深く組み込んでいます。",
             viewWork: "プロジェクトを見る",
             viewPlaybook: "AI Playbook を見る",
             contact: "自己紹介"
@@ -368,7 +362,7 @@ export const translations = {
                     industry: "領域：Open Source · AI Engineering",
                     role: "Author / Independent（執筆・個人開発）",
                     whatIBuilt: "大規模企業プロジェクト・独立開発・商業クライアント納品を通じて形成した AI Agent ソフトウェアエンジニアリング方法論を継続的に整理し、オープンソースとして公開しています。実際の開発経験を Task Decomposition、Context Isolation、Artifact、Verification、Gate、Contract、Convergence、Human Authority などの再利用可能な工程原則に抽象化しています。<br><br>Coding Agents を検証可能なソフトウェアエンジニアリングフローに統合する方法に焦点を当て、実際のプロジェクト実践を通じて継続的に修正・拡張しています。関連する方法論は Maestro でもツール化・検証されており、Playbook 自体は GitHub にて MIT ライセンスで公開しています。",
-                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.svg",
+                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.png",
                     github: "https://github.com/heisyoudan/ai-agent-playbook",
                     tech: ["AI Agents", "Agent Workflow", "Context Engineering", "Software Engineering", "Open Source"]
                 },
@@ -486,14 +480,11 @@ export const translations = {
             ]
         },
         home: {
-            greeting: "欢迎来到我的世界！",
-            intro: "你好，",
             name: "我是何晓丹。",
             codeName: "何晓丹",
             role: "Software Engineer & Indie Developer",
-            subtitle: "Backend · Full-Stack · Product Engineering · AI-Native Development",
-            description: "在企业系统、独立产品与国际客户项目中构建生产级软件，将 AI 辅助工程作为开发工作流的组成部分融入实际交付。",
-            signals: ["企业级工程", "独立产品开发", "国际客户交付"],
+            subtitle: "Backend · Full Stack · Product Engineering · AI Native Development",
+            description: "在企业级系统、独立产品与海外商业项目中构建生产级软件，并将 AI 深度融入实际开发与交付流程。",
             viewWork: "查看项目",
             viewPlaybook: "查看 AI Playbook",
             contact: "关于我"
@@ -581,7 +572,7 @@ export const translations = {
                     industry: "领域：Open Source · AI Engineering",
                     role: "作者 · 独立开发",
                     whatIBuilt: "持续整理并开源自己在大型企业项目、独立开发和商业交付中形成的 AI Agent 软件工程方法论，将真实开发经验抽象为 Task Decomposition、Context Isolation、Artifact、Verification、Gate、Contract、Convergence 与 Human Authority 等可复用工程原则。<br><br>Playbook 关注如何将 Coding Agents 纳入可验证的软件工程流程，并持续通过真实项目实践进行修正和扩展。相关方法同时在 Maestro 中进行工具化验证，Playbook 本身已在 GitHub 开源。",
-                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.svg",
+                    imgSrc: "/VS-Style-Portfolio/img/ai-playbook.png",
                     github: "https://github.com/heisyoudan/ai-agent-playbook",
                     tech: ["AI Agents", "Agent Workflow", "Context Engineering", "Software Engineering", "Open Source"]
                 },
