@@ -51,7 +51,7 @@ const Lightbox = ({ src, alt, onClose }) => {
 };
 
 // ─── ProjectCard ──────────────────────────────────────────────────────────────
-const ProjectCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, industry, proprietary, privateLabel, t, onImageClick }) => (
+const ProjectCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, caseStudyUrl, highlight, industry, proprietary, privateLabel, t, onImageClick }) => (
     <div style={{
         backgroundColor: 'var(--sidebar-bg)',
         border: '1px solid var(--border-color)',
@@ -100,6 +100,21 @@ const ProjectCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, indu
 
         <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
             <h3 style={{ margin: '0 0 10px 0', fontSize: '16px', color: 'var(--text-primary)' }}>{title}</h3>
+            {highlight && (
+                <div style={{
+                    margin: '0 0 14px 0',
+                    paddingLeft: '10px',
+                    borderLeft: '2px solid var(--accent-purple)',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '11px',
+                    fontStyle: 'italic',
+                    lineHeight: '1.6',
+                    color: 'var(--accent-purple)',
+                    opacity: 0.9
+                }}>
+                    {highlight}
+                </div>
+            )}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '15px' }}>
                 {tech && tech.map(item => (
                     <span key={item} style={{
@@ -130,7 +145,12 @@ const ProjectCard = ({ title, tech, role, whatIBuilt, imgSrc, link, github, indu
                         {link.includes('apps.apple.com') ? <SiAppstore /> : <FaYoutube />} <span style={{ color: 'var(--accent-cyan)' }}>{link.includes('apps.apple.com') ? t.store : t.demo}</span>
                     </a>
                 )}
-                {(proprietary || privateLabel) && !github && !link && (
+                {caseStudyUrl && (
+                    <a href={caseStudyUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '5px', fontSize: '12px' }}>
+                        <VscGithubAlt /> <span style={{ color: 'var(--accent-green)' }}>{t.caseStudy}</span>
+                    </a>
+                )}
+                {(proprietary || privateLabel) && (
                     <span style={{ color: 'var(--text-muted)', fontSize: '12px', fontStyle: 'italic' }}>
                         {privateLabel || t.proprietary}
                     </span>

@@ -100,6 +100,7 @@ export const translations = {
             store: "App Store",
             roleLabel: "Role",
             whatIBuiltLabel: "What I Built",
+            caseStudy: "Real-world Workflow",
             proprietary: "Proprietary enterprise project",
             items: [
                 {
@@ -142,8 +143,10 @@ export const translations = {
                     title: "Maestro",
                     industry: "Domain: AI Engineering · Developer Tools",
                     role: "Author · Independent Engineer",
-                    whatIBuilt: "Designed and continuously maintains Maestro, an agent-first workflow controller for organizing AI Coding Agents in software development. It transforms requirements into tasks with explicit context, responsibilities, and acceptance criteria, then coordinates roles including Dev, QA, and Sage through development, independent verification, rollback, and closure.<br><br><b>Workflow:</b> Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close. Each role works in isolated context, passing tasks, artifacts, evidence, and lifecycle state through shared project truth. Failed verification returns to development with evidence attached; successful verification advances state.<br><br><b>Core mechanisms:</b> Task Contract, Context Isolation, Shared Truth, Quality Gate, Atomic Rollback, Human Authority, and replaceable AI Worker / Provider Adapters.<br><br>Maestro has evolved through long-term real-world project use and now serves as personal workflow infrastructure across independent products and commercial client delivery.",
+                    highlight: "Separate conversations. Shared truth. Workers are replaceable. Project truth persists.",
+                    whatIBuilt: "Designed and continuously maintains Maestro, an agent-agnostic workflow controller for AI-assisted software development. It binds to no specific model or agent — instead it externalizes task goals, context, constraints, state, and verification evidence into a persistent project truth, so different AI workers can read the current task state and resume work without sharing prior chat history.<br><br>Maestro turns requirements into Task Contracts with explicit context, responsibility, and acceptance criteria, then coordinates roles including Dev, QA, and Sage through development, independent verification, failure rollback, and closure.<br><br><b>Workflow:</b> Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close. Each role works in isolated context, passing tasks, artifacts, evidence, and lifecycle state through shared project truth. Failed QA verification returns to Dev with evidence attached; passing verification advances state.<br><br><b>Core mechanisms:</b> Task Contract, Context Isolation, Shared Truth, Quality Gate, Atomic Rollback, Human Authority, Replaceable Workers / Provider Adapter.<br><br>Maestro has evolved through long-term real-world project use and now serves as personal Agent Engineering infrastructure across independent products and commercial client delivery.",
                     imgSrc: "/VS-Style-Portfolio/img/maestro.png",
+                    caseStudyUrl: "https://github.com/heisyoudan/ai-agent-playbook/blob/main/case-studies/maestro-real-world-workflow/README.md",
                     tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
                     privateLabel: "Private Repository · Personal Tooling"
                 },
@@ -310,6 +313,7 @@ export const translations = {
             store: "App Store",
             roleLabel: "役割",
             whatIBuiltLabel: "実装内容",
+            caseStudy: "実運用ワークフロー",
             proprietary: "社内専用プロジェクト",
             items: [
                 {
@@ -352,8 +356,10 @@ export const translations = {
                     title: "Maestro",
                     industry: "領域：AI Engineering · Developer Tools",
                     role: "Author / Solo Engineer（設計・開発者）",
-                    whatIBuilt: "Maestro を設計し、長期にわたってメンテナンスを続けています。Maestro は AI Coding Agents をソフトウェア開発に組み込むためのエージェントファーストなワークフローコントローラーです。要件を明確なコンテキスト・責任・受け入れ基準を持つタスクに変換し、Dev / QA / Sage などのロールを通じて開発・独立検証・ロールバック・クローズのサイクルを協調します。<br><br><b>ワークフロー：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。各ロールは隔離されたコンテキストで動作し、共有プロジェクト状態を通じて Task・Artifact・Evidence・ライフサイクル情報を受け渡します。検証失敗時は証拠付きで開発に差し戻し、通過後は状態を進めます。<br><br><b>コアメカニズム：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority、交換可能な AI Worker / Provider Adapter。<br><br>Maestro は長期にわたる実プロジェクトでの使用を通じて進化を続け、現在は個人のワークフロー基盤として、個人プロダクト開発および商業クライアント納品に活用されています。",
+                    highlight: "Separate conversations. Shared truth. Workers are replaceable. Project truth persists.",
+                    whatIBuilt: "Maestro を設計し、長期にわたってメンテナンスを続けています。Maestro は AI 支援ソフトウェア開発のための Agent-agnostic なワークフローコントローラーです。特定のモデルやエージェントに依存せず、タスクの目的・コンテキスト・制約・状態・検証証跡を永続的なプロジェクト Truth として外部化することで、異なる AI Worker であっても過去の会話履歴を共有せずに現在のタスク状態を読み取り、作業を継続できます。<br><br>Maestro は要件を、明確なコンテキスト・責任・受け入れ基準を持つ Task Contract に変換し、Dev / QA / Sage などのロールを通じて開発・独立検証・失敗時のロールバック・クローズまでを協調します。<br><br><b>ワークフロー：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。各ロールは隔離されたコンテキストで動作し、共有プロジェクト状態を通じて Task・Artifact・Evidence・ライフサイクル情報を受け渡します。QA 検証が失敗した場合は証拠付きで Dev に差し戻し、通過した場合は状態を進めます。<br><br><b>コアメカニズム：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority、Replaceable Workers / Provider Adapter。<br><br>Maestro は長期にわたる実プロジェクトでの使用を通じて進化を続け、現在は個人の Agent Engineering 基盤として、個人プロダクト開発および商業クライアント納品に活用されています。",
                     imgSrc: "/VS-Style-Portfolio/img/maestro.png",
+                    caseStudyUrl: "https://github.com/heisyoudan/ai-agent-playbook/blob/main/case-studies/maestro-real-world-workflow/README.ja.md",
                     tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
                     privateLabel: "Private Repository · Personal Tooling"
                 },
@@ -520,6 +526,7 @@ export const translations = {
             store: "App Store",
             roleLabel: "角色",
             whatIBuiltLabel: "我做了什么",
+            caseStudy: "真实工作流案例",
             proprietary: "企业专有项目",
             items: [
                 {
@@ -562,8 +569,10 @@ export const translations = {
                     title: "Maestro",
                     industry: "领域：AI Engineering · Developer Tools",
                     role: "作者 · 独立工程师",
-                    whatIBuilt: "设计并长期维护 Maestro，一个用于组织 AI Coding Agents 参与软件开发的 Agent-first Workflow Controller。它将需求转化为具有明确上下文、职责和验收标准的任务，并协调 Dev、QA、Sage 等角色完成开发、独立验证、回退与关闭。<br><br><b>工作流程：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。不同角色在隔离上下文中工作，通过共享项目状态传递 Task、Artifact、Evidence 与生命周期信息；验证失败时携带证据回退开发，通过后继续推进状态。<br><br><b>核心机制：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority，以及可替换的 AI Worker / Provider Adapter。<br><br>Maestro 经过长期实际项目使用和持续演进，目前作为个人工作流基础设施，应用于独立产品开发与商业客户交付。",
+                    highlight: "Separate conversations. Shared truth. Workers are replaceable. Project truth persists.",
+                    whatIBuilt: "设计并长期维护 Maestro，一个 Agent-agnostic 的 AI 软件开发工作流控制器。它不绑定特定模型或 Agent，而是将任务目标、上下文、约束、状态与验证证据外置为持久化的项目 Truth，使不同 AI Worker 即使没有共享上一段会话历史，也能读取当前任务状态并继续工作。<br><br>Maestro 将需求转化为具有明确上下文、职责与验收标准的 Task Contract，并协调 Dev、QA、Sage 等角色完成开发、独立验证、失败回退与最终关闭。<br><br><b>工作流程：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。不同角色在隔离上下文中工作，通过共享项目状态传递 Task、Artifact、Evidence 与生命周期信息；QA 验证失败时携带证据回退 Dev，通过后继续推进。<br><br><b>核心机制：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority、Replaceable Workers / Provider Adapter。<br><br>Maestro 已经过长期实际项目使用和持续演进，目前作为个人 Agent Engineering 基础设施，应用于独立产品开发与商业客户交付。",
                     imgSrc: "/VS-Style-Portfolio/img/maestro.png",
+                    caseStudyUrl: "https://github.com/heisyoudan/ai-agent-playbook/blob/main/case-studies/maestro-real-world-workflow/README.zh-CN.md",
                     tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
                     privateLabel: "私有仓库 · 个人工具"
                 },
