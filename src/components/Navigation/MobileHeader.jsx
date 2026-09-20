@@ -11,9 +11,9 @@ const MobileHeader = ({ activeFileName, onOpenMenu }) => {
             alignItems: 'center',
             padding: '0 15px',
             justifyContent: 'space-between',
-            position: 'sticky',
-            top: 0,
-            zIndex: 100
+            position: 'relative',
+            zIndex: 100,
+            flexShrink: 0
         }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
                 <VscMenu

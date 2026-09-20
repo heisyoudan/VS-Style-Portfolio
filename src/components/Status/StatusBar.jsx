@@ -20,6 +20,7 @@ const StatusBar = () => {
             fontSize: '12px',
             fontWeight: '600',
             userSelect: 'none',
+            flexShrink: 0,
             position: 'relative' // For absolute positioning of menu
         }}>
             <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
@@ -61,7 +62,7 @@ const StatusBar = () => {
                         <>
                             {/* Backdrop to close on click outside */}
                             <div
-                                style={{ fixed: true, top: 0, left: 0, right: 0, bottom: 0, zIndex: 999 }}
+                                style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 999 }}
                                 onClick={() => setShowLangMenu(false)}
                             />
                             <div style={{

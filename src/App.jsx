@@ -65,8 +65,8 @@ const App = () => {
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100vh',
-                width: '100vw',
+                height: '100dvh',
+                width: '100%',
                 backgroundColor: 'var(--bg-color)',
                 color: 'var(--text-primary)',
                 overflow: 'hidden',
@@ -81,7 +81,7 @@ const App = () => {
                     />
                 )}
 
-                <div style={{ flex: 1, display: 'flex', overflow: 'hidden', position: 'relative' }}>
+                <div style={{ flex: 1, display: 'flex', overflow: 'hidden', position: 'relative', minHeight: 0 }}>
                     {/* Desktop Sidebar (Hidden on Mobile) */}
                     {!isMobile && (
                         <div style={{ display: 'flex', backgroundColor: 'var(--sidebar-bg)' }}>

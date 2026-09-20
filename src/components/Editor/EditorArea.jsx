@@ -10,7 +10,7 @@ const displayNameMap = {
 
 const TabBar = ({ activeFile, openFiles, onCloseFile, onSelectFile }) => {
     return (
-        <div style={{ display: 'flex', backgroundColor: 'var(--bg-color)', overflowX: 'auto', borderBottom: '1px solid var(--border-color)' }}>
+        <div style={{ display: 'flex', flexShrink: 0, backgroundColor: 'var(--bg-color)', overflowX: 'auto', borderBottom: '1px solid var(--border-color)' }}>
             {openFiles.map(file => {
                 const displayName = displayNameMap[file.name] || file.name;
                 return (
