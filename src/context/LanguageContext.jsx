@@ -106,10 +106,10 @@ export const translations = {
                     title: "International EdTech Platform Modernization",
                     industry: "Domain: EdTech · International Freelance",
                     role: "Independent Full-Stack Developer",
-                    whatIBuilt: "Took ownership of and continued development on a live EdTech platform for an international client. The system spans Unity, C#, backend services, Azure, and MySQL. Conducted end-to-end architecture investigation, reviewed the cloud and database environment, established a reliable technical baseline, and advanced curriculum and localization architecture.<br><br><b>Scope:</b> Codebase investigation, Unity and backend architecture analysis, Azure environment review, database schema analysis, implementation, testing, technical documentation, and asynchronous international client communication across time zones.<br><br><b>AI-assisted development:</b> Applied AI Coding Agents to codebase investigation, implementation support, QA, and technical documentation through role-separated workflows. Requirements definition, acceptance criteria, and final judgment remain human-controlled.",
+                    whatIBuilt: "Took ownership of and continued development on a live EdTech platform for an international client. The system spans Unity, C#, backend services, Azure, and MySQL. Conducted end-to-end architecture investigation, reviewed the cloud and database environment, established a reliable technical baseline, and advanced curriculum and localization architecture.<br><br><b>Scope:</b> Codebase investigation, Unity and backend architecture analysis, Azure environment review, database schema analysis, implementation, testing, technical documentation, and asynchronous international client communication across time zones.<br><br><b>Maestro / AI engineering practice:</b> Applied my own Maestro agent workflow to live commercial delivery — organizing AI Coding Agents through task contracts, role separation, isolated context, and quality gates to support investigation, implementation, verification, and delivery across Unity, backend, Azure, and database layers.",
                     imgSrc: "/VS-Style-Portfolio/img/edtech.png",
                     tech: ["Unity", "C#", "Azure", "MySQL", "Localization", "Full-Stack"],
-                    privateLabel: "International Commercial Project · Upwork Contract"
+                    privateLabel: "Upwork · Verified Contract"
                 },
                 {
                     title: "Enterprise Payment Platform Modernization",
@@ -142,7 +142,7 @@ export const translations = {
                     title: "Maestro",
                     industry: "Domain: AI Engineering · Developer Tools",
                     role: "Author · Independent Engineer",
-                    whatIBuilt: "Designed and continuously maintains Maestro, an agent-first workflow controller for organizing AI Coding Agents in software development. It transforms requirements into tasks with explicit context, responsibilities, and acceptance criteria, then coordinates roles including Dev, QA, and Sage through development, independent verification, rollback, and closure.<br><br><b>Workflow:</b> Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close. Each role works in isolated context, passing tasks, artifacts, evidence, and lifecycle state through shared project truth. Failed verification returns to development with evidence attached; successful verification advances state.<br><br><b>Core mechanisms:</b> Task Contract, Context Isolation, Shared Truth, Quality Gate, Atomic Rollback, Human Authority, and replaceable AI Worker / Provider Adapters.<br><br>Maestro has evolved through long-term real-world project use and continues to serve as personal development workflow infrastructure.",
+                    whatIBuilt: "Designed and continuously maintains Maestro, an agent-first workflow controller for organizing AI Coding Agents in software development. It transforms requirements into tasks with explicit context, responsibilities, and acceptance criteria, then coordinates roles including Dev, QA, and Sage through development, independent verification, rollback, and closure.<br><br><b>Workflow:</b> Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close. Each role works in isolated context, passing tasks, artifacts, evidence, and lifecycle state through shared project truth. Failed verification returns to development with evidence attached; successful verification advances state.<br><br><b>Core mechanisms:</b> Task Contract, Context Isolation, Shared Truth, Quality Gate, Atomic Rollback, Human Authority, and replaceable AI Worker / Provider Adapters.<br><br>Maestro has evolved through long-term real-world project use and now serves as personal workflow infrastructure across independent products and commercial client delivery.",
                     imgSrc: "/VS-Style-Portfolio/img/maestro.png",
                     tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
                     privateLabel: "Private Repository · Personal Tooling"
@@ -316,10 +316,10 @@ export const translations = {
                     title: "国際 EdTech プラットフォーム モダナイゼーション",
                     industry: "領域：EdTech · 国際フリーランス",
                     role: "Independent Full-Stack Developer（独立フルスタック開発者）",
-                    whatIBuilt: "国際クライアントの稼働中 EdTech プラットフォームを引き継ぎ、開発を継続。Unity / C# / バックエンド / Azure / MySQL にまたがる既存システムのアーキテクチャ調査・クラウドおよびデータベース環境確認・信頼できる技術ベースラインの確立を経て、カリキュラムおよびローカライゼーションアーキテクチャの改善開発を推進しました。<br><br><b>担当範囲：</b>コードベース調査、Unity・バックエンドアーキテクチャ分析、Azure 環境確認、DB スキーマ分析、実装、テスト、技術ドキュメント整備、時差をまたぐ非同期の国際クライアントコミュニケーション。<br><br><b>AI-assisted development：</b>コードベース調査・実装支援・QA・技術ドキュメント作成に AI Coding Agents をロール分離ワークフローで適用。要件定義・受け入れ基準・最終判断は人間が管理。",
+                    whatIBuilt: "国際クライアントの稼働中 EdTech プラットフォームを引き継ぎ、開発を継続。Unity / C# / バックエンド / Azure / MySQL にまたがる既存システムのアーキテクチャ調査・クラウドおよびデータベース環境確認・信頼できる技術ベースラインの確立を経て、カリキュラムおよびローカライゼーションアーキテクチャの改善開発を推進しました。<br><br><b>担当範囲：</b>コードベース調査、Unity・バックエンドアーキテクチャ分析、Azure 環境確認、DB スキーマ分析、実装、テスト、技術ドキュメント整備、時差をまたぐ非同期の国際クライアントコミュニケーション。<br><br><b>Maestro / AI エンジニアリング実践：</b>自ら設計した Maestro エージェントワークフローを実際の商業納品に適用。タスク契約・ロール分離・独立コンテキスト・品質ゲートによって AI Coding Agents を統制し、Unity / バックエンド / Azure / データベースにまたがる調査・実装・検証・納品を支援。",
                     imgSrc: "/VS-Style-Portfolio/img/edtech.png",
                     tech: ["Unity", "C#", "Azure", "MySQL", "ローカライゼーション", "Full-Stack"],
-                    privateLabel: "国際商業案件 · Upwork 契約"
+                    privateLabel: "Upwork · 契約確認済み"
                 },
                 {
                     title: "大手企業向け決済基盤モダナイゼーション",
@@ -352,7 +352,7 @@ export const translations = {
                     title: "Maestro",
                     industry: "領域：AI Engineering · Developer Tools",
                     role: "Author / Solo Engineer（設計・開発者）",
-                    whatIBuilt: "Maestro を設計し、長期にわたってメンテナンスを続けています。Maestro は AI Coding Agents をソフトウェア開発に組み込むためのエージェントファーストなワークフローコントローラーです。要件を明確なコンテキスト・責任・受け入れ基準を持つタスクに変換し、Dev / QA / Sage などのロールを通じて開発・独立検証・ロールバック・クローズのサイクルを協調します。<br><br><b>ワークフロー：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。各ロールは隔離されたコンテキストで動作し、共有プロジェクト状態を通じて Task・Artifact・Evidence・ライフサイクル情報を受け渡します。検証失敗時は証拠付きで開発に差し戻し、通過後は状態を進めます。<br><br><b>コアメカニズム：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority、交換可能な AI Worker / Provider Adapter。<br><br>Maestro は長期にわたる実際のプロジェクト使用を通じて進化を続け、個人開発ワークフローの基盤として機能しています。",
+                    whatIBuilt: "Maestro を設計し、長期にわたってメンテナンスを続けています。Maestro は AI Coding Agents をソフトウェア開発に組み込むためのエージェントファーストなワークフローコントローラーです。要件を明確なコンテキスト・責任・受け入れ基準を持つタスクに変換し、Dev / QA / Sage などのロールを通じて開発・独立検証・ロールバック・クローズのサイクルを協調します。<br><br><b>ワークフロー：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。各ロールは隔離されたコンテキストで動作し、共有プロジェクト状態を通じて Task・Artifact・Evidence・ライフサイクル情報を受け渡します。検証失敗時は証拠付きで開発に差し戻し、通過後は状態を進めます。<br><br><b>コアメカニズム：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority、交換可能な AI Worker / Provider Adapter。<br><br>Maestro は長期にわたる実プロジェクトでの使用を通じて進化を続け、現在は個人のワークフロー基盤として、個人プロダクト開発および商業クライアント納品に活用されています。",
                     imgSrc: "/VS-Style-Portfolio/img/maestro.png",
                     tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
                     privateLabel: "Private Repository · Personal Tooling"
@@ -526,10 +526,10 @@ export const translations = {
                     title: "国际 EdTech 平台现代化",
                     industry: "领域：EdTech · 国际自由职业",
                     role: "独立全栈开发者（Independent Full-Stack Developer）",
-                    whatIBuilt: "接手并持续开发国际客户的生产 EdTech 平台。承接横跨 Unity / C# / 后端服务 / Azure / MySQL 的既有系统，完成架构调研、云和数据库环境核查、建立可靠的技术基线，并推进课程及本地化架构的改进开发。<br><br><b>担当范围：</b>代码库调研、Unity 与后端架构分析、Azure 环境核查、数据库 Schema 分析、开发实现、测试及技术文档整理、跨时区异步国际客户沟通。<br><br><b>AI 辅助开发：</b>将 AI Coding Agents 应用于代码库调研、实现支持、QA 与技术文档，并通过角色分离的工作流进行协作；需求定义、验收标准与最终判断由人工控制。",
+                    whatIBuilt: "接手并持续开发国际客户的生产 EdTech 平台。承接横跨 Unity / C# / 后端服务 / Azure / MySQL 的既有系统，完成架构调研、云和数据库环境核查、建立可靠的技术基线，并推进课程及本地化架构的改进开发。<br><br><b>担当范围：</b>代码库调研、Unity 与后端架构分析、Azure 环境核查、数据库 Schema 分析、开发实现、测试及技术文档整理、跨时区异步国际客户沟通。<br><br><b>Maestro / AI 工程实践：</b>将自研 Maestro Agent Workflow 应用于实际商业交付，通过任务契约、角色分离、独立上下文与质量门禁组织 AI Coding Agents，辅助完成跨 Unity、Backend、Azure 与 Database 的调查、实现、验证和交付。",
                     imgSrc: "/VS-Style-Portfolio/img/edtech.png",
                     tech: ["Unity", "C#", "Azure", "MySQL", "本地化", "Full-Stack"],
-                    privateLabel: "国际商业项目 · Upwork 合同验证"
+                    privateLabel: "Upwork · 合同验证"
                 },
                 {
                     title: "大型企业支付平台现代化重构",
@@ -562,7 +562,7 @@ export const translations = {
                     title: "Maestro",
                     industry: "领域：AI Engineering · Developer Tools",
                     role: "作者 · 独立工程师",
-                    whatIBuilt: "设计并长期维护 Maestro，一个用于组织 AI Coding Agents 参与软件开发的 Agent-first Workflow Controller。它将需求转化为具有明确上下文、职责和验收标准的任务，并协调 Dev、QA、Sage 等角色完成开发、独立验证、回退与关闭。<br><br><b>工作流程：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。不同角色在隔离上下文中工作，通过共享项目状态传递 Task、Artifact、Evidence 与生命周期信息；验证失败时携带证据回退开发，通过后继续推进状态。<br><br><b>核心机制：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority，以及可替换的 AI Worker / Provider Adapter。<br><br>Maestro 经过长期实际项目使用和持续演进，目前作为个人开发工作流基础设施使用。",
+                    whatIBuilt: "设计并长期维护 Maestro，一个用于组织 AI Coding Agents 参与软件开发的 Agent-first Workflow Controller。它将需求转化为具有明确上下文、职责和验收标准的任务，并协调 Dev、QA、Sage 等角色完成开发、独立验证、回退与关闭。<br><br><b>工作流程：</b>Requirement → Task Contract → Dev → QA → Sage / Human Gate → Close。不同角色在隔离上下文中工作，通过共享项目状态传递 Task、Artifact、Evidence 与生命周期信息；验证失败时携带证据回退开发，通过后继续推进状态。<br><br><b>核心机制：</b>Task Contract、Context Isolation、Shared Truth、Quality Gate、Atomic Rollback、Human Authority，以及可替换的 AI Worker / Provider Adapter。<br><br>Maestro 经过长期实际项目使用和持续演进，目前作为个人工作流基础设施，应用于独立产品开发与商业客户交付。",
                     imgSrc: "/VS-Style-Portfolio/img/maestro.png",
                     tech: ["Multi-Agent", "CLI", "State Machine", "Context Engineering", "Quality Gates"],
                     privateLabel: "私有仓库 · 个人工具"
